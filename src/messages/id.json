@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "role": "Engineer full-stack, jaringan, keamanan, dan AI",
+    "description": "Andrew the Builder membangun dari ujung ke ujung: aplikasi web dan mobile, jaringan optik, keamanan, dan AI di production. Proyek pilihan dan CV.",
+    "ogLocale": "id_ID",
+    "projectsTitle": "Proyek",
+    "projectsDescription": "Proyek pilihan di bidang web, infrastruktur, keamanan, dan AI."
+  },
+  "a11y": {
+    "skip": "Lewati ke konten",
+    "home": "Andrew the Builder, beranda",
+    "switchLabel": "Ganti bahasa ke English",
+    "theme": "Ganti tema terang dan gelap",
+    "gallery": "Tangkapan layar proyek, gulir ke samping",
+    "mainNav": "Navigasi utama"
+  },
+  "nav": {
+    "work": "Karya",
+    "glance": "Sekilas",
+    "experience": "Pengalaman",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "headlineA": "Saya membangun dari ujung ke ujung,",
+    "headlineB": "dari serat optik sampai antarmuka.",
+    "dimension": "serat optik → antarmuka",
+    "sub": "Web, jaringan, keamanan, AI. Satu engineer, dikirim dari hulu ke hilir.",
+    "lanes": "Web · Jaringan · Keamanan · AI",
+    "availability": {
+      "both": "Terbuka untuk posisi dan proyek",
+      "roles": "Terbuka untuk posisi",
+      "projects": "Terbuka untuk proyek",
+      "closed": "Sedang tidak menerima pekerjaan baru"
+    },
+    "forRecruiters": "Untuk rekruter",
+    "forClients": "Untuk klien",
+    "ctaCv": "Unduh CV",
+    "ctaClient": "Mulai proyek",
+    "waMessage": "Halo Andrew, saya menemukan portofolio Anda dan ingin membahas sebuah proyek.",
+    "photoAlt": "Potret Andrew berkacamata dan bersweter gelap, menoleh ke samping."
+  },
+  "glance": {
+    "title": "Sekilas",
+    "intro": "Versi singkat, untuk yang membaca cepat."
+  },
+  "lanes": {
+    "title": "Empat lajur, satu builder",
+    "intro": "Pilih bagian stack yang Anda pedulikan. Setiap proyek diberi label lajur.",
+    "view": "Lihat proyek",
+    "web": { "name": "Web & Mobile", "blurb": "Next.js, React Native, SaaS multi-tenant, serta integrasi pembayaran dan WhatsApp." },
+    "infra": { "name": "Jaringan & DevOps", "blurb": "Jaringan optik (DWDM), konfigurasi server, Docker, dan CI/CD." },
+    "security": { "name": "Keamanan", "blurb": "Audit, hardening, IDS/IPS, dan penetration testing." },
+    "ai": { "name": "AI & Vision", "blurb": "Model computer vision yang disajikan sebagai API terkontainerisasi yang aman." }
+  },
+  "work": {
+    "title": "Karya pilihan",
+    "intro": "Beberapa proyek yang ingin saya tunjukkan lebih dulu.",
+    "all": "Semua proyek"
+  },
+  "projects": {
+    "title": "Proyek",
+    "intro": "Semua yang bisa saya tunjukkan, bisa difilter per lajur.",
+    "filterLabel": "Filter per lajur",
+    "all": "Semua",
+    "empty": "Belum ada proyek di lajur ini.",
+    "open": "Buka studi kasus"
+  },
+  "project": {
+    "back": "Semua proyek",
+    "role": "Peran",
+    "year": "Tahun",
+    "status": "Status",
+    "lane": "Lajur",
+    "stack": "Stack",
+    "problem": "Masalahnya",
+    "approach": "Pendekatan",
+    "highlights": "Sorotan",
+    "gallery": "Tangkapan layar",
+    "live": "Buka demo langsung",
+    "repo": "Kode sumber",
+    "video": "Tonton walkthrough",
+    "videoPlay": "Putar video"
+  },
+  "status": {
+    "live": "Live",
+    "beta": "Beta",
+    "archived": "Arsip",
+    "in-progress": "Dalam pengerjaan"
+  },
+  "apk": {
+    "title": "APK Android",
+    "intro": "Belum ada di Play Store. Unduh APK langsung dan verifikasi.",
+    "version": "Versi",
+    "size": "Ukuran",
+    "minAndroid": "Android",
+    "sha": "SHA-256",
+    "download": "Unduh APK",
+    "howTitle": "Cara memasang",
+    "steps": [
+      "Unduh APK di ponsel Android Anda.",
+      "Izinkan pemasangan dari sumber ini saat Android bertanya (Pengaturan → Pasang aplikasi tidak dikenal).",
+      "Buka file lalu pasang. Play Protect mungkin menampilkan peringatan karena aplikasi tidak berasal dari Play Store."
+    ],
+    "verify": "Opsional: bandingkan SHA-256 file yang diunduh dengan nilai di atas."
+  },
+  "experience": {
+    "title": "Pengalaman"
+  },
+  "contact": {
+    "title": "Mari membangun sesuatu",
+    "intro": "Sedang merekrut atau punya proyek? Pilih jalur tersingkat.",
+    "hireTitle": "Saya merekrut",
+    "hireBody": "Unduh CV atau hubungi saya langsung.",
+    "projectTitle": "Saya punya proyek",
+    "projectBody": "Ceritakan kebutuhan Anda. Beberapa baris sudah cukup untuk memulai.",
+    "email": "Email",
+    "emailCta": "Kirim email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "mailSubject": "Halo dari portofolio Anda",
+    "cv": "Unduh CV (PDF)"
+  },
+  "dummy": "Placeholder",
+  "footer": {
+    "built": "Dibuat dengan Next.js. Statis, dua bahasa, tanpa cookie.",
+    "top": "Kembali ke atas"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "role": "Full-stack, network, security and AI engineer",
+    "description": "Andrew the Builder builds things end to end: web and mobile apps, optical networks, security and production AI. Selected projects and CV.",
+    "ogLocale": "en_US",
+    "projectsTitle": "Projects",
+    "projectsDescription": "Selected projects across web, infrastructure, security and AI."
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "Andrew the Builder, home",
+    "switchLabel": "Switch language to Bahasa Indonesia",
+    "theme": "Toggle light and dark theme",
+    "gallery": "Project screenshots, scroll horizontally",
+    "mainNav": "Main navigation"
+  },
+  "nav": {
+    "work": "Work",
+    "glance": "At a glance",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headlineA": "I build things end to end,",
+    "headlineB": "from fiber to frontend.",
+    "dimension": "fiber → frontend",
+    "sub": "Web, network, security, AI. One engineer, shipped end to end.",
+    "lanes": "Web · Network · Security · AI",
+    "availability": {
+      "both": "Open for roles and projects",
+      "roles": "Open for roles",
+      "projects": "Open for projects",
+      "closed": "Not taking new work right now"
+    },
+    "forRecruiters": "For recruiters",
+    "forClients": "For clients",
+    "ctaCv": "Download CV",
+    "ctaClient": "Start a project",
+    "waMessage": "Hi Andrew, I found your portfolio and would like to discuss a project.",
+    "photoAlt": "Portrait of Andrew in glasses and a dark sweater, glancing to the side."
+  },
+  "glance": {
+    "title": "At a glance",
+    "intro": "The short version, for people who skim."
+  },
+  "lanes": {
+    "title": "Four lanes, one builder",
+    "intro": "Pick the part of the stack you care about. Every project is tagged by lane.",
+    "view": "View projects",
+    "web": { "name": "Web & Mobile", "blurb": "Next.js, React Native, multi-tenant SaaS, payments and WhatsApp integrations." },
+    "infra": { "name": "Network & DevOps", "blurb": "Optical networks (DWDM), server configuration, Docker and CI/CD." },
+    "security": { "name": "Security", "blurb": "Audits, hardening, IDS/IPS and penetration testing." },
+    "ai": { "name": "AI & Vision", "blurb": "Computer-vision models shipped as secure, containerized APIs." }
+  },
+  "work": {
+    "title": "Selected work",
+    "intro": "A few projects I would show first.",
+    "all": "All projects"
+  },
+  "projects": {
+    "title": "Projects",
+    "intro": "Everything I can show, filterable by lane.",
+    "filterLabel": "Filter by lane",
+    "all": "All",
+    "empty": "No projects in this lane yet.",
+    "open": "Open case study"
+  },
+  "project": {
+    "back": "All projects",
+    "role": "Role",
+    "year": "Year",
+    "status": "Status",
+    "lane": "Lane",
+    "stack": "Stack",
+    "problem": "The problem",
+    "approach": "The approach",
+    "highlights": "Highlights",
+    "gallery": "Screenshots",
+    "live": "Open live demo",
+    "repo": "Source code",
+    "video": "Watch walkthrough",
+    "videoPlay": "Play video"
+  },
+  "status": {
+    "live": "Live",
+    "beta": "Beta",
+    "archived": "Archived",
+    "in-progress": "In progress"
+  },
+  "apk": {
+    "title": "Android APK",
+    "intro": "Not on the Play Store yet. Download the APK directly and verify it.",
+    "version": "Version",
+    "size": "Size",
+    "minAndroid": "Android",
+    "sha": "SHA-256",
+    "download": "Download APK",
+    "howTitle": "How to install",
+    "steps": [
+      "Download the APK on your Android phone.",
+      "Allow installs from this source when Android asks (Settings → Install unknown apps).",
+      "Open the file and install. Play Protect may show a warning because the app is not from the Play Store."
+    ],
+    "verify": "Optional: compare the SHA-256 of the downloaded file with the value above."
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "contact": {
+    "title": "Let's build something",
+    "intro": "Hiring or have a project? Pick the shortest path.",
+    "hireTitle": "I'm hiring",
+    "hireBody": "Grab the CV or write to me directly.",
+    "projectTitle": "I have a project",
+    "projectBody": "Tell me what you need. A few lines are enough to start.",
+    "email": "Email",
+    "emailCta": "Send an email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "mailSubject": "Hello from your portfolio",
+    "cv": "Download CV (PDF)"
+  },
+  "dummy": "Placeholder",
+  "footer": {
+    "built": "Built by hand with Next.js. Static, bilingual, no cookies.",
+    "top": "Back to top"
+  }
+}

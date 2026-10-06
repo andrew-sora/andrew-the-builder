@@ -1,0 +1,34 @@
+slug: backbone
+placeholder: true
+lane: infra
+status: archived
+year: 2024
+featured: true
+order: 3
+stack: [DWDM, Fiber management, Server configuration, Docker]
+links: {}
+cover: /projects/backbone/cover.svg
+gallery:
+  - src: /projects/backbone/shot-1.svg
+    alt: { id: Topologi jaringan optik yang disederhanakan (dummy), en: Simplified optical network topology (dummy) }
+text:
+  id:
+    title: Backbone
+    tagline: Integrasi jaringan optik DWDM dan konfigurasi server pendukungnya.
+    role: Network engineer
+    problem: "[Kebutuhan kapasitas atau keandalan yang mendorong proyek ini.]"
+    approach: "[Desain topologi, pengelolaan fiber, konfigurasi, pengujian, serah terima. Tanpa detail sensitif milik klien.]"
+    highlights:
+      - "[Kapasitas atau ketersediaan yang dicapai]"
+      - "[Tantangan lapangan dan solusinya]"
+      - "[Dokumentasi atau otomasi yang dihasilkan]"
+  en:
+    title: Backbone
+    tagline: DWDM optical network integration and the server configuration around it.
+    role: Network engineer
+    problem: "[The capacity or reliability need behind the project.]"
+    approach: "[Topology design, fiber management, configuration, testing, handover. No sensitive client details.]"
+    highlights:
+      - "[Capacity or availability achieved]"
+      - "[Field challenge and how it was solved]"
+      - "[Documentation or automation produced]"

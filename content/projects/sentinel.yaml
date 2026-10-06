@@ -1,0 +1,34 @@
+slug: sentinel
+placeholder: true
+lane: security
+status: live
+year: 2025
+featured: true
+order: 4
+stack: [nmap, Snort IDS/IPS, Web auditing, Patching]
+links: {}
+cover: /projects/sentinel/cover.svg
+gallery:
+  - src: /projects/sentinel/shot-1.svg
+    alt: { id: Alur audit dan perbaikan (dummy), en: Audit and remediation flow (dummy) }
+text:
+  id:
+    title: Sentinel
+    tagline: Audit keamanan web dan jaringan, dari pemindaian sampai penambalan.
+    role: Security engineer
+    problem: "[Sistem apa yang diaudit dan risiko apa yang ditemukan, tanpa membuka detail yang masih bisa dieksploitasi.]"
+    approach: "[Metodologi: reconnaissance, pemindaian, validasi temuan, patching, verifikasi ulang, aturan IDS/IPS.]"
+    highlights:
+      - "[Jumlah dan tingkat keparahan temuan yang ditutup]"
+      - "[Pencegahan SEO poisoning atau eksploit web yang relevan]"
+      - "[Proses yang kini dipakai tim]"
+  en:
+    title: Sentinel
+    tagline: Web and network security audits, from scanning to patching.
+    role: Security engineer
+    problem: "[What was audited and which risks were found, without exposing anything still exploitable.]"
+    approach: "[Methodology: reconnaissance, scanning, finding validation, patching, re-verification, IDS/IPS rules.]"
+    highlights:
+      - "[Number and severity of findings closed]"
+      - "[Relevant SEO-poisoning or web-exploit prevention]"
+      - "[Process the team uses now]"

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Pulse placeholder">
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1c2f5c" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="750" fill="#0f1b36"/><rect width="1200" height="750" fill="url(#g)"/>
+<rect x="520" y="90" width="300" height="560" rx="38" fill="none" stroke="#7aa5ff" stroke-width="3"/>
+<rect x="630" y="106" width="80" height="12" rx="6" fill="#7aa5ff" opacity=".6"/>
+<rect x="546" y="150" width="248" height="92" rx="14" fill="none" stroke="#7aa5ff" stroke-width="2"/><circle cx="582" cy="196" r="20" fill="#ffc933"/><rect x="616" y="178" width="150" height="12" rx="6" fill="#cfdcff" opacity=".8"/><rect x="616" y="204" width="110" height="10" rx="5" fill="#7aa5ff" opacity=".5"/><rect x="546" y="262" width="248" height="92" rx="14" fill="none" stroke="#7aa5ff" stroke-width="2"/><circle cx="582" cy="308" r="20" fill="#3b5aa6"/><rect x="616" y="290" width="150" height="12" rx="6" fill="#cfdcff" opacity=".8"/><rect x="616" y="316" width="110" height="10" rx="5" fill="#7aa5ff" opacity=".5"/><rect x="546" y="374" width="248" height="92" rx="14" fill="none" stroke="#7aa5ff" stroke-width="2"/><circle cx="582" cy="420" r="20" fill="#3b5aa6"/><rect x="616" y="402" width="150" height="12" rx="6" fill="#cfdcff" opacity=".8"/><rect x="616" y="428" width="110" height="10" rx="5" fill="#7aa5ff" opacity=".5"/><rect x="546" y="486" width="248" height="92" rx="14" fill="none" stroke="#7aa5ff" stroke-width="2"/><circle cx="582" cy="532" r="20" fill="#3b5aa6"/><rect x="616" y="514" width="150" height="12" rx="6" fill="#cfdcff" opacity=".8"/><rect x="616" y="540" width="110" height="10" rx="5" fill="#7aa5ff" opacity=".5"/>
+<text x="200" y="380" font-family="ui-monospace,Menlo,monospace" font-size="22" fill="#7aa5ff">APK · v0.1.0</text>
+<rect x="40" y="666" width="470" height="44" rx="6" fill="#ffc933"/>
+<text x="60" y="695" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#1a1400">PLACEHOLDER · screenshot 1</text>
+<text x="1160" y="64" text-anchor="end" font-family="Georgia,serif" font-size="40" font-weight="700" fill="#cfdcff">Pulse</text>
+</svg>

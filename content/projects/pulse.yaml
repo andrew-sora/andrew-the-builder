@@ -1,0 +1,43 @@
+slug: pulse
+placeholder: true
+lane: web
+status: beta
+year: 2026
+featured: true
+order: 2
+stack: [React Native, TypeScript, Zustand, Supabase]
+links:
+  repo: https://github.com/your-handle/pulse
+  apk:
+    url: https://github.com/your-handle/pulse/releases/download/v0.1.0/pulse-0.1.0.apk
+    version: 0.1.0
+    sizeMb: 18.4
+    sha256: "0000000000000000000000000000000000000000000000000000000000000000"
+    minAndroid: "8.0"
+cover: /projects/pulse/cover.svg
+gallery:
+  - src: /projects/pulse/shot-1.svg
+    alt: { id: Layar utama aplikasi (dummy), en: App home screen (dummy) }
+  - src: /projects/pulse/shot-2.svg
+    alt: { id: Alur data aplikasi (dummy), en: App data flow (dummy) }
+text:
+  id:
+    title: Pulse
+    tagline: Aplikasi Android React Native yang dibagikan langsung sebagai APK.
+    role: Mobile engineer
+    problem: "[Siapa penggunanya dan mengapa tidak lewat Play Store dulu.]"
+    approach: "[Struktur aplikasi, state management, strategi offline, proses rilis APK bertanda tangan.]"
+    highlights:
+      - "[Fitur utama yang bisa dicoba pengunjung]"
+      - "[Hasil terukur atau umpan balik pengguna]"
+      - "[Catatan teknis: ukuran bundle, performa, signing]"
+  en:
+    title: Pulse
+    tagline: A React Native Android app distributed directly as an APK.
+    role: Mobile engineer
+    problem: "[Who the users are and why it is not on the Play Store yet.]"
+    approach: "[App structure, state management, offline strategy, signed APK release process.]"
+    highlights:
+      - "[Key feature visitors can try]"
+      - "[Measurable result or user feedback]"
+      - "[Technical notes: bundle size, performance, signing]"

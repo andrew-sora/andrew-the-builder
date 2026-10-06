@@ -1,0 +1,33 @@
+{
+  "name": "andrew-the-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portfolio and landing page for Andrew the Builder. Static export, bilingual (ID/EN), file-based content.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:prod": "node scripts/check-placeholders.mjs && next build",
+    "check": "node scripts/check-placeholders.mjs",
+    "typecheck": "tsc --noEmit",
+    "assets": "node scripts/gen-assets.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.0",
+    "@fontsource-variable/inter": "^5.2.0",
+    "@fontsource-variable/jetbrains-mono": "^5.2.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "yaml": "^2.8.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.7.0"
+  }
+}

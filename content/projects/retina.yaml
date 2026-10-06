@@ -1,0 +1,38 @@
+slug: retina
+placeholder: true
+lane: ai
+status: beta
+year: 2025
+featured: true
+order: 5
+stack: [Python, PyTorch, FastAPI, Docker, Next.js]
+links:
+  live: https://example.com/retina
+  repo: https://github.com/your-handle/retina
+cover: /projects/retina/cover.svg
+gallery:
+  - src: /projects/retina/shot-1.svg
+    alt: { id: Antarmuka unggah gambar dan hasil (dummy), en: Image upload and results interface (dummy) }
+  - src: /projects/retina/shot-2.svg
+    alt: { id: Arsitektur layanan inferensi (dummy), en: Inference service architecture (dummy) }
+text:
+  id:
+    title: Retina
+    tagline: Model computer vision untuk diagnostik medis yang disajikan lewat REST API terkontainerisasi.
+    role: ML engineer
+    problem: "[Tugas klinis yang dibantu dan batasan datanya.]"
+    approach: "[Dataset, arsitektur model, evaluasi, serving lewat FastAPI di Docker, integrasi dengan frontend.]"
+    highlights:
+      - "[Metrik evaluasi yang relevan, mis. sensitivitas dan spesifisitas]"
+      - "[Latensi inferensi dan kebutuhan sumber daya]"
+      - "[Catatan privasi: demo ini hanya memakai data publik atau sintetis, bukan alat diagnostik]"
+  en:
+    title: Retina
+    tagline: A computer-vision model for medical diagnostics, served through a containerized REST API.
+    role: ML engineer
+    problem: "[The clinical task it supports and the data limits.]"
+    approach: "[Dataset, model architecture, evaluation, serving via FastAPI in Docker, frontend integration.]"
+    highlights:
+      - "[Relevant evaluation metric, e.g. sensitivity and specificity]"
+      - "[Inference latency and resource needs]"
+      - "[Privacy note: the demo uses public or synthetic data only and is not a diagnostic tool]"

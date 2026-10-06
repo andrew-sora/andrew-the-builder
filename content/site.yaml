@@ -1,0 +1,68 @@
+# Site-wide content. Every localized field has `id` and `en`; the build fails if one is missing.
+# `placeholderFields` lists what is still dummy. Remove an entry once the real value is in.
+# `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.
+
+siteUrl: https://andrewthebuilder.pages.dev
+brand: Andrew the Builder
+fullName: Andrew Chivas # derived from the email address, confirm the real full name
+
+placeholderFields: [fullName, whatsapp, linkedin, github, about, glance, experience]
+
+availability:
+  clients: true
+  recruiters: true
+
+contact:
+  email: andrewchivas.ar@gmail.com
+  whatsapp: "6281234567890" # international format, digits only
+  linkedin: https://www.linkedin.com/in/your-handle
+  github: https://github.com/your-handle
+
+cv:
+  id: /cv/cv-id.pdf
+  en: /cv/cv-en.pdf
+
+# DRAFT bio, shown above "At a glance" (same text as docs/COPY.md section 2).
+# Replace the [bracketed] sentence, then remove `about` from placeholderFields.
+about:
+  id: >-
+    Saya lulusan Teknologi Informasi Universitas Gadjah Mada yang akhirnya bekerja di seluruh lapisan: produk web
+    dan mobile, jaringan optik, keamanan, dan AI di production. Saya suka memegang satu masalah dari sketsa pertama
+    sampai sistemnya berjalan, jadi saya bisa berpindah antara frontend Next.js, backend Supabase, jalur fiber, dan
+    container penyaji model tanpa melempar masalahnya ke orang lain.
+    [Satu kalimat tentang apa yang sedang Anda bangun atau cari saat ini.]
+  en: >-
+    I'm an Information Technology graduate from Universitas Gadjah Mada who ended up working across the whole stack:
+    web and mobile products, optical networks, security and production AI. I like owning a problem from the first
+    sketch to the running system, so I can move between a Next.js frontend, a Supabase backend, a fiber route and a
+    model-serving container without handing the problem off.
+    [One sentence on what you are building or looking for right now.]
+
+glance:
+  - label: { id: Peran, en: Role }
+    value: { id: Full-stack / product engineer, en: Full-stack / product engineer }
+  - label: { id: Stack inti, en: Core stack }
+    value: { id: "TypeScript, React / Next.js, Node.js, Supabase, Docker", en: "TypeScript, React / Next.js, Node.js, Supabase, Docker" }
+  - label: { id: Juga mengerjakan, en: Also works on }
+    value: { id: "Jaringan optik (DWDM), keamanan web, computer vision", en: "Optical networks (DWDM), web security, computer vision" }
+  - label: { id: Pendidikan, en: Education }
+    value: { id: "Teknologi Informasi, Universitas Gadjah Mada (UGM)", en: "Information Technology, Universitas Gadjah Mada (UGM)" }
+  - label: { id: Lokasi, en: Location }
+    value: { id: "[Kota], Indonesia", en: "[City], Indonesia" }
+  - label: { id: Mode kerja, en: Work mode }
+    value: { id: "[Remote / hybrid / onsite]", en: "[Remote / hybrid / onsite]" }
+
+experience:
+  # DRAFT: first entry built from public SoraKos / SoraDev facts, confirm the dates and wording.
+  - company: SoraDev (PT Studio Sora Teknologi)
+    period: "20XX – now"
+    role: { id: "Founder dan lead engineer", en: "Founder and lead engineer" }
+    summary:
+      id: "Membangun SoraKos, SaaS manajemen kos untuk pemilik kos di Indonesia: dari arsitektur multi-tenant di Supabase sampai peluncuran beta ke pengguna nyata."
+      en: "Building SoraKos, a SaaS for managing boarding houses in Indonesia: from multi-tenant architecture on Supabase to a beta launch with real users."
+  - company: "[Previous company]"
+    period: "20XX – 20XX"
+    role: { id: "[Jabatan]", en: "[Title]" }
+    summary:
+      id: "[Satu sampai dua kalimat tentang cakupan kerja dan dampaknya.]"
+      en: "[One or two sentences on scope and impact.]"

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Backbone placeholder">
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1c2f5c" stroke-width="1"/></pattern></defs>
+<rect width="1200" height="750" fill="#0f1b36"/><rect width="1200" height="750" fill="url(#g)"/>
+<path d="M340 355 L440 235 M340 355 L440 475 M660 235 L760 355 M660 475 L760 355" stroke="#7aa5ff" stroke-width="3" fill="none" stroke-dasharray="10 8"/><rect x="120" y="300" width="220" height="110" rx="12" fill="#0f1b36" stroke="#7aa5ff" stroke-width="3"/><text x="230" y="364" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="26" fill="#cfdcff">site A</text><rect x="440" y="180" width="220" height="110" rx="12" fill="#0f1b36" stroke="#ffc933" stroke-width="3"/><text x="550" y="244" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="26" fill="#cfdcff">DWDM</text><rect x="440" y="420" width="220" height="110" rx="12" fill="#0f1b36" stroke="#7aa5ff" stroke-width="3"/><text x="550" y="484" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="26" fill="#cfdcff">OADM</text><rect x="760" y="300" width="220" height="110" rx="12" fill="#0f1b36" stroke="#7aa5ff" stroke-width="3"/><text x="870" y="364" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="26" fill="#cfdcff">site B</text>
+<path d="M120 590 H980" stroke="#7aa5ff" stroke-width="2"/><path d="M120 578 V602 M980 578 V602" stroke="#7aa5ff" stroke-width="2"/>
+<text x="550" y="578" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="18" fill="#7aa5ff">architecture diagram</text>
+<rect x="40" y="666" width="470" height="44" rx="6" fill="#ffc933"/>
+<text x="60" y="695" font-family="ui-monospace,Menlo,Consolas,monospace" font-size="20" font-weight="700" fill="#1a1400">PLACEHOLDER · cover image</text>
+<text x="1160" y="64" text-anchor="end" font-family="Georgia,serif" font-size="40" font-weight="700" fill="#cfdcff">Backbone</text>
+</svg>

@@ -1,0 +1,39 @@
+# DRAFT built from public SoraKos facts. Review every sentence, fill the [brackets], replace the
+# generated cover/screenshots with real ones, then delete `placeholder: true`.
+slug: sorakos
+placeholder: true
+lane: web
+status: beta
+year: 2026
+featured: true
+order: 1
+stack: [React, Vite, Supabase, PostgreSQL RLS, Edge Functions, WhatsApp]
+links:
+  live: https://kos.soradev.id
+cover: /projects/sorakos/cover.svg
+gallery:
+  - src: /projects/sorakos/shot-1.svg
+    alt: { id: "[Ganti: dashboard pemilik kos]", en: "[Replace: landlord dashboard]" }
+  - src: /projects/sorakos/shot-2.svg
+    alt: { id: "[Ganti: portal penghuni atau laporan]", en: "[Replace: renter portal or reports]" }
+text:
+  id:
+    title: SoraKos
+    tagline: SaaS manajemen kos untuk pemilik kos di Indonesia.
+    role: Founder dan lead engineer
+    problem: "Pemilik kos umumnya mengelola penghuni, kontrak sewa, dan tagihan secara manual lewat buku catatan dan chat WhatsApp, sehingga sulit melacak siapa yang sudah bayar, kapan kontrak berakhir, dan berapa pengeluaran. [Tambahkan detail dari hasil wawancara atau pengamatan Anda.]"
+    approach: "SoraKos adalah SaaS multi-tenant: setiap pemilik kos mengelola properti, kamar, penghuni, kontrak, tagihan, pengeluaran, dan laporan dalam satu aplikasi, lengkap dengan kode QR dan portal terpisah untuk penghuni. Frontend React/Vite berjalan di atas Supabase (PostgreSQL, Auth, Edge Functions), dengan data tiap pemilik diisolasi di level database lewat Row Level Security. Tombol WhatsApp menjadi kanal umpan balik langsung dari pengguna beta."
+    highlights:
+      - "Properti, penghuni, kontrak sewa, tagihan, pengeluaran, laporan, dan kode QR dalam satu produk."
+      - "Isolasi data antar pemilik kos di level database (RLS), dengan portal penghuni yang terpisah."
+      - "[Isi hasil beta: jumlah kos terdaftar, pengguna aktif, atau umpan balik yang paling berkesan.]"
+  en:
+    title: SoraKos
+    tagline: A SaaS for managing boarding houses (kos) for landlords in Indonesia.
+    role: Founder and lead engineer
+    problem: "Kos landlords typically manage tenants, leases and rent manually through notebooks and WhatsApp chats, which makes it hard to see who has paid, when a lease ends and what was spent. [Add detail from your interviews or observations.]"
+    approach: "SoraKos is a multi-tenant SaaS: each landlord manages properties, rooms, tenants, leases, billing, expenses and reports in one app, with QR codes and a separate renter portal. A React/Vite frontend runs on Supabase (PostgreSQL, Auth, Edge Functions), and each landlord's data is isolated at the database level with Row Level Security. A WhatsApp button gives beta users a direct feedback channel."
+    highlights:
+      - "Properties, tenants, leases, billing, expenses, reports and QR codes in one product."
+      - "Data isolation between landlords at the database level (RLS), with a separate renter portal."
+      - "[Add beta results: kos registered, active users, or the most memorable feedback.]"
