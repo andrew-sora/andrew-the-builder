@@ -1,0 +1,37 @@
+slug: yeka-studio
+placeholder: false
+lane: web
+status: live
+year: 2026
+featured: true
+order: 1
+stack: [Next.js 16, TypeScript, Custom Design System, Cloudflare Pages]
+links:
+  repo: https://github.com/andrew-sora/yeka-studio
+cover: /projects/yeka-studio/cover.svg
+gallery:
+  - src: /projects/yeka-studio/shot-1.svg
+    alt: { id: Landing page Yeka Studio dengan estetika warm-luxury, en: Yeka Studio landing page with warm-luxury aesthetics }
+  - src: /projects/yeka-studio/shot-2.svg
+    alt: { id: Dashboard CMS pengelolaan galeri foto, en: Photo gallery management CMS dashboard }
+text:
+  id:
+    title: Yeka Studio
+    tagline: Web portofolio fotografi & CMS bertema warm-luxury dengan Next.js 16.
+    role: Lead Frontend Developer & Designer
+    problem: Studio fotografi profesional membutuhkan platform web yang mengekspresikan nilai estetika warm-luxury secara autentik sekaligus mempermudah tim internal dalam memperbarui katalog karya visual dan konten secara mandiri tanpa harus tergantung pada developer.
+    approach: Membangun web aplikasi berbasis Next.js 16 (App Router) dan TypeScript dengan sistem desain khusus (custom design system) yang mengedepankan tipografi elegan, animasi mikro yang halus, dan performa pemuatan gambar teroptimasi. Sistem dilengkapi dengan admin CMS terintegrasi yang memudahkan pengelolaan portofolio karya.
+    highlights:
+      - Arsitektur Next.js 16 & TypeScript dengan performa tinggi dan static export / edge deployment.
+      - Custom Design System bertema warm-luxury dengan desain responsif penuh dari mobile hingga desktop.
+      - Terintegrasi dengan Sistem Manajemen Konten (CMS) untuk pembaruan portofolio mandiri.
+  en:
+    title: Yeka Studio
+    tagline: Warm-luxury photography portfolio web app & CMS built with Next.js 16.
+    role: Lead Frontend Developer & Designer
+    problem: Professional photography studios require a web platform that authentically expresses warm-luxury aesthetic values while empowering internal teams to manage visual portfolios independently without relying on a developer.
+    approach: Built a Next.js 16 (App Router) and TypeScript application featuring a bespoke custom design system with elegant typography, smooth micro-animations, and optimized image loading performance. Integrated with an admin CMS to streamline portfolio management.
+    highlights:
+      - High-performance Next.js 16 & TypeScript architecture deployed to edge infrastructure.
+      - Bespoke warm-luxury design system fully responsive across mobile and desktop devices.
+      - Integrated Content Management System (CMS) for independent portfolio updates.
