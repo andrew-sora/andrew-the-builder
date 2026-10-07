@@ -278,25 +278,26 @@ ul {
 /* ---------------------------------------------------------------- hero */
 
 .hero {
-  padding-top: clamp(32px, 6vw, 80px);
+  padding-top: clamp(20px, 3.5vw, 48px);
   overflow-x: clip;
 }
 
 .hero__grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 8px;
-  align-items: end;
+  gap: 20px;
+  align-items: center;
 }
 @media (min-width: 900px) {
   .hero__grid {
     grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
     gap: 32px;
+    align-items: flex-end;
   }
 }
 
 .hero__copy {
-  padding-bottom: clamp(36px, 5vw, 72px);
+  padding-bottom: clamp(12px, 2.5vw, 28px);
 }
 
 .hero__name {
@@ -304,9 +305,9 @@ ul {
 }
 
 .hero h1 {
-  margin-top: 10px;
-  font-size: clamp(2.3rem, 5.6vw, 4.5rem);
-  line-height: 1.04;
+  margin-top: 8px;
+  font-size: clamp(2rem, 4.2vw, 3.5rem);
+  line-height: 1.08;
   text-wrap: balance; /* avoids the orphan "end to / end," break on desktop */
 }
 .hero h1 em {
@@ -318,14 +319,14 @@ ul {
 /* photo: cutout anchored to the bottom, head pokes out of a yellow arch */
 .hero__photo {
   position: relative;
-  width: min(72%, 340px);
+  width: min(72%, 260px);
   aspect-ratio: 4 / 5;
-  margin: 72px auto 0;
+  margin: 16px auto 0;
 }
 @media (min-width: 900px) {
   .hero__photo {
-    width: min(100%, 400px);
-    margin: 80px 0 0 auto;
+    width: min(100%, 320px);
+    margin: 0 0 0 auto;
   }
 }
 .hero__arch {
@@ -349,9 +350,9 @@ ul {
 .stamp {
   position: absolute;
   left: -6%;
-  bottom: 14%;
-  width: 112px;
-  height: 112px;
+  bottom: 10%;
+  width: clamp(86px, 10vw, 104px);
+  height: clamp(86px, 10vw, 104px);
   border-radius: 50%;
   background: #101a33;
   border: 3px solid var(--tape);
@@ -388,7 +389,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 32px;
+  margin-top: clamp(18px, 2.5vw, 24px);
 }
 .pill {
   display: inline-flex;
@@ -414,7 +415,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 26px;
+  margin-top: clamp(14px, 2vw, 20px);
   max-width: 560px;
   color: var(--blue);
   font: 500 0.76rem var(--font-mono);
@@ -431,17 +432,17 @@ ul {
 }
 
 .hero__sub {
-  margin-top: 22px;
+  margin-top: clamp(14px, 2vw, 18px);
   max-width: 52ch;
-  font-size: clamp(1.1rem, 2.2vw, 1.3rem);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   color: var(--ink-2);
 }
 
 .hero__ctas {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px 28px;
-  margin-top: 36px;
+  gap: 14px 24px;
+  margin-top: clamp(20px, 2.5vw, 28px);
 }
 .cta {
   display: grid;
