@@ -44,7 +44,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   const site = localizeSite(getSite(), locale);
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} data-theme="light" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
