@@ -309,6 +309,7 @@ ul {
   font-size: clamp(2rem, 4.2vw, 3.5rem);
   line-height: 1.08;
   text-wrap: balance; /* avoids the orphan "end to / end," break on desktop */
+  max-width: 17ch;
 }
 .hero h1 em {
   font-style: normal;
