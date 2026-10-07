@@ -5,7 +5,7 @@ status: beta
 year: 2026
 featured: true
 order: 2
-stack: [React, Vite, Supabase, PostgreSQL RLS, Edge Functions, WhatsApp]
+stack: [React, Vite, PostgreSQL (RLS), Supabase Auth, Edge Functions, WhatsApp]
 links:
   live: https://kos.soradev.id
 cover: /projects/sorakos/cover.svg
@@ -20,7 +20,7 @@ text:
     tagline: SaaS manajemen kos multi-tenant untuk pemilik properti di Indonesia.
     role: Founder & Lead Engineer
     problem: Pemilik kos skala kecil dan menengah umumnya mengelola data penghuni, siklus sewa, tagihan bulanan, serta catatan pengeluaran secara manual via WhatsApp dan catatan kertas. Hal ini sering memicu salah catat, tunggakan pembayaran yang terlewat, dan kesulitan memantau arus kas properti secara real-time.
-    approach: Membangun SoraKos sebagai platform SaaS multi-tenant dengan arsitektur React/Vite yang cepat dan Supabase sebagai backend serverless. Data tiap pemilik properti diisolasi secara ketat di level database menggunakan PostgreSQL Row Level Security (RLS). Dilengkapi fitur manajemen kamar, kontrak sewa, tagihan otomatis via WhatsApp, pencatatan pengeluaran, serta portal terpisah untuk penghuni kos.
+    approach: Membangun SoraKos sebagai platform SaaS multi-tenant dengan arsitektur React/Vite yang cepat dan backend PostgreSQL serverless (Supabase Auth & Edge Functions). Data tiap pemilik properti diisolasi secara ketat di level database menggunakan PostgreSQL Row Level Security (RLS). Dilengkapi fitur manajemen kamar, kontrak sewa, tagihan otomatis via WhatsApp, pencatatan pengeluaran, serta portal terpisah untuk penghuni kos.
     highlights:
       - Arsitektur SaaS multi-tenant dengan isolasi data tingkat database via PostgreSQL RLS.
       - Dashboard komprehensif untuk manajemen kamar, kontrak, tagihan, dan laporan keuangan.
@@ -30,7 +30,7 @@ text:
     tagline: Multi-tenant property management SaaS for boarding house landlords in Indonesia.
     role: Founder & Lead Engineer
     problem: Independent boarding house (kos) landlords typically manage tenant records, lease cycles, monthly bills, and expenses manually through WhatsApp and paper ledgers. This often causes record-keeping errors, missed overdue payments, and lack of real-time financial visibility.
-    approach: Built SoraKos as a multi-tenant SaaS platform utilizing a fast React/Vite frontend powered by Supabase. Data between property owners is strictly isolated at the database layer using PostgreSQL Row Level Security (RLS). Features include room and lease management, expense tracking, WhatsApp billing reminders, and a dedicated tenant portal.
+    approach: Built SoraKos as a multi-tenant SaaS platform utilizing a fast React/Vite frontend powered by PostgreSQL serverless infrastructure (Supabase Auth & Edge Functions). Data between property owners is strictly isolated at the database layer using PostgreSQL Row Level Security (RLS). Features include room and lease management, expense tracking, WhatsApp billing reminders, and a dedicated tenant portal.
     highlights:
       - Multi-tenant SaaS architecture with database-level isolation via PostgreSQL RLS.
       - Comprehensive dashboard for rooms, leases, billing, and financial reporting.

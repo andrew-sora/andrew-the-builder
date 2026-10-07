@@ -5,7 +5,7 @@ status: beta
 year: 2026
 featured: true
 order: 2
-stack: [React Native, TypeScript, Zustand, Supabase]
+stack: [React Native, TypeScript, Zustand, PostgreSQL (RLS)]
 links:
   repo: https://github.com/your-handle/pulse
   apk:

@@ -24,15 +24,15 @@ cv:
 
 about:
   id: >-
-    Lulusan Teknologi Informasi Universitas Gadjah Mada (UGM) dan Founder SORADEV. Berpengalaman merancang dan mengeksekusi sistem dari hulu ke hilir: mulai dari antarmuka Next.js & React Native, arsitektur multi-tenant Supabase dengan PostgreSQL RLS, hingga jaringan optik DWDM dan inferensi Deep Learning (CNN) berbasis PyTorch. Berfokus pada keandalan sistem, performa tinggi, dan solusi yang langsung memecahkan masalah nyata.
+    Lulusan Teknologi Informasi Universitas Gadjah Mada (UGM) dan Founder SORADEV. Berpengalaman merancang dan mengeksekusi sistem dari hulu ke hilir: mulai dari antarmuka Next.js & React Native, arsitektur backend multi-tenant PostgreSQL dengan Row Level Security (RLS), hingga jaringan optik DWDM dan inferensi Deep Learning (CNN) berbasis PyTorch. Berfokus pada keandalan sistem, performa tinggi, dan solusi yang langsung memecahkan masalah nyata.
   en: >-
-    Information Technology graduate from Universitas Gadjah Mada (UGM) and Founder of SORADEV. Experienced in architecting and delivering systems end-to-end: from Next.js & React Native interfaces and Supabase multi-tenant architectures to DWDM optical networks and PyTorch-based Deep Learning (CNN) inference. Focused on system resilience, performance, and pragmatic problem-solving.
+    Information Technology graduate from Universitas Gadjah Mada (UGM) and Founder of SORADEV. Experienced in architecting and delivering systems end-to-end: from Next.js & React Native interfaces and PostgreSQL multi-tenant database architectures to DWDM optical networks and PyTorch-based Deep Learning (CNN) inference. Focused on system resilience, performance, and pragmatic problem-solving.
 
 glance:
   - label: { id: Peran, en: Role }
     value: { id: Full-stack / product engineer, en: Full-stack / product engineer }
   - label: { id: Stack utama, en: Primary stack }
-    value: { id: "TypeScript, React / Next.js, Node.js, Python, Supabase, PostgreSQL, Docker", en: "TypeScript, React / Next.js, Node.js, Python, Supabase, PostgreSQL, Docker" }
+    value: { id: "TypeScript, React / Next.js, Node.js, Python, PostgreSQL (RLS), Docker", en: "TypeScript, React / Next.js, Node.js, Python, PostgreSQL (RLS), Docker" }
   - label: { id: Ekosistem & Tools, en: Ecosystem & Tools }
     value: { id: "React Native, FastAPI, Tailwind CSS, Cloudflare, Nginx, Linux", en: "React Native, FastAPI, Tailwind CSS, Cloudflare, Nginx, Linux" }
   - label: { id: "AI, Security & Infra", en: "AI, Security & Infra" }
@@ -49,5 +49,5 @@ experience:
     period: "2024 – Sekarang"
     role: { id: "Founder & Lead Engineer", en: "Founder & Lead Engineer" }
     summary:
-      id: "Memimpin perancangan dan pengembangan produk SaaS seperti SoraKos (arsitektur multi-tenant di Supabase), Yeka Studio, serta solusi perangkat lunak kustom untuk klien."
-      en: "Leading product architecture and development for SaaS products like SoraKos (Supabase multi-tenant setup), Yeka Studio, and custom software solutions for clients."
+      id: "Memimpin perancangan dan pengembangan produk SaaS seperti SoraKos (arsitektur backend multi-tenant PostgreSQL RLS), Yeka Studio, serta solusi perangkat lunak kustom untuk klien."
+      en: "Leading product architecture and development for SaaS products like SoraKos (PostgreSQL RLS multi-tenant database architecture), Yeka Studio, and custom software solutions for clients."
