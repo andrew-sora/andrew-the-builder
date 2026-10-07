@@ -6,7 +6,7 @@ siteUrl: https://andrewthebuilder.pages.dev
 brand: Andrew Chivas
 fullName: Andrew Chivas
 
-placeholderFields: [whatsapp, about, glance, experience]
+placeholderFields: [whatsapp, about, experience]
 
 availability:
   clients: true
@@ -41,16 +41,18 @@ about:
 glance:
   - label: { id: Peran, en: Role }
     value: { id: Full-stack / product engineer, en: Full-stack / product engineer }
-  - label: { id: Stack inti, en: Core stack }
-    value: { id: "TypeScript, React / Next.js, Node.js, Supabase, Docker", en: "TypeScript, React / Next.js, Node.js, Supabase, Docker" }
-  - label: { id: Juga mengerjakan, en: Also works on }
-    value: { id: "Jaringan optik (DWDM), keamanan web, computer vision", en: "Optical networks (DWDM), web security, computer vision" }
+  - label: { id: Stack utama, en: Primary stack }
+    value: { id: "TypeScript, React / Next.js, Node.js, Python, Supabase, PostgreSQL, Docker", en: "TypeScript, React / Next.js, Node.js, Python, Supabase, PostgreSQL, Docker" }
+  - label: { id: Ekosistem & Tools, en: Ecosystem & Tools }
+    value: { id: "React Native, FastAPI, Tailwind CSS, Cloudflare, Nginx, Linux", en: "React Native, FastAPI, Tailwind CSS, Cloudflare, Nginx, Linux" }
+  - label: { id: AI, Security & Infra, en: AI, Security & Infra }
+    value: { id: "Deep Learning (CNN), PyTorch, Web Security Audit (OWASP), Jaringan Optik (DWDM)", en: "Deep Learning (CNN), PyTorch, Web Security Audit (OWASP), DWDM Optical Networks" }
   - label: { id: Pendidikan, en: Education }
     value: { id: "Teknologi Informasi, Universitas Gadjah Mada (UGM)", en: "Information Technology, Universitas Gadjah Mada (UGM)" }
   - label: { id: Lokasi, en: Location }
-    value: { id: "[Kota], Indonesia", en: "[City], Indonesia" }
+    value: { id: "Yogyakarta / Jakarta, Indonesia", en: "Yogyakarta / Jakarta, Indonesia" }
   - label: { id: Mode kerja, en: Work mode }
-    value: { id: "[Remote / hybrid / onsite]", en: "[Remote / hybrid / onsite]" }
+    value: { id: "Remote / Hybrid / Onsite", en: "Remote / Hybrid / Onsite" }
 
 experience:
   # DRAFT: first entry built from public SoraKos / SoraDev facts, confirm the dates and wording.
