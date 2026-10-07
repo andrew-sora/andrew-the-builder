@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   };
 }
 
-// Applies a saved theme before first paint. Without a saved choice, CSS follows the OS setting.
-const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}`;
+// Applies a saved theme before first paint. Without a saved choice, default to light mode.
+const themeScript = `try{var t=localStorage.getItem('theme')||'light';if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}`;
 
 export default async function LocaleLayout({ children, params }: { children: ReactNode } & Params) {
   const { locale } = await params;

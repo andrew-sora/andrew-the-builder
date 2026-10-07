@@ -3,8 +3,7 @@
 export default function ThemeToggle({ label }: { label: string }) {
   const toggle = () => {
     const root = document.documentElement;
-    const current =
-      root.dataset.theme ?? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const current = root.dataset.theme ?? 'light';
     const next = current === 'dark' ? 'light' : 'dark';
     root.dataset.theme = next;
     try {
