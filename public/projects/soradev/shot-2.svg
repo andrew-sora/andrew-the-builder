@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="SORADEV Shot 2">
+<rect width="1200" height="750" fill="#0b1220"/>
+<rect x="60" y="60" width="1080" height="630" rx="12" fill="#111c33" stroke="#7aa5ff" stroke-width="2"/>
+<text x="100" y="130" font-family="Georgia,serif" font-size="36" fill="#e8edf7" font-weight="700">SORADEV — Services &amp; Showcase</text>
+<rect x="100" y="170" width="480" height="460" rx="8" fill="#1b294a"/>
+<rect x="610" y="170" width="490" height="460" rx="8" fill="#1b294a"/>
+</svg>

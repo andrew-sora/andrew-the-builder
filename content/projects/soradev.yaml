@@ -1,0 +1,37 @@
+slug: soradev
+placeholder: false
+lane: web
+status: live
+year: 2026
+featured: true
+order: 3
+stack: [Next.js, TypeScript, Tailwind CSS, Cloudflare Pages]
+links:
+  live: https://soradev.id
+cover: /projects/soradev/cover.svg
+gallery:
+  - src: /projects/soradev/shot-1.svg
+    alt: { id: Landing page resmi SORADEV Software House, en: SORADEV official software house landing page }
+  - src: /projects/soradev/shot-2.svg
+    alt: { id: Katalog layanan dan portofolio studio SORADEV, en: SORADEV services and studio portfolio catalog }
+text:
+  id:
+    title: SORADEV
+    tagline: Situs resmi Software House & SaaS Product Studio berbasis Next.js & Tailwind CSS.
+    role: Founder & Lead Developer
+    problem: Studio pengembangan perangkat lunak (software house) membutuhkan brand presence digital yang profesional dan responsif untuk menampilkan katalog layanan SaaS, portofolio proyek klien, serta membangun kepercayaan calon klien komersial.
+    approach: Merancang dan mengimplementasikan website studio SORADEV dengan Next.js dan Tailwind CSS. Mengedepankan struktur tata letak yang bersih, performa pemuatan yang cepat, optimasi SEO penuh, serta copywriting bernilai jual tinggi untuk mengonversi pengunjung menjadi calon klien.
+    highlights:
+      - Website resmi SORADEV Software House & SaaS Product Studio.
+      - Arsitektur Next.js & Tailwind CSS dengan skor performa dan SEO tinggi.
+      - Tata letak responsif editorial dengan katalog layanan dan portfolio showcase.
+  en:
+    title: SORADEV
+    tagline: Official website for SORADEV Software House & SaaS Product Studio.
+    role: Founder & Lead Developer
+    problem: A software development studio requires a highly professional and responsive digital brand presence to showcase SaaS capabilities, client project portfolios, and convert prospective commercial clients.
+    approach: Designed and implemented the official SORADEV studio website utilizing Next.js and Tailwind CSS. Focused on clean modern layouts, fast page loads, comprehensive SEO optimization, and persuasive messaging.
+    highlights:
+      - Official corporate web presence for SORADEV Software House & SaaS Studio.
+      - High-performance Next.js and Tailwind CSS architecture with optimized SEO.
+      - Fully responsive editorial layout showcasing services and client projects.
