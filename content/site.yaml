@@ -3,10 +3,10 @@
 # `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.
 
 siteUrl: https://andrewthebuilder.pages.dev
-brand: Andrew the Builder
-fullName: Andrew Chivas # derived from the email address, confirm the real full name
+brand: Andrew Chivas
+fullName: Andrew Chivas
 
-placeholderFields: [fullName, whatsapp, linkedin, github, about, glance, experience]
+placeholderFields: [whatsapp, linkedin, github, about, glance, experience]
 
 availability:
   clients: true
