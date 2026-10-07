@@ -6,7 +6,7 @@ siteUrl: https://andrewthebuilder.pages.dev
 brand: Andrew Chivas
 fullName: Andrew Chivas
 
-placeholderFields: [whatsapp, linkedin, github, about, glance, experience]
+placeholderFields: [whatsapp, about, glance, experience]
 
 availability:
   clients: true
@@ -15,8 +15,8 @@ availability:
 contact:
   email: andrewchivas.ar@gmail.com
   whatsapp: "6281234567890" # international format, digits only
-  linkedin: https://www.linkedin.com/in/your-handle
-  github: https://github.com/your-handle
+  linkedin: https://www.linkedin.com/in/andrewchivasar
+  github: https://github.com/andrew-sora
 
 cv:
   id: /cv/cv-id.pdf
