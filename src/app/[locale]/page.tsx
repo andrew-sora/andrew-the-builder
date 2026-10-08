@@ -42,6 +42,7 @@ export default async function Home({ params }: Props) {
   const waHref = `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(dict.hero.waMessage)}`;
   const emailEncoded = Buffer.from(site.contact.email).toString('base64');
   const emailFallback = site.contact.email.replace('@', ' [at] ');
+  const cvFilename = locale === 'id' ? 'CV-Andrew-Chivas-Arsenal-Rico-ID.pdf' : 'CV-Andrew-Chivas-Arsenal-Rico-EN.pdf';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -78,7 +79,7 @@ export default async function Home({ params }: Props) {
               {recruiters && (
                 <div className="cta">
                   <span className="cta__for mono">{dict.hero.forRecruiters}</span>
-                  <a className="btn btn--solid" href={site.cv} download>
+                  <a className="btn btn--solid" href={site.cv} download={cvFilename}>
                     {dict.hero.ctaCv} ↓
                   </a>
                 </div>
@@ -220,7 +221,7 @@ export default async function Home({ params }: Props) {
                 <h3>{dict.contact.hireTitle}</h3>
                 <p>{dict.contact.hireBody}</p>
                 <div className="contact__links">
-                  <a className="btn btn--solid" href={site.cv} download>
+                  <a className="btn btn--solid" href={site.cv} download={cvFilename}>
                     {dict.contact.cv} ↓
                   </a>
                 </div>
