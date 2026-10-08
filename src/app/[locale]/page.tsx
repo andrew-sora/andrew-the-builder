@@ -33,7 +33,7 @@ export default async function Home({ params }: Props) {
   const dict = getDictionary(locale);
   const site = localizeSite(getSite(), locale);
   const projects = getProjects().map((p) => localizeProject(p, locale));
-  const featured = projects.filter((p) => p.featured).slice(0, 5);
+  const featured = projects.filter((p) => p.featured).slice(0, 3);
   const labels = cardLabels(dict);
 
   const { clients, recruiters } = site.availability;

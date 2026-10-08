@@ -229,13 +229,13 @@ ul {
 /* ---------------------------------------------------------------- sections */
 
 .section {
-  padding-block: clamp(56px, 9vw, 108px);
+  padding-block: clamp(36px, 6vw, 84px);
 }
 
 .section__head {
   display: grid;
-  gap: 10px;
-  margin-bottom: clamp(28px, 4vw, 44px);
+  gap: 8px;
+  margin-bottom: clamp(18px, 3vw, 36px);
   max-width: 62ch;
 }
 .section__head h2 {
@@ -514,16 +514,17 @@ ul {
 
 .glance {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: 1px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--card);
+  background: var(--line);
   overflow: hidden;
 }
 .glance__item {
-  padding: 18px 20px;
-  border-bottom: 1px dashed var(--line);
+  padding: 12px 14px;
+  background: var(--card);
+  border-bottom: 0;
 }
 .glance dt {
   color: var(--blue);
@@ -713,7 +714,7 @@ ul {
 }
 .timeline li {
   position: relative;
-  padding: 0 0 32px 28px;
+  padding: 0 0 20px 22px;
 }
 .timeline li::before {
   content: '';
