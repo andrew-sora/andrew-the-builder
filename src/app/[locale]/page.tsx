@@ -5,9 +5,38 @@ import ObfuscatedEmail from '@/components/ObfuscatedEmail';
 import Stamp from '@/components/Stamp';
 import ProjectCard from '@/components/ProjectCard';
 import { cardLabels, toCard } from '@/lib/cards';
-import { LANES, getProjects, getSite, localizeProject, localizeSite } from '@/lib/content';
+import { LANES, type Lane, getProjects, getSite, localizeProject, localizeSite } from '@/lib/content';
 import { getDictionary, isLocale } from '@/lib/i18n';
 import { pageMetadata } from '@/lib/seo';
+
+const LANE_ICONS: Record<Lane, React.ReactNode> = {
+  web: (
+    <svg className="pill__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="2" y="3" width="20" height="14" rx="2" />
+      <line x1="8" y1="21" x2="16" y2="21" />
+      <line x1="12" y1="17" x2="12" y2="21" />
+    </svg>
+  ),
+  infra: (
+    <svg className="pill__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="2" y="2" width="20" height="8" rx="2" />
+      <rect x="2" y="14" width="20" height="8" rx="2" />
+      <line x1="6" y1="6" x2="6.01" y2="6" strokeWidth="3" />
+      <line x1="6" y1="18" x2="6.01" y2="18" strokeWidth="3" />
+    </svg>
+  ),
+  security: (
+    <svg className="pill__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+    </svg>
+  ),
+  ai: (
+    <svg className="pill__icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  ),
+};
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -98,7 +127,9 @@ export default async function Home({ params }: Props) {
               {LANES.map((lane) => (
                 <li key={lane}>
                   <Link className="pill" href={`/${locale}/projects/#${lane}`}>
-                    {dict.lanes[lane].name}
+                    {LANE_ICONS[lane]}
+                    <span>{dict.lanes[lane].name}</span>
+                    <span className="pill__arrow" aria-hidden="true">↗</span>
                   </Link>
                 </li>
               ))}
