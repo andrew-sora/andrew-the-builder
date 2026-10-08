@@ -42,7 +42,7 @@ export default async function Home({ params }: Props) {
   const waHref = `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(dict.hero.waMessage)}`;
   const emailEncoded = Buffer.from(site.contact.email).toString('base64');
   const emailFallback = site.contact.email.replace('@', ' [at] ');
-  const cvFilename = locale === 'id' ? 'CV-Andrew-Chivas-Arsenal-Rico-ID.pdf' : 'CV-Andrew-Chivas-Arsenal-Rico-EN.pdf';
+  const cvFilename = 'CV-Andrew-Chivas-Arsenal-Rico.pdf';
 
   const jsonLd = {
     '@context': 'https://schema.org',

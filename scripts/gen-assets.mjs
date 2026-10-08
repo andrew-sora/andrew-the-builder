@@ -101,6 +101,5 @@ function pdf(title) {
 }
 
 fs.mkdirSync(path.join(root, 'public', 'cv'), { recursive: true });
-fs.writeFileSync(path.join(root, 'public', 'cv', 'CV-Andrew-Chivas-Arsenal-Rico-EN.pdf'), pdf('PLACEHOLDER-CV (English)'));
-fs.writeFileSync(path.join(root, 'public', 'cv', 'CV-Andrew-Chivas-Arsenal-Rico-ID.pdf'), pdf('PLACEHOLDER-CV (Bahasa Indonesia)'));
+fs.writeFileSync(path.join(root, 'public', 'cv', 'CV-Andrew-Chivas-Arsenal-Rico.pdf'), pdf('PLACEHOLDER-CV'));
 console.log('Dummy assets written to public/.');
