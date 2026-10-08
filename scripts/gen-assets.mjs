@@ -1,7 +1,7 @@
 // Generates dummy assets (no dependencies): blueprint-style SVG covers/screenshots
 // for each project in content/projects and two dummy CV PDFs.
 // Real screenshots: drop files in public/projects/<slug>/ and point the YAML at them.
-// Real CVs: overwrite public/cv/cv-id.pdf and public/cv/cv-en.pdf.
+// Real CVs: overwrite public/cv/CV-Andrew-Chivas-Arsenal-Rico.pdf.
 import fs from 'node:fs';
 import path from 'node:path';
 
