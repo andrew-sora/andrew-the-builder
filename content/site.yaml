@@ -45,9 +45,30 @@ glance:
     value: { id: "Remote / Hybrid / Onsite", en: "Remote / Hybrid / Onsite" }
 
 experience:
-  - company: SORADEV (PT Studio Sora Teknologi)
-    period: "2024 – Sekarang"
-    role: { id: "Founder & Lead Engineer", en: "Founder & Lead Engineer" }
+  - company: PT Studio Sora Teknologi (SoraDev)
+    period: "Jun 2025 – Sekarang"
+    role: { id: "Lead / IT Project Coordinator", en: "Lead / IT Project Coordinator" }
     summary:
-      id: "Memimpin perancangan dan pengembangan produk SaaS seperti SoraKos (arsitektur backend multi-tenant PostgreSQL RLS), Yeka Studio, serta solusi perangkat lunak kustom untuk klien."
-      en: "Leading product architecture and development for SaaS products like SoraKos (PostgreSQL RLS multi-tenant database architecture), Yeka Studio, and custom software solutions for clients."
+      id: "Mengawasi siklus hidup proyek IT dari hulu ke hilir, menerjemahkan kebutuhan bisnis & pengguna menjadi spesifikasi teknis, mengoordinasikan operasional harian studio tech, serta mengoperasionalkan sistem dokumentasi & pengarsipan digital."
+      en: "Supervising end-to-end IT project lifecycles, translating business & user requirements into technical specifications, coordinating daily tech studio operations, and standardizing digital archiving and repository documentation."
+
+  - company: PT Bach Multi Infrastruktur
+    period: "Nov 2025 – Mei 2026"
+    role: { id: "Team Leader – Operasional Infrastruktur", en: "Team Leader – Infrastructure Operations" }
+    summary:
+      id: "Memimpin operasional teknis lapangan di berbagai site, mendiagnosis dan memulihkan insiden infrastruktur teknis dengan cepat untuk menjaga uptime tinggi, serta mengelola alokasi sumber daya teknis."
+      en: "Spearheaded technical field operations across multiple sites, diagnosed and resolved infrastructure incidents to maintain high uptime, and managed technical resource allocation."
+
+  - company: Various Clients (Australia & International)
+    period: "Des 2024 – Mei 2025"
+    role: { id: "Konsultan Sistem & Operasional (Freelance)", en: "System & Operational Consultant (Freelance)" }
+    summary:
+      id: "Memberikan konsultasi transformasi digital dan optimasi alur kerja IT untuk klien bisnis kecil-menengah di Australia, serta menyusun panduan pengguna dan SOP teknis."
+      en: "Advised SMB clients in Australia on digital transformation, IT workflow optimization, and authored comprehensive technical SOPs and operational manuals."
+
+  - company: Digital Talent Scholarship - Komdigi
+    period: "2019 – 2020"
+    role: { id: "Asisten Instruktur & Koordinator Pelatihan", en: "Assistant Instructor & Training Coordinator" }
+    summary:
+      id: "Menyediakan dukungan teknis dan administratif untuk program pelatihan IT berskala besar yang menjangkau 1.900+ peserta, serta memfasilitasi lingkungan pembelajaran online."
+      en: "Provided technical and administrative support for large-scale IT training initiatives reaching 1,900+ participants and managed online learning environments."
