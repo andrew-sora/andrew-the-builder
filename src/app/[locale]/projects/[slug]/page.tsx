@@ -44,6 +44,12 @@ export default async function ProjectPage({ params }: Props) {
   const { locale, project: p } = found;
   const dict = getDictionary(locale);
 
+  const site = localizeSite(getSite(), locale);
+  const waMsg = locale === 'id'
+    ? `Halo Andrew, saya tertarik dengan proyek ${p.title} di portofolio Anda dan ingin berkonsultasi mengenai proyek serupa.`
+    : `Hi Andrew, I saw your ${p.title} project case study and would like to discuss a similar project.`;
+  const projectWaHref = `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(waMsg)}`;
+
   return (
     <article className="section">
       <div className="wrap">
@@ -82,6 +88,9 @@ export default async function ProjectPage({ params }: Props) {
                 {dict.project.repo} ↗
               </a>
             )}
+            <a className="btn btn--ghost" href={projectWaHref} target="_blank" rel="noopener noreferrer">
+              {locale === 'id' ? 'Konsultasi proyek serupa ↗' : 'Discuss similar project ↗'}
+            </a>
           </div>
         </header>
 

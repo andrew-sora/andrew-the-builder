@@ -43,6 +43,8 @@ glance:
     value: { id: "Yogyakarta / Jakarta, Indonesia", en: "Yogyakarta / Jakarta, Indonesia" }
   - label: { id: Mode kerja, en: Work mode }
     value: { id: "Remote / Hybrid / Onsite", en: "Remote / Hybrid / Onsite" }
+  - label: { id: Bahasa, en: Languages }
+    value: { id: "Bahasa Indonesia (Native), English (Professional Working)", en: "Indonesian (Native), English (Professional Working)" }
 
 experience:
   - company: SORADEV (PT Studio Sora Teknologi)
