@@ -233,7 +233,7 @@ export default async function Home({ params }: Props) {
                     subject={dict.contact.mailSubject}
                   />
                   <a className="link" href={site.contact.linkedin} target="_blank" rel="noopener noreferrer">
-                    {dict.contact.linkedin} ↗
+                    {dict.contact.linkedin}
                   </a>
                 </div>
               </div>
@@ -244,7 +244,7 @@ export default async function Home({ params }: Props) {
                 <p>{dict.contact.projectBody}</p>
                 <div className="contact__links">
                   <a className="btn btn--ghost" href={waHref} target="_blank" rel="noopener noreferrer">
-                    {dict.contact.whatsapp} ↗
+                    {dict.contact.whatsapp} <span className="btn__tag mono">WA</span>
                   </a>
                 </div>
                 <div className="contact__links">
@@ -255,7 +255,7 @@ export default async function Home({ params }: Props) {
                     subject={dict.contact.mailSubject}
                   />
                   <a className="link" href={site.contact.github} target="_blank" rel="noopener noreferrer">
-                    {dict.contact.github} ↗
+                    {dict.contact.github}
                   </a>
                 </div>
               </div>

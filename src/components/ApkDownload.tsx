@@ -25,7 +25,7 @@ export default function ApkDownload({ apk, dict }: { apk: Apk; dict: Dictionary[
       </dl>
       <div>
         <a className="btn btn--solid" href={apk.url} rel="noopener">
-          {dict.download} ↓
+          {dict.download} <span className="btn__tag mono">APK</span>
         </a>
       </div>
       <div>
