@@ -16,7 +16,7 @@
   },
   "nav": {
     "work": "Karya",
-    "glance": "Sekilas",
+    "glance": "Profil Singkat",
     "experience": "Pengalaman",
     "contact": "Kontak"
   },
@@ -40,7 +40,7 @@
     "photoAlt": "Potret Andrew berkacamata dan bersweter gelap, menoleh ke samping."
   },
   "glance": {
-    "title": "Sekilas",
+    "title": "Profil Singkat",
     "intro": "Versi singkat, untuk yang membaca cepat."
   },
   "lanes": {

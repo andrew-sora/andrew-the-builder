@@ -16,7 +16,7 @@
   },
   "nav": {
     "work": "Work",
-    "glance": "At a glance",
+    "glance": "Short Profile",
     "experience": "Experience",
     "contact": "Contact"
   },
@@ -40,7 +40,7 @@
     "photoAlt": "Portrait of Andrew in glasses and a dark sweater, glancing to the side."
   },
   "glance": {
-    "title": "At a glance",
+    "title": "Short Profile",
     "intro": "The short version, for people who skim."
   },
   "lanes": {
