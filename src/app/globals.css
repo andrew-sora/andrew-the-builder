@@ -473,9 +473,9 @@ ul {
   box-shadow: 4px 4px 0 var(--tape);
 }
 .btn--ghost {
-  background: transparent;
+  background: var(--card);
   color: var(--ink);
-  box-shadow: 4px 4px 0 var(--line);
+  box-shadow: 4px 4px 0 var(--blue);
 }
 .btn:hover {
   transform: translate(-2px, -2px);
@@ -496,8 +496,8 @@ ul {
   color: #101a33;
 }
 .btn--ghost .btn__tag {
-  background: var(--line);
-  color: var(--ink);
+  background: var(--blue);
+  color: #ffffff;
 }
 .btn:hover .btn__tag {
   transform: scale(1.08);
