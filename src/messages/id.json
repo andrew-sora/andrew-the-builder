@@ -21,10 +21,10 @@
     "contact": "Kontak"
   },
   "hero": {
-    "headlineA": "Saya membangun dari ujung ke ujung,",
-    "headlineB": "dari serat optik sampai antarmuka.",
-    "dimension": "serat optik → antarmuka",
-    "sub": "Web, jaringan, keamanan, AI. Satu engineer, dikirim dari hulu ke hilir.",
+    "headlineA": "Saya merancang & merilis produk,",
+    "headlineB": "dari konsep sampai production.",
+    "dimension": "konsep → production",
+    "sub": "Web, jaringan, keamanan, AI. Shipped end-to-end tanpa perantara.",
     "lanes": "Web · Jaringan · Keamanan · AI",
     "availability": {
       "both": "Terbuka untuk posisi dan proyek",

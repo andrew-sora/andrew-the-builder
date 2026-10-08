@@ -21,10 +21,10 @@
     "contact": "Contact"
   },
   "hero": {
-    "headlineA": "I build products end to end,",
-    "headlineB": "from fiber to frontend.",
-    "dimension": "fiber → frontend",
-    "sub": "Web, network, security, AI. One engineer, shipped end to end.",
+    "headlineA": "I design & ship products,",
+    "headlineB": "from concept to production.",
+    "dimension": "concept → production",
+    "sub": "Web, network, security, AI. Shipped end-to-end, no middleman.",
     "lanes": "Web · Network · Security · AI",
     "availability": {
       "both": "Open for roles and projects",
