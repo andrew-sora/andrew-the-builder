@@ -95,10 +95,10 @@ export default async function Home({ params }: Props) {
             </div>
 
             <ul className="pills" aria-label={dict.lanes.title}>
-              {LANES.map((lane, i) => (
+              {LANES.map((lane) => (
                 <li key={lane}>
                   <Link className="pill" href={`/${locale}/projects/#${lane}`}>
-                    <span className="mono">#0{i + 1}</span> {dict.lanes[lane].name}
+                    {dict.lanes[lane].name}
                   </Link>
                 </li>
               ))}
