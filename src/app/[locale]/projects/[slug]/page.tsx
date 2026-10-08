@@ -80,16 +80,16 @@ export default async function ProjectPage({ params }: Props) {
           <div className="actions">
             {p.links.live && (
               <a className="btn btn--solid" href={p.links.live} target="_blank" rel="noopener noreferrer">
-                {dict.project.live} ↗
+                {dict.project.live} <span className="btn__tag mono">DEMO</span>
               </a>
             )}
             {p.links.repo && (
               <a className="btn btn--ghost" href={p.links.repo} target="_blank" rel="noopener noreferrer">
-                {dict.project.repo} ↗
+                {dict.project.repo} <span className="btn__tag mono">GIT</span>
               </a>
             )}
             <a className="btn btn--ghost" href={projectWaHref} target="_blank" rel="noopener noreferrer">
-              {locale === 'id' ? 'Konsultasi proyek serupa ↗' : 'Discuss similar project ↗'}
+              {locale === 'id' ? 'Konsultasi proyek' : 'Discuss project'} <span className="btn__tag mono">WA</span>
             </a>
           </div>
         </header>

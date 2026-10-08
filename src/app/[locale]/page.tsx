@@ -80,7 +80,7 @@ export default async function Home({ params }: Props) {
                 <div className="cta">
                   <span className="cta__for mono">{dict.hero.forRecruiters}</span>
                   <a className="btn btn--solid" href={site.cv} download={cvFilename}>
-                    {dict.hero.ctaCv} ↓
+                    {dict.hero.ctaCv} <span className="btn__tag mono">PDF</span>
                   </a>
                 </div>
               )}
@@ -88,7 +88,7 @@ export default async function Home({ params }: Props) {
                 <div className="cta">
                   <span className="cta__for mono">{dict.hero.forClients}</span>
                   <a className="btn btn--ghost" href={waHref} target="_blank" rel="noopener noreferrer">
-                    {dict.hero.ctaClient} ↗
+                    {dict.hero.ctaClient} <span className="btn__tag mono">WA</span>
                   </a>
                 </div>
               )}
@@ -222,7 +222,7 @@ export default async function Home({ params }: Props) {
                 <p>{dict.contact.hireBody}</p>
                 <div className="contact__links">
                   <a className="btn btn--solid" href={site.cv} download={cvFilename}>
-                    {dict.contact.cv} ↓
+                    {dict.contact.cv} <span className="btn__tag mono">PDF</span>
                   </a>
                 </div>
                 <div className="contact__links">

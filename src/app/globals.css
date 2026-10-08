@@ -481,6 +481,28 @@ ul {
   transform: translate(-2px, -2px);
 }
 
+.btn__tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font: 700 0.68rem var(--font-mono);
+  letter-spacing: 0.05em;
+  line-height: 1;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.btn--solid .btn__tag {
+  background: var(--tape);
+  color: #101a33;
+}
+.btn--ghost .btn__tag {
+  background: var(--line);
+  color: var(--ink);
+}
+.btn:hover .btn__tag {
+  transform: scale(1.08);
+}
+
 /* ---------------------------------------------------------------- glance */
 
 .about {
