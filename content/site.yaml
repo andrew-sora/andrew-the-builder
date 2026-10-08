@@ -45,12 +45,12 @@ glance:
     value: { id: "Remote / Hybrid / Onsite", en: "Remote / Hybrid / Onsite" }
 
 experience:
-  - company: PT Studio Sora Teknologi (SoraDev)
-    period: "Jun 2025 – Sekarang"
-    role: { id: "Lead / IT Project Coordinator", en: "Lead / IT Project Coordinator" }
+  - company: SORADEV (PT Studio Sora Teknologi)
+    period: "2024 – Sekarang"
+    role: { id: "Founder & Lead Engineer", en: "Founder & Lead Engineer" }
     summary:
-      id: "Mengawasi siklus hidup proyek IT dari hulu ke hilir, menerjemahkan kebutuhan bisnis & pengguna menjadi spesifikasi teknis, mengoordinasikan operasional harian studio tech, serta mengoperasionalkan sistem dokumentasi & pengarsipan digital."
-      en: "Supervising end-to-end IT project lifecycles, translating business & user requirements into technical specifications, coordinating daily tech studio operations, and standardizing digital archiving and repository documentation."
+      id: "Memimpin perancangan dan eksekusi produk SaaS dari hulu ke hilir (seperti SoraKos dengan arsitektur backend multi-tenant PostgreSQL RLS), sekaligus mengoordinasikan tim teknis, alur kerja proyek, dan komunikasi klien."
+      en: "Leading end-to-end architecture and execution for SaaS products (like SoraKos with PostgreSQL RLS multi-tenant backend architecture), while coordinating technical teams, project workflows, and client delivery."
 
   - company: PT Bach Multi Infrastruktur
     period: "Nov 2025 – Mei 2026"
