@@ -1,0 +1,41 @@
+slug: danus-collection
+placeholder: false
+lane: web
+status: live
+year: 2026
+featured: true
+order: 4
+stack: [Next.js 15, TypeScript, Tailwind CSS, Sheet Integration, WhatsApp Commerce]
+links:
+  repo: https://github.com/andrew-sora/Danu-S-Collection
+cover: /projects/danus-collection/cover.svg
+gallery:
+  - src: /projects/danus-collection/shot-1.svg
+    alt: { id: Katalog produk mobile-first Danu's Collection, en: Danu's Collection mobile-first product catalog }
+  - src: /projects/danus-collection/shot-2.svg
+    alt: { id: Alur konversi pesanan langsung ke WhatsApp, en: Direct WhatsApp order conversion flow }
+text:
+  id:
+    title: Danu's Collection
+    tagline: Web katalog produk & landing page handicraft modern dengan alur pesanan instan via WhatsApp.
+    role: Tech Lead & Frontend Engineer
+    problem: >-
+      Usaha rumahan kerajinan tangan (handicraft) dan dekorasi rumah di Batam membutuhkan kehadiran digital yang kredibel dan responsif mobile. Penjualan sebelumnya hanya mengandalkan chat informal tanpa katalog terpusat, menyulitkan calon pembeli dalam melihat ketersediaan varian produk.
+    approach: >-
+      Membangun platform katalog modern berbasis Next.js 15 dan Tailwind CSS dengan prinsip mobile-first. Merancang alur pemesanan zero-friction yang langsung mengarahkan pilihan produk ke chat WhatsApp penjual secara otomatis. Menggunakan sistem integrasi data katalog berbasis spreadsheet yang mempermudah pemilik bisnis memperbarui stok tanpa harus menguasai perkakas teknis database.
+    highlights:
+      - Antarmuka katalog produk mobile-first yang bersih, cepat, dan responsif di seluruh perangkat.
+      - Alur checkout nir-gesekan (zero-friction) yang langsung mengonversi pilihan produk ke pesan WhatsApp terstruktur.
+      - Manajemen data katalog mudah berbasis lembar kerja (spreadsheet/CSV) ramah operasional pemilik UMKM.
+  en:
+    title: Danu's Collection
+    tagline: Modern handicraft brand showcase & interactive catalog with zero-friction WhatsApp ordering.
+    role: Tech Lead & Frontend Engineer
+    problem: >-
+      A Batam-based handicraft and home decor business required a professional mobile-first digital presence. Sales previously depended solely on fragmented chat exchanges without a centralized showcase, making browsing product variants tedious for prospective customers.
+    approach: >-
+      Engineered a responsive catalog web application utilizing Next.js 15 and Tailwind CSS. Designed a zero-friction conversion flow that formats customer product selections into structured WhatsApp orders instantly. Implemented a lightweight spreadsheet-backed data layer allowing non-technical business owners to update product catalogs seamlessly without database tools.
+    highlights:
+      - High-performance, mobile-first product showcase tailored for intuitive browsing and fast loading.
+      - Zero-friction ordering pipeline converting browsing directly into pre-filled WhatsApp transactions.
+      - Non-technical operational workflow enabling catalog and pricing updates via spreadsheet data.

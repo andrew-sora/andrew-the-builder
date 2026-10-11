@@ -1,0 +1,43 @@
+slug: edunest
+placeholder: false
+lane: web
+status: beta
+year: 2026
+featured: true
+order: 3
+stack: [Next.js 15, TypeScript, Tailwind CSS, Supabase (RLS), Shadcn UI, WhatsApp API]
+links:
+  repo: https://github.com/andrew-sora/Management-Bimbel
+cover: /projects/edunest/cover.svg
+gallery:
+  - src: /projects/edunest/shot-1.svg
+    alt: { id: Dashboard operasional EduNest Bimbel Management, en: EduNest Bimbel management operations dashboard }
+  - src: /projects/edunest/shot-2.svg
+    alt: { id: Manajemen SPP dan jadwal kelas otomatis, en: Automated tuition billing and class scheduling }
+text:
+  id:
+    title: EduNest
+    tagline: Platform SaaS all-in-one untuk manajemen operasional bimbingan belajar berbasis multi-tenancy.
+    role: Founder & Lead Engineer
+    problem: >-
+      Bimbingan belajar (bimbel) skala kecil hingga menengah umumnya mengelola absensi siswa, jadwal tutor, dan penagihan SPP bulanan secara manual. Hal ini sering memicu keterlambatan pembayaran SPP, jadwal kelas yang bentrok, dan hilangnya rekaman riwayat perkembangan belajar siswa.
+    approach: >-
+      Merancang dan mengimplementasikan EduNest sebagai platform SaaS modern berbasis Next.js 15 dan Supabase. Menggunakan isolasi data multi-tenant ketat pada tingkat database melalui PostgreSQL Row Level Security (RLS) dengan subdomain routing. Menyediakan antarmuka komprehensif mencakup manajemen siswa, tutor, penjadwalan kelas, modul tagihan SPP otomatis via WhatsApp, serta integrasi payment gateway.
+    highlights:
+      - Arsitektur SaaS multi-tenant dengan isolasi data PostgreSQL RLS berbasis JWT custom claims.
+      - Modul terpadu untuk absensi kehadiran, manajemen jadwal tutor, dan tracking SPP bulanan.
+      - Sistem notifikasi penagihan otomatis ke orang tua melalui integrasi kanal WhatsApp.
+      - Perancangan spesifikasi produk lengkap mencakup PRD, skema database 17 tabel, dan investor pitch deck.
+  en:
+    title: EduNest
+    tagline: All-in-one multi-tenant SaaS platform for tutoring center (bimbel) operations.
+    role: Founder & Lead Engineer
+    problem: >-
+      Small to medium tutoring centers (bimbel) struggle with manual tracking across student attendance, tutor schedules, and monthly tuition billing. This operational friction results in delayed payments, scheduling conflicts, and scattered student academic records.
+    approach: >-
+      Engineered EduNest as a full-featured SaaS platform utilizing Next.js 15 (App Router), Tailwind CSS, and Supabase. Enforced rigorous multi-tenant data isolation at the database layer using PostgreSQL Row Level Security (RLS) with subdomain routing. Developed an extensive design system covering student and tutor management, calendar scheduling, automated WhatsApp tuition billing, and digital payment integration.
+    highlights:
+      - Multi-tenant SaaS architecture with database-level isolation via PostgreSQL RLS and custom claims.
+      - Integrated operational workflows for student attendance, tutor scheduling, and revenue analytics.
+      - Automated parent notification and invoice delivery via WhatsApp integration.
+      - Comprehensive product specification including PRD, 17-table relational schema, and pitch deck.
