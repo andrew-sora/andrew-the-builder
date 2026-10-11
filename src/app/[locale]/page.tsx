@@ -33,7 +33,12 @@ export default async function Home({ params }: Props) {
   const dict = getDictionary(locale);
   const site = localizeSite(getSite(), locale);
   const projects = getProjects().map((p) => localizeProject(p, locale));
-  const featured = projects.filter((p) => p.featured).slice(0, 3);
+  const featured = projects.filter((p) => p.featured);
+  const featuredProject = projects.find((p) => p.slug === 'sorakos') || featured[0];
+  const secondaryProjects = projects
+    .filter((p) => p.featured && p.slug !== featuredProject?.slug)
+    .sort((a, b) => (a.placeholder === b.placeholder ? a.order - b.order : a.placeholder ? 1 : -1))
+    .slice(0, 2);
   const labels = cardLabels(dict);
 
   const { clients, recruiters } = site.availability;
@@ -66,7 +71,11 @@ export default async function Home({ params }: Props) {
       <section className="hero">
         <div className="wrap hero__grid">
           <div className="hero__copy">
-            <p className="hero__name mono">{site.fullName}</p>
+            <div className="hero__identity">
+              <p className="hero__name mono">{site.fullName}</p>
+              <span className="hero__badge mono">PRODUCT BUILDER</span>
+            </div>
+            <p className="hero__descriptor mono">Design · Engineering · AI · Infrastructure</p>
             <h1>
               {dict.hero.headlineA} <em>{dict.hero.headlineB}</em>
             </h1>
@@ -124,60 +133,34 @@ export default async function Home({ params }: Props) {
       </section>
       <div className="tape" aria-hidden="true" />
 
-      {/* ------------------------------------------------------------ glance */}
-      <section className="section" id="glance" aria-labelledby="glance-title">
-        <div className="wrap">
-          <div className="section__head">
-            <span className="eyebrow mono">01</span>
-            <h2 id="glance-title">{dict.glance.title}</h2>
-            <p>{dict.glance.intro}</p>
-          </div>
-          <p className="about">{site.about}</p>
-          <dl className="glance">
-            {site.glance.map((g) => (
-              <div className="glance__item" key={g.label}>
-                <dt className="mono">{g.label}</dt>
-                <dd>{g.value}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------ lanes */}
-      <section className="section" id="lanes" aria-labelledby="lanes-title">
-        <div className="wrap">
-          <div className="section__head">
-            <span className="eyebrow mono">02</span>
-            <h2 id="lanes-title">{dict.lanes.title}</h2>
-            <p>{dict.lanes.intro}</p>
-          </div>
-          <div className="lanes">
-            {LANES.map((lane, i) => (
-              <Link key={lane} href={`/${locale}/projects/#${lane}`} className="card lane">
-                <span className="lane__num mono">0{i + 1}</span>
-                <h3>{dict.lanes[lane].name}</h3>
-                <p>{dict.lanes[lane].blurb}</p>
-                <span className="lane__go">{dict.lanes.view} →</span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------------ work */}
+      {/* ------------------------------------------------------------ 01. work (featured + secondary) */}
       <section className="section" id="work" aria-labelledby="work-title">
         <div className="wrap">
           <div className="section__head">
-            <span className="eyebrow mono">03</span>
+            <span className="eyebrow mono">01</span>
             <h2 id="work-title">{dict.work.title}</h2>
             <p>{dict.work.intro}</p>
           </div>
-          <div className="projects-grid">
-            {featured.map((p) => (
-              <ProjectCard key={p.slug} project={toCard(p)} locale={locale} labels={labels} />
-            ))}
-          </div>
+
+          {featuredProject && (
+            <div className="featured-work">
+              <ProjectCard
+                project={toCard(featuredProject)}
+                locale={locale}
+                labels={labels}
+                variant="featured"
+              />
+            </div>
+          )}
+
+          {secondaryProjects.length > 0 && (
+            <div className="projects-grid--secondary">
+              {secondaryProjects.map((p) => (
+                <ProjectCard key={p.slug} project={toCard(p)} locale={locale} labels={labels} />
+              ))}
+            </div>
+          )}
+
           <p className="more">
             <Link className="link" href={`/${locale}/projects/`}>
               {dict.work.all} →
@@ -186,7 +169,54 @@ export default async function Home({ params }: Props) {
         </div>
       </section>
 
-      {/* ------------------------------------------------------------ experience */}
+      {/* ------------------------------------------------------------ 02. profile / about */}
+      <section className="section" id="glance" aria-labelledby="glance-title">
+        <div className="wrap">
+          <div className="section__head">
+            <span className="eyebrow mono">02</span>
+            <h2 id="glance-title">{dict.glance.title}</h2>
+            <p>{dict.glance.intro}</p>
+          </div>
+          <div className="about-editorial">
+            <p className="about-editorial__lead">{site.about}</p>
+            <dl className="facts-strip">
+              {site.glance.map((g) => (
+                <div className="facts-strip__item" key={g.label}>
+                  <dt>{g.label}</dt>
+                  <dd>{g.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------ 03. capabilities */}
+      <section className="section" id="lanes" aria-labelledby="lanes-title">
+        <div className="wrap">
+          <div className="section__head">
+            <span className="eyebrow mono">03</span>
+            <h2 id="lanes-title">{dict.lanes.title}</h2>
+            <p>{dict.lanes.intro}</p>
+          </div>
+          <div className="capabilities-list">
+            {LANES.map((lane, i) => (
+              <Link key={lane} href={`/${locale}/projects/#${lane}`} className="capability-row">
+                <span className="capability-row__num">0{i + 1}</span>
+                <div className="capability-row__content">
+                  <h3>{dict.lanes[lane].name}</h3>
+                  <p>{dict.lanes[lane].blurb}</p>
+                </div>
+                <span className="capability-row__cta">
+                  {dict.lanes.view} →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------------------------------ 04. experience */}
       <section className="section" id="experience" aria-labelledby="exp-title">
         <div className="wrap">
           <div className="section__head">
@@ -194,20 +224,24 @@ export default async function Home({ params }: Props) {
             <h2 id="exp-title">{dict.experience.title}</h2>
           </div>
           <ul className="timeline">
-            {site.experience.map((e) => (
-              <li key={`${e.company}-${e.period}`}>
-                <span className="mono">{e.period}</span>
-                <h3>
-                  {e.role} · {e.company}
-                </h3>
-                <p>{e.summary}</p>
-              </li>
-            ))}
+            {site.experience.map((e) => {
+              const isCurrent = e.period.includes('Sekarang') || e.period.includes('Present');
+              return (
+                <li key={`${e.company}-${e.period}`}>
+                  <span className="mono">{e.period}</span>
+                  {isCurrent && <span className="timeline__badge--active">CURRENT</span>}
+                  <h3>
+                    {e.role} · {e.company}
+                  </h3>
+                  <p>{e.summary}</p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
 
-      {/* ------------------------------------------------------------ contact */}
+      {/* ------------------------------------------------------------ 05. contact */}
       <section className="section" id="contact" aria-labelledby="contact-title">
         <div className="wrap">
           <div className="section__head">

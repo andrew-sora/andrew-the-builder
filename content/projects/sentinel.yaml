@@ -1,34 +1,35 @@
 slug: sentinel
-placeholder: true
+placeholder: false
 lane: security
 status: live
 year: 2025
 featured: true
-order: 4
-stack: [nmap, Snort IDS/IPS, Web auditing, Patching]
-links: {}
+order: 6
+stack: [OWASP Top 10, DVWA, SQL Injection, XSS, Command Injection, Nginx Hardening]
+links:
+  repo: https://github.com/andrew-sora/dvwa-web-security-lab
 cover: /projects/sentinel/cover.svg
 gallery:
   - src: /projects/sentinel/shot-1.svg
-    alt: { id: Alur audit dan perbaikan (dummy), en: Audit and remediation flow (dummy) }
+    alt: { id: Lab pengujian celah keamanan web dan mitigasi OWASP, en: Web security vulnerability testing lab and OWASP mitigation }
 text:
   id:
-    title: Sentinel
-    tagline: Audit keamanan web dan jaringan, dari pemindaian sampai penambalan.
-    role: Security engineer
-    problem: "[Sistem apa yang diaudit dan risiko apa yang ditemukan, tanpa membuka detail yang masih bisa dieksploitasi.]"
-    approach: "[Metodologi: reconnaissance, pemindaian, validasi temuan, patching, verifikasi ulang, aturan IDS/IPS.]"
+    title: Web Security Audit & Penetration Testing Lab
+    tagline: Lab pengujian kerentanan web (SQLi, XSS, Command Injection) dan mitigasi hardening sistem.
+    role: Security Engineer & Researcher
+    problem: Aplikasi web modern rentan terhadap serangan injeksi dan kelemahan sanitasi input (OWASP Top 10) yang dapat menyebabkan kebocoran data sensitif serta eksekusi kode berbahaya tanpa izin.
+    approach: Merancang lab simulasi audit keamanan berbasis DVWA untuk mendemonstrasikan eksploitasi celah SQL Injection, Cross-Site Scripting (XSS), dan Command Injection secara terarah. Menyusun analisis mendalam mengenai vektor serangan serta mengimplementasikan mitigasi berbasis prepared statements, sanitasi context-aware, dan hardening konfigurasi server web.
     highlights:
-      - "[Jumlah dan tingkat keparahan temuan yang ditutup]"
-      - "[Pencegahan SEO poisoning atau eksploit web yang relevan]"
-      - "[Proses yang kini dipakai tim]"
+      - Laboratorium simulasi pengujian penetrasi mandiri yang mencakup analisis eksploitasi OWASP Top 10.
+      - Dokumentasi terstruktur dan Proof of Concept (PoC) untuk remediasi SQLi, XSS, dan injeksi perintah.
+      - Rekomendasi penerapan keamanan berlapis (defense-in-depth) pada layer aplikasi dan web server.
   en:
-    title: Sentinel
-    tagline: Web and network security audits, from scanning to patching.
-    role: Security engineer
-    problem: "[What was audited and which risks were found, without exposing anything still exploitable.]"
-    approach: "[Methodology: reconnaissance, scanning, finding validation, patching, re-verification, IDS/IPS rules.]"
+    title: Web Security Audit & Penetration Testing Lab
+    tagline: Web vulnerability research lab demonstrating SQLi, XSS, Command Injection, and mitigation hardening.
+    role: Security Engineer & Researcher
+    problem: Modern web applications remain vulnerable to input sanitization flaws and injection attacks (OWASP Top 10), risking sensitive data breaches and unauthorized remote code execution.
+    approach: Architected a hands-on web security testing environment utilizing DVWA to demonstrate targeted exploitation of SQL Injection, Cross-Site Scripting (XSS), and Command Injection vectors. Authored comprehensive remediation strategies incorporating prepared statements, context-aware input escaping, and secure web server configurations.
     highlights:
-      - "[Number and severity of findings closed]"
-      - "[Relevant SEO-poisoning or web-exploit prevention]"
-      - "[Process the team uses now]"
+      - Hands-on penetration testing lab environment evaluating core OWASP Top 10 vulnerability vectors.
+      - Documented Proof of Concepts (PoC) and verified defensive mitigations for injection flaws.
+      - Formulated defense-in-depth security hardening recommendations across web application tiers.

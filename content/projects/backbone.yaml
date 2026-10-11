@@ -1,34 +1,34 @@
 slug: backbone
-placeholder: true
+placeholder: false
 lane: infra
-status: archived
-year: 2024
+status: live
+year: 2026
 featured: true
-order: 3
-stack: [DWDM, Fiber management, Server configuration, Docker]
+order: 5
+stack: [DWDM, Fiber Management, Linux Server, Incident Recovery, Docker]
 links: {}
 cover: /projects/backbone/cover.svg
 gallery:
   - src: /projects/backbone/shot-1.svg
-    alt: { id: Topologi jaringan optik yang disederhanakan (dummy), en: Simplified optical network topology (dummy) }
+    alt: { id: Topologi jaringan optik DWDM dan monitoring server, en: DWDM optical network topology and server monitoring }
 text:
   id:
-    title: Backbone
-    tagline: Integrasi jaringan optik DWDM dan konfigurasi server pendukungnya.
-    role: Network engineer
-    problem: "[Kebutuhan kapasitas atau keandalan yang mendorong proyek ini.]"
-    approach: "[Desain topologi, pengelolaan fiber, konfigurasi, pengujian, serah terima. Tanpa detail sensitif milik klien.]"
+    title: Infrastruktur Jaringan Optik & Server
+    tagline: Operasional infrastruktur jaringan DWDM dan manajemen pemulihan insiden server.
+    role: Team Leader – Operasional Infrastruktur (PT Bach Multi Infrastruktur)
+    problem: Infrastruktur jaringan transmisi optik DWDM membutuhkan ketersediaan tinggi (high availability) dan penanganan insiden cepat di lapangan guna mencegah pemadaman jaringan telekomunikasi skala luas.
+    approach: Memimpin operasional teknis lapangan lintas site, melakukan pemantauan sistem transmisi, perutean fiber optik, dan konfigurasi server pendukung. Merancang SOP pemulihan insiden darurat untuk meminimalkan waktu henti (downtime) serta mengoptimalkan alokasi sumber daya teknis.
     highlights:
-      - "[Kapasitas atau ketersediaan yang dicapai]"
-      - "[Tantangan lapangan dan solusinya]"
-      - "[Dokumentasi atau otomasi yang dihasilkan]"
+      - Memimpin tim teknis operasional lapangan untuk menjaga SLA uptime infrastruktur optik berkinerja tinggi.
+      - Manajemen insiden cepat dan mitigasi gangguan transmisi optik DWDM di berbagai lokasi site.
+      - Standarisasi alur diagnosis teknis dan pengelolaan konfigurasi server pendukung berbasis Linux dan Docker.
   en:
-    title: Backbone
-    tagline: DWDM optical network integration and the server configuration around it.
-    role: Network engineer
-    problem: "[The capacity or reliability need behind the project.]"
-    approach: "[Topology design, fiber management, configuration, testing, handover. No sensitive client details.]"
+    title: Optical Network & Server Infrastructure
+    tagline: DWDM optical transmission operations and high-availability server incident management.
+    role: Team Leader – Infrastructure Operations (PT Bach Multi Infrastruktur)
+    problem: DWDM optical transmission networks require strict high-availability SLAs and rapid on-site incident response to prevent mission-critical telecommunication blackouts.
+    approach: Led on-site technical operations across multiple sites, managing optical transmission monitoring, fiber routing, and supporting server infrastructure. Authored emergency incident recovery SOPs to drastically reduce mean-time-to-repair (MTTR) while optimizing operational resource allocation.
     highlights:
-      - "[Capacity or availability achieved]"
-      - "[Field challenge and how it was solved]"
-      - "[Documentation or automation produced]"
+      - Led technical field teams ensuring high-availability uptime across mission-critical optical infrastructure.
+      - Rapid incident diagnostics and mitigation of DWDM transmission faults across diverse field sites.
+      - Standardized technical operational SOPs and maintained Linux/Docker supporting server configurations.

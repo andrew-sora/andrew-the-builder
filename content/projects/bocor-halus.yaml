@@ -1,0 +1,43 @@
+slug: bocor-halus
+placeholder: false
+lane: web
+status: live
+year: 2026
+featured: true
+order: 2
+stack: [React Native, Expo SDK 57, TypeScript, NativeWind, SQLite, Reanimated]
+links:
+  repo: https://github.com/andrew-sora/bocor-halus-app
+cover: /projects/bocor-halus/cover.svg
+gallery:
+  - src: /projects/bocor-halus/shot-1.svg
+    alt: { id: Dashboard pelacak pengeluaran mikro Bocor Halus, en: Bocor Halus micro-expense tracking dashboard }
+  - src: /projects/bocor-halus/shot-2.svg
+    alt: { id: Fitur kalkulator in-app dan visualisasi batas jatah bulanan, en: In-app receipt evaluator and monthly budget limit visualization }
+text:
+  id:
+    title: Bocor Halus
+    tagline: Aplikasi mobile pengelola keuangan mikro minimalis & offline-first dengan React Native & Expo.
+    role: Founder & Mobile Engineer
+    problem: >-
+      Banyak pengguna (seperti ibu rumah tangga dan pekerja lepas) mengalami kebocoran anggaran akibat transaksi-transaksi kecil tak tercatat (di bawah Rp 50.000) yang terabaikan. Aplikasi keuangan yang ada umumnya terlalu rumit, penuh grafik korporat berlebih, dan memerlukan kalkulator terpisah untuk menjumlahkan struk belanja.
+    approach: >-
+      Membangun Bocor Halus dengan React Native (Expo SDK 57) dan TypeScript menggunakan pendekatan desain empati bertema Earth Tone (Soft Warm Cream dan Deep Emerald). Fitur meliputi evaluator ekspresi matematika in-app tanpa eval() untuk menjumlahkan nota langsung di aplikasi, meteran batas jatah bulanan real-time, penandaan kategori 1-ketuk, serta penyimpanan offline lokal berkinerja tinggi menggunakan Expo SQLite.
+    highlights:
+      - Aplikasi mobile offline-first dengan arsitektur Expo Router dan penyimpanan lokal SQLite.
+      - In-App Expression Evaluator kustom berbasis Abstract Syntax Tree (AST) untuk perhitungan cepat tanpa eval().
+      - Desain visual estetik berbasis tema Earth Tone dengan animasi mikro halus dari React Native Reanimated.
+      - Arsitektur modular dengan engine database ganda (Native SQLite & Web fallback).
+  en:
+    title: Bocor Halus
+    tagline: Minimalist, offline-first mobile micro-expense tracker built with React Native & Expo.
+    role: Founder & Mobile Engineer
+    problem: >-
+      Everyday users and remote workers frequently suffer from untracked micro-leakages on small daily purchases (< Rp 50,000). Existing personal finance apps are often cluttered with corporate charts and require separate calculator apps to sum multi-item receipts, creating high friction.
+    approach: >-
+      Engineered Bocor Halus utilizing React Native (Expo SDK 57) and TypeScript with an empathy-first Earth Tone aesthetic (#FAF7F2 warm cream & #064E3B deep emerald). Implemented an in-app AST math expression evaluator (zero-eval) for typing receipts directly, a real-time visual monthly allowance meter, 1-tap emoji categorization, and an ultra-fast offline storage layer using Expo SQLite.
+    highlights:
+      - Offline-first mobile architecture powered by Expo Router and localized Expo SQLite storage.
+      - Custom AST-based in-app math expression evaluator for zero-friction receipt summation.
+      - Calming, modern Earth Tone design system paired with fluid React Native Reanimated micro-interactions.
+      - Dual-engine architecture with native SQLite for mobile and LocalStorage fallback for browser previews.

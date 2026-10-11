@@ -1,38 +1,40 @@
 slug: retina
-placeholder: true
+placeholder: false
 lane: ai
-status: beta
-year: 2025
+status: live
+year: 2024
 featured: true
-order: 5
-stack: [Python, PyTorch, FastAPI, Docker, Next.js]
+order: 4
+stack: [Python, PyTorch (CNN), FastAPI, Docker, REST API]
 links:
-  live: https://example.com/retina
-  repo: https://github.com/your-handle/retina
+  live: https://etd.repository.ugm.ac.id
+  repo: https://github.com/andrew-sora
 cover: /projects/retina/cover.svg
 gallery:
   - src: /projects/retina/shot-1.svg
-    alt: { id: Antarmuka unggah gambar dan hasil (dummy), en: Image upload and results interface (dummy) }
+    alt: { id: Pipeline deteksi otomatis citra fundus retina, en: Automated retinal fundus image classification pipeline }
   - src: /projects/retina/shot-2.svg
-    alt: { id: Arsitektur layanan inferensi (dummy), en: Inference service architecture (dummy) }
+    alt: { id: Arsitektur layanan inferensi REST API dengan FastAPI dan Docker, en: Containerized FastAPI REST API inference architecture }
 text:
   id:
-    title: Retina
-    tagline: Model computer vision untuk diagnostik medis yang disajikan lewat REST API terkontainerisasi.
-    role: ML engineer
-    problem: "[Tugas klinis yang dibantu dan batasan datanya.]"
-    approach: "[Dataset, arsitektur model, evaluasi, serving lewat FastAPI di Docker, integrasi dengan frontend.]"
+    title: Deteksi Retinopati Diabetik (Retina-AI)
+    tagline: Model Computer Vision & REST API untuk deteksi otomatis penyakit retinopati diabetik.
+    role: Lead Researcher & ML Engineer (Skripsi S1 TI UGM)
+    problem: Skrining manual retinopati diabetik oleh dokter spesialis mata memakan waktu panjang dan prosedur bertahap yang rumit. Di tengah lonjakan pasien diabetes, keterlambatan diagnosis dini sering kali berujung pada kerusakan penglihatan permanen atau kebutaan total.
+    approach: Merancang dan melatih model Convolutional Neural Network (CNN) berbasis PyTorch untuk mengklasifikasikan citra fundus retina secara otomatis. Model inferensi dikemas ke dalam layanan REST API berlatensi rendah menggunakan FastAPI dan dikontainerisasi dengan Docker, memungkinkan integrasi lintas platform web medis tanpa kendala spesifikasi perangkat keras pengguna.
     highlights:
-      - "[Metrik evaluasi yang relevan, mis. sensitivitas dan spesifisitas]"
-      - "[Latensi inferensi dan kebutuhan sumber daya]"
-      - "[Catatan privasi: demo ini hanya memakai data publik atau sintetis, bukan alat diagnostik]"
+      - Riset karya akhir resmi S1 Teknologi Informasi Universitas Gadjah Mada (UGM, 2024) di bawah bimbingan Dr.Eng. Silmi Fauziati, S.T., M.T.
+      - Arsitektur Convolutional Neural Network (CNN) untuk klasifikasi otomatis citra fundus retina dengan akurasi teruji.
+      - Layanan inferensi REST API mandiri berbasis FastAPI dan Docker untuk kemudahan deployment dan skalabilitas.
+      - Terpublikasi dan terindeks secara permanen di Repositori Ilmiah ETD Universitas Gadjah Mada.
   en:
-    title: Retina
-    tagline: A computer-vision model for medical diagnostics, served through a containerized REST API.
-    role: ML engineer
-    problem: "[The clinical task it supports and the data limits.]"
-    approach: "[Dataset, model architecture, evaluation, serving via FastAPI in Docker, frontend integration.]"
+    title: Diabetic Retinopathy Detection (Retina-AI)
+    tagline: Computer vision model and REST API for automated diabetic retinopathy classification.
+    role: Lead Researcher & ML Engineer (UGM Bachelor Thesis)
+    problem: Manual screening for diabetic retinopathy by ophthalmologists is resource-intensive and procedurally complex. With rising diabetic populations, delayed clinical diagnosis frequently results in irreversible vision impairment or blindness.
+    approach: Designed and trained a Convolutional Neural Network (CNN) pipeline in PyTorch to automate retinal fundus image grading. Packaged the inference pipeline into a high-performance REST API with FastAPI and containerized it with Docker, enabling lightweight cross-platform web integration independent of client hardware limitations.
     highlights:
-      - "[Relevant evaluation metric, e.g. sensitivity and specificity]"
-      - "[Inference latency and resource needs]"
-      - "[Privacy note: the demo uses public or synthetic data only and is not a diagnostic tool]"
+      - Official Bachelor Thesis in Information Technology at Universitas Gadjah Mada (UGM, 2024), advised by Dr.Eng. Silmi Fauziati, S.T., M.T.
+      - Deep Learning Convolutional Neural Network (CNN) architecture delivering automated fundus image grading.
+      - Containerized, low-latency REST API inference service powered by FastAPI and Docker.
+      - Officially indexed and archived in Universitas Gadjah Mada's ETD Academic Research Repository.

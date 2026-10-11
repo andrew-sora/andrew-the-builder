@@ -13,6 +13,8 @@ export function toCard(p: LocalizedProject): CardProject {
     cover: p.cover,
     stack: p.stack,
     placeholder: p.placeholder,
+    role: p.role,
+    liveUrl: p.links?.live,
   };
 }
 
@@ -26,5 +28,8 @@ export function cardLabels(dict: Dictionary): CardLabels {
       ai: dict.lanes.ai.name,
     },
     dummy: dict.dummy,
+    featuredBadge: dict.project.featured ?? 'FEATURED',
+    caseStudy: dict.projects.open,
+    liveDemo: dict.project.live,
   };
 }
