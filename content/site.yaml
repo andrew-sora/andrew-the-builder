@@ -48,7 +48,7 @@ glance:
 
 experience:
   - company: SORADEV (PT Studio Sora Teknologi)
-    period: "2024 – Sekarang"
+    period: "2025 – Sekarang"
     role: { id: "Founder & Lead Engineer", en: "Founder & Lead Engineer" }
     summary:
       id: "Memimpin perancangan dan eksekusi produk SaaS dari hulu ke hilir (seperti SoraKos dengan arsitektur backend multi-tenant PostgreSQL RLS), sekaligus mengoordinasikan tim teknis, alur kerja proyek, dan komunikasi klien."

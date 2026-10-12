@@ -93,12 +93,13 @@ let siteCache: Site | undefined;
 let projectsCache: Project[] | undefined;
 
 export function getSite(): Site {
-  siteCache ??= parseYaml(path.join(contentDir, 'site.yaml'), SiteSchema);
+  if (process.env.NODE_ENV === 'production' && siteCache) return siteCache;
+  siteCache = parseYaml(path.join(contentDir, 'site.yaml'), SiteSchema);
   return siteCache;
 }
 
 export function getProjects(): Project[] {
-  if (projectsCache) return projectsCache;
+  if (process.env.NODE_ENV === 'production' && projectsCache) return projectsCache;
   const dir = path.join(contentDir, 'projects');
   const projects = fs
     .readdirSync(dir)
