@@ -3,7 +3,7 @@
 # `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.
 
 siteUrl: https://andrewthebuilder.pages.dev
-brand: Andrew Chivas
+brand: Archivas
 fullName: Andrew Chivas
 
 placeholderFields: []

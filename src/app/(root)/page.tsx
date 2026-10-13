@@ -6,7 +6,7 @@ export default function RootRedirect() {
   return (
     <main className="redirect">
       <script dangerouslySetInnerHTML={{ __html: script }} />
-      <h1>Andrew the Builder</h1>
+      <h1>Archivas</h1>
       <p>
         <a href="/id/">Bahasa Indonesia</a> · <a href="/en/">English</a>
       </p>

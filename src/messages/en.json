@@ -1,14 +1,14 @@
 {
   "meta": {
     "role": "Full-stack, network, security and AI engineer",
-    "description": "Andrew the Builder builds things end to end: web and mobile apps, optical networks, security and production AI. Selected projects and CV.",
+    "description": "Archivas by Andrew Chivas: curated digital products, systems, and innovations from concept to production. Selected projects and CV.",
     "ogLocale": "en_US",
     "projectsTitle": "Projects",
     "projectsDescription": "Selected projects across web, infrastructure, security and AI."
   },
   "a11y": {
     "skip": "Skip to content",
-    "home": "Andrew the Builder, home",
+    "home": "Archivas, home",
     "switchLabel": "Switch language to Bahasa Indonesia",
     "theme": "Toggle light and dark theme",
     "gallery": "Project screenshots, scroll horizontally",

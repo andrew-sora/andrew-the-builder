@@ -5,7 +5,7 @@ import '@fontsource-variable/inter';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Andrew the Builder',
+  title: 'Archivas · Andrew Chivas',
   icons: { icon: '/favicon.svg' },
 };
 
