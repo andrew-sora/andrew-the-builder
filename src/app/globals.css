@@ -1204,6 +1204,7 @@ ul {
 
 .gallery {
   display: flex;
+  align-items: flex-start;
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -1218,6 +1219,11 @@ ul {
   border-radius: var(--radius);
   overflow: hidden;
   background: #0f1b36;
+}
+.gallery figure img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .apk {
