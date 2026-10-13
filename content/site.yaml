@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=none
 # Site-wide content. Every localized field has `id` and `en`; the build fails if one is missing.
 # `placeholderFields` lists what is still dummy. Remove an entry once the real value is in.
 # `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.
@@ -30,7 +31,7 @@ about:
 
 glance:
   - label: { id: Peran, en: Role }
-    value: { id: Full-stack / product engineer, en: Full-stack / product engineer }
+    value: { id: "Full-stack / product engineer", en: "Full-stack / product engineer" }
   - label: { id: Stack utama, en: Primary stack }
     value: { id: "TypeScript, React / Next.js, Node.js, Python, PostgreSQL (RLS), Docker", en: "TypeScript, React / Next.js, Node.js, Python, PostgreSQL (RLS), Docker" }
   - label: { id: Ekosistem & Tools, en: Ecosystem & Tools }
