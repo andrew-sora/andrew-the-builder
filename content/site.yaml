@@ -1,4 +1,3 @@
-# yaml-language-server: $schema=none
 # Site-wide content. Every localized field has `id` and `en`; the build fails if one is missing.
 # `placeholderFields` lists what is still dummy. Remove an entry once the real value is in.
 # `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.

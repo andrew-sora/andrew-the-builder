@@ -1,5 +1,9 @@
 {
+  "yaml.disableSchemaDetection": [
+    "**/site.yaml",
+    "site.yaml"
+  ],
   "yaml.schemas": {
-    "none": ["content/site.yaml"]
+    "": "**/site.yaml"
   }
 }
