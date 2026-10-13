@@ -10,8 +10,8 @@ links:
   live: https://kos.soradev.id
 cover: /projects/sorakos/cover.webp
 gallery:
-  - src: /projects/sorakos/shot-1.svg
-    alt: { id: Dashboard pemilik kos SoraKos, en: SoraKos landlord dashboard }
+  - src: /projects/sorakos/shot-1.webp
+    alt: { id: Inventaris kamar dan manajemen status tagihan SoraKos, en: SoraKos room inventory and billing status management }
   - src: /projects/sorakos/shot-2.svg
     alt: { id: Portal penghuni dan alur pembayaran, en: Renter portal and payment flow }
 text:
