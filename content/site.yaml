@@ -2,7 +2,7 @@
 # `placeholderFields` lists what is still dummy. Remove an entry once the real value is in.
 # `npm run build:prod` refuses to build while this list (or any project placeholder) is non-empty.
 
-siteUrl: https://andrewthebuilder.pages.dev
+siteUrl: https://archivas.pages.dev
 brand: Archivas
 fullName: Andrew Chivas
 
