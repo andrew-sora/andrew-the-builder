@@ -758,7 +758,7 @@ ul {
 
 @media (min-width: 900px) {
   .project--featured {
-    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
     align-items: stretch;
   }
   .project--featured .project__media {
@@ -788,7 +788,7 @@ ul {
 }
 .project--featured .project__body {
   min-width: 0;
-  padding: clamp(20px, 3vw, 36px);
+  padding: clamp(18px, 2.5vw, 28px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -867,8 +867,13 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px 12px;
   color: var(--ink-2);
+  font-size: 0.8rem;
+}
+.project__meta > span:last-child {
+  white-space: nowrap;
 }
 .project__body h3 {
   font-size: 1.5rem;
@@ -895,11 +900,14 @@ ul {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 2px 9px;
+  padding: 3px 10px;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink);
   background: var(--card);
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1.2;
 }
 .chip::before {
   content: '';
