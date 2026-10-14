@@ -95,7 +95,7 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </header>
 
-        <div className="cover">
+        <div className={`cover cover--${p.slug}`}>
           <WindowFrame
             placeholder={p.placeholder}
             placeholderLabel={dict.dummy}

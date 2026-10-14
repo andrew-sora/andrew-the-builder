@@ -1158,6 +1158,19 @@ ul {
   margin-top: 36px;
 }
 
+/* Khusus Soradev: Frame gelap seamless dengan ambient shadow lembut */
+.cover--soradev .frame-card {
+  background: #080d1a;
+  border-color: rgba(232, 237, 247, 0.16);
+  box-shadow:
+    0 10px 30px -4px rgba(8, 13, 26, 0.35),
+    0 24px 60px -10px rgba(8, 13, 26, 0.45),
+    0 0 0 1px rgba(8, 13, 26, 0.2);
+}
+.cover--soradev .frame-card__screen {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
 /* ---------------------------------------------------------------- frame card (clean & minimal media frame) */
 
 .frame-card {
