@@ -97,8 +97,6 @@ export default async function ProjectPage({ params }: Props) {
 
         <div className="cover">
           <WindowFrame
-            url={p.links.live}
-            title={p.title}
             placeholder={p.placeholder}
             placeholderLabel={dict.dummy}
           >
@@ -148,12 +146,9 @@ export default async function ProjectPage({ params }: Props) {
               {dict.project.gallery}
             </h2>
             <div className="gallery" role="region" aria-label={dict.a11y.gallery} tabIndex={0}>
-              {p.gallery.map((g, idx) => (
+              {p.gallery.map((g) => (
                 <figure key={g.src}>
-                  <WindowFrame
-                    title={`${p.title} // Shot 0${idx + 1}`}
-                    caption={g.alt}
-                  >
+                  <WindowFrame caption={g.alt}>
                     <img src={g.src} alt={g.alt} width={1200} height={750} loading="lazy" />
                   </WindowFrame>
                 </figure>
