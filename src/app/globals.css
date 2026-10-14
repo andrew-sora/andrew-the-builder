@@ -1255,7 +1255,7 @@ ul {
 
 .gallery {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;

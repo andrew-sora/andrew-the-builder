@@ -8,12 +8,12 @@ order: 3
 stack: [Next.js, TypeScript, Tailwind CSS, Cloudflare Pages]
 links:
   live: https://soradev.id
-cover: /projects/soradev/cover.svg
+cover: /projects/soradev/cover.webp
 gallery:
-  - src: /projects/soradev/shot-1.svg
-    alt: { id: Landing page resmi SORADEV Software House, en: SORADEV official software house landing page }
-  - src: /projects/soradev/shot-2.svg
-    alt: { id: Katalog layanan dan portofolio studio SORADEV, en: SORADEV services and studio portfolio catalog }
+  - src: /projects/soradev/shot-1.webp
+    alt: { id: Tiga pilar solusi pengembangan produk digital dan SaaS SORADEV, en: SORADEV three core digital product and SaaS development solution pillars }
+  - src: /projects/soradev/shot-2.webp
+    alt: { id: Metodologi kerja rekayasa perangkat lunak dan alur pengembangan agile, en: Software engineering methodology and agile development workflow pipeline }
 text:
   id:
     title: SORADEV
