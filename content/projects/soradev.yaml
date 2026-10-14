@@ -13,7 +13,7 @@ gallery:
   - src: /projects/soradev/shot-1.webp
     alt: { id: Tiga pilar solusi pengembangan produk digital dan SaaS SORADEV, en: SORADEV three core digital product and SaaS development solution pillars }
   - src: /projects/soradev/shot-2.webp
-    alt: { id: Metodologi kerja rekayasa perangkat lunak dan alur pengembangan agile, en: Software engineering methodology and agile development workflow pipeline }
+    alt: { id: Profil kapabilitas rekayasa perangkat lunak dan keandalan sistem SORADEV, en: SORADEV software engineering capabilities and system reliability showcase }
 text:
   id:
     title: SORADEV

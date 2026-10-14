@@ -45,7 +45,7 @@ Tiap proyek membutuhkan **3 gambar** (`cover`, `shot-1`, dan `shot-2`) dengan ra
 📁 Folder: `public/projects/soradev/`
 - [x] **`cover.webp`** — Hero section website resmi `soradev.id` *(Sistem yang Tanpa Downtime)*
 - [x] **`shot-1.webp`** — Section Tiga Pilar Solusi Produk Digital & SaaS
-- [x] **`shot-2.webp`** — Section Metodologi Alur Kerja Rekayasa Perangkat Lunak (Agile)
+- [x] **`shot-2.webp`** — Section Rekayasa Perangkat Lunak & Keandalan Sistem
 
 ---
 
