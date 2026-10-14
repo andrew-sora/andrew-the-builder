@@ -7,13 +7,16 @@ featured: true
 order: 1
 stack: [Next.js 16, TypeScript, Custom Design System, Cloudflare Pages]
 links:
+  live: https://yeka-studio.pages.dev
   repo: https://github.com/andrew-sora/yeka-studio
 cover: /projects/yeka-studio/cover.webp
 gallery:
-  - src: /projects/yeka-studio/shot-1.svg
-    alt: { id: Landing page Yeka Studio dengan estetika warm-luxury, en: Yeka Studio landing page with warm-luxury aesthetics }
-  - src: /projects/yeka-studio/shot-2.svg
-    alt: { id: Dashboard CMS pengelolaan galeri foto, en: Photo gallery management CMS dashboard }
+  - src: /projects/yeka-studio/shot-1.webp
+    alt: { id: Galeri portofolio wedding dan prewedding adat Jawa warm-luxury, en: Warm-luxury Javanese traditional wedding and prewedding portfolio gallery }
+  - src: /projects/yeka-studio/shot-2.webp
+    alt: { id: Showcase paket foto wisuda outdoor kampus UGM dan Solo, en: Outdoor graduation and campus photography showcase }
+  - src: /projects/yeka-studio/shot-3.webp
+    alt: { id: Panel CMS Owner Portal pengelolaan portofolio foto dan metadata SEO, en: Owner Portal CMS dashboard for photo portfolio and SEO metadata management }
 text:
   id:
     title: Yeka Studio

@@ -52,8 +52,9 @@ Tiap proyek membutuhkan **3 gambar** (`cover`, `shot-1`, dan `shot-2`) dengan ra
 ### 6. Yeka Studio (Creative Photography Portfolio)
 📁 Folder: `public/projects/yeka-studio/`
 - [x] **`cover.webp`** — Hero section Yeka Studio *(Nuansa warm-luxury)*
-- [ ] **`shot-1.webp`** — Grid Galeri Foto / Karya Visual Fotografi
-- [ ] **`shot-2.webp`** — Panel CMS Pengelolaan Galeri Foto *(Halaman upload/edit konten)*
+- [x] **`shot-1.webp`** — Galeri Portofolio Wedding & Prewedding Adat Jawa
+- [x] **`shot-2.webp`** — Showcase Paket Foto Wisuda Outdoor UGM & Solo
+- [x] **`shot-3.webp`** — Panel CMS Owner Portal Pengelolaan Portofolio & SEO
 
 ---
 
