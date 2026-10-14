@@ -8,7 +8,7 @@ order: 1
 stack: [Next.js 16, TypeScript, Custom Design System, Cloudflare Pages]
 links:
   repo: https://github.com/andrew-sora/yeka-studio
-cover: /projects/yeka-studio/cover.svg
+cover: /projects/yeka-studio/cover.webp
 gallery:
   - src: /projects/yeka-studio/shot-1.svg
     alt: { id: Landing page Yeka Studio dengan estetika warm-luxury, en: Yeka Studio landing page with warm-luxury aesthetics }
