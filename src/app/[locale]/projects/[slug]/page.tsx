@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ApkDownload from '@/components/ApkDownload';
 import LiteYouTube from '@/components/LiteYouTube';
+import WindowFrame from '@/components/WindowFrame';
 import { getProjects, getSite, localizeProject, localizeSite } from '@/lib/content';
 import { getDictionary, isLocale, locales } from '@/lib/i18n';
 import { pageMetadata } from '@/lib/seo';
@@ -94,9 +95,15 @@ export default async function ProjectPage({ params }: Props) {
           </div>
         </header>
 
-        <div className="cover" style={{ position: 'relative' }}>
-          <img src={p.cover} alt={p.gallery[0]?.alt ?? p.title} width={1200} height={750} />
-          {p.placeholder && <span className="dummy">{dict.dummy}</span>}
+        <div className="cover">
+          <WindowFrame
+            url={p.links.live}
+            title={p.title}
+            placeholder={p.placeholder}
+            placeholderLabel={dict.dummy}
+          >
+            <img src={p.cover} alt={p.gallery[0]?.alt ?? p.title} width={1200} height={750} />
+          </WindowFrame>
         </div>
 
         <div className="prose-grid">
@@ -141,9 +148,14 @@ export default async function ProjectPage({ params }: Props) {
               {dict.project.gallery}
             </h2>
             <div className="gallery" role="region" aria-label={dict.a11y.gallery} tabIndex={0}>
-              {p.gallery.map((g) => (
+              {p.gallery.map((g, idx) => (
                 <figure key={g.src}>
-                  <img src={g.src} alt={g.alt} width={1200} height={750} loading="lazy" />
+                  <WindowFrame
+                    title={`${p.title} // Shot 0${idx + 1}`}
+                    caption={g.alt}
+                  >
+                    <img src={g.src} alt={g.alt} width={1200} height={750} loading="lazy" />
+                  </WindowFrame>
                 </figure>
               ))}
             </div>
