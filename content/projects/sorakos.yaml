@@ -12,8 +12,8 @@ cover: /projects/sorakos/cover.webp
 gallery:
   - src: /projects/sorakos/shot-1.webp
     alt: { id: Inventaris kamar dan manajemen status tagihan SoraKos, en: SoraKos room inventory and billing status management }
-  - src: /projects/sorakos/shot-2.svg
-    alt: { id: Portal penghuni dan alur pembayaran, en: Renter portal and payment flow }
+  - src: /projects/sorakos/shot-2.webp
+    alt: { id: Pusat manajemen tagihan sewa dan simulasi proyeksi finansial SoraKos, en: SoraKos rental billing management and financial projection dashboard }
 text:
   id:
     title: SoraKos

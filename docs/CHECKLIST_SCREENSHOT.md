@@ -10,8 +10,8 @@ Tiap proyek membutuhkan **3 gambar** (`cover`, `shot-1`, dan `shot-2`) dengan ra
 ### 1. SoraKos (SaaS Multi-tenant Kos)
 📁 Folder: `public/projects/sorakos/`
 - [x] **`cover.webp`** — Halaman Login / Portal Selamat Datang *(Sudah Terpasang)*
-- [x] **`shot-1.webp`** — Dashboard Pemilik Kos *(Statistik kamar terisi vs kosong, grafik pendapatan) — Sudah Terpasang*
-- [ ] **`shot-2.webp`** — Portal Penghuni & Manajemen Tagihan *(Daftar sewa, tagihan SPP, invoice WhatsApp)*
+- [X] **`shot-1.webp`** — Dashboard Pemilik Kos *(Statistik kamar terisi vs kosong, grafik pendapatan)*
+- [x] **`shot-2.webp`** — Pusat Tagihan Sewa & Proyeksi Finansial *(Manajemen tagihan, koleksi 36%, reminder WA)*
 
 ---
 
