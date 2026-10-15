@@ -860,12 +860,13 @@ ul {
   border-radius: var(--radius) var(--radius) 0 0;
   overflow: hidden;
   background: #0f1b36;
-  aspect-ratio: 8 / 5;
+  aspect-ratio: 16 / 8;
 }
 .project__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .project__body {
   display: grid;
