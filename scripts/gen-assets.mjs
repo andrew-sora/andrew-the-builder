@@ -1,7 +1,7 @@
 // Generates dummy assets (no dependencies): blueprint-style SVG covers/screenshots
 // for each project in content/projects and two dummy CV PDFs.
 // Real screenshots: drop files in public/projects/<slug>/ and point the YAML at them.
-// Real CVs: overwrite public/cv/CV-Andrew-Chivas-Arsenal-Rico.pdf.
+// Real CVs: overwrite public/cv/CV-Andrew-Chivas-Umum.pdf, CV-Andrew-Chivas-FullStack.pdf, and CV-Andrew-Chivas-Network.pdf.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -101,5 +101,7 @@ function pdf(title) {
 }
 
 fs.mkdirSync(path.join(root, 'public', 'cv'), { recursive: true });
-fs.writeFileSync(path.join(root, 'public', 'cv', 'CV-Andrew-Chivas-Arsenal-Rico.pdf'), pdf('PLACEHOLDER-CV'));
+for (const f of ['CV-Andrew-Chivas-Umum.pdf', 'CV-Andrew-Chivas-FullStack.pdf', 'CV-Andrew-Chivas-Network.pdf']) {
+  fs.writeFileSync(path.join(root, 'public', 'cv', f), pdf(`PLACEHOLDER-CV · ${f}`));
+}
 console.log('Dummy assets written to public/.');

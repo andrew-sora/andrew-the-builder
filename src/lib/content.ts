@@ -68,7 +68,12 @@ const SiteSchema = z.object({
   about: Localized,
   glance: z.array(z.object({ label: Localized, value: Localized })),
   experience: z.array(
-    z.object({ company: z.string(), period: z.string(), role: Localized, summary: Localized }),
+    z.object({
+      company: z.union([z.string(), Localized]),
+      period: z.string(),
+      role: Localized,
+      summary: Localized,
+    }),
   ),
 });
 
@@ -157,7 +162,7 @@ export function localizeSite(site: Site, locale: Locale): LocalizedSite {
     about: site.about[locale],
     glance: site.glance.map((g) => ({ label: g.label[locale], value: g.value[locale] })),
     experience: site.experience.map((e) => ({
-      company: e.company,
+      company: typeof e.company === 'string' ? e.company : e.company[locale],
       period: e.period,
       role: e.role[locale],
       summary: e.summary[locale],

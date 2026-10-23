@@ -18,7 +18,7 @@ text:
   id:
     title: EduNest
     tagline: Platform SaaS all-in-one untuk manajemen operasional bimbingan belajar berbasis multi-tenancy.
-    role: Founder & Lead Engineer
+    role: Founder & Software Engineer
     problem: >-
       Bimbingan belajar (bimbel) skala kecil hingga menengah umumnya mengelola absensi siswa, jadwal tutor, dan penagihan SPP bulanan secara manual. Hal ini sering memicu keterlambatan pembayaran SPP, jadwal kelas yang bentrok, dan hilangnya rekaman riwayat perkembangan belajar siswa.
     approach: >-
@@ -31,7 +31,7 @@ text:
   en:
     title: EduNest
     tagline: All-in-one multi-tenant SaaS platform for tutoring center (bimbel) operations.
-    role: Founder & Lead Engineer
+    role: Founder & Software Engineer
     problem: >-
       Small to medium tutoring centers (bimbel) struggle with manual tracking across student attendance, tutor schedules, and monthly tuition billing. This operational friction results in delayed payments, scheduling conflicts, and scattered student academic records.
     approach: >-

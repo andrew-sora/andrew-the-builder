@@ -5,7 +5,7 @@ status: live
 year: 2025
 featured: true
 order: 6
-stack: [OWASP Top 10, DVWA, SQL Injection, XSS, Command Injection, Nginx Hardening]
+stack: [OWASP Top 10, DVWA, SQL Injection, XSS, Command Injection, Web Server Hardening]
 links:
   repo: https://github.com/andrew-sora/dvwa-web-security-lab
 cover: /projects/sentinel/cover.svg

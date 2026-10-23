@@ -1,7 +1,7 @@
 {
   "meta": {
-    "role": "Full-stack, network, security and AI engineer",
-    "description": "Archivas by Andrew Chivas: curated digital products, systems, and innovations from concept to production. Selected projects and CV.",
+    "role": "Full-Stack & Infrastructure Engineer",
+    "description": "Andrew Chivas (Archivas): Full-stack engineer (Next.js, TypeScript, PostgreSQL) and network infrastructure. Curated digital products and systems from concept to production.",
     "ogLocale": "en_US",
     "projectsTitle": "Projects",
     "projectsDescription": "Selected projects across web, infrastructure, security and AI."
@@ -25,7 +25,7 @@
     "headlineB": "from concept to production.",
     "dimension": "concept → production",
     "sub": "Web, network, security, AI. Shipped end-to-end, no middleman.",
-    "lanes": "Web · Network · Security · AI",
+    "lanes": "Web · Networks · Security · AI",
     "availability": {
       "both": "Open for roles and projects",
       "roles": "Open for roles",
@@ -35,6 +35,8 @@
     "forRecruiters": "For recruiters",
     "forClients": "For clients",
     "ctaCv": "Download CV",
+    "cvFullstack": "Full-Stack CV",
+    "cvNetwork": "Network CV",
     "ctaClient": "Start a project",
     "waMessage": "Hi Andrew, I found your portfolio and would like to discuss a project.",
     "photoAlt": "Portrait of Andrew in glasses and a dark sweater, glancing to the side."
@@ -120,7 +122,9 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "mailSubject": "Hello from your portfolio",
-    "cv": "Download CV"
+    "cv": "Download CV",
+    "cvFullstack": "Full-Stack CV",
+    "cvNetwork": "Network CV"
   },
   "dummy": "Placeholder",
   "footer": {

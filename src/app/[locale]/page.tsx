@@ -47,7 +47,9 @@ export default async function Home({ params }: Props) {
   const waHref = `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(dict.hero.waMessage)}`;
   const emailEncoded = Buffer.from(site.contact.email).toString('base64');
   const emailFallback = site.contact.email.replace('@', ' [at] ');
-  const cvFilename = 'CV-Andrew-Chivas-Arsenal-Rico.pdf';
+  const cvGeneral = '/cv/CV-Andrew-Chivas-Umum.pdf';
+  const cvFullstack = '/cv/CV-Andrew-Chivas-FullStack.pdf';
+  const cvNetwork = '/cv/CV-Andrew-Chivas-Network.pdf';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -73,9 +75,9 @@ export default async function Home({ params }: Props) {
           <div className="hero__copy">
             <div className="hero__identity">
               <p className="hero__name mono">{site.fullName}</p>
-              <span className="hero__badge mono">PRODUCT BUILDER</span>
+              <span className="hero__badge mono">FULL-STACK &amp; INFRASTRUCTURE ENGINEER</span>
             </div>
-            <p className="hero__descriptor mono">Design · Engineering · AI · Infrastructure</p>
+            <p className="hero__descriptor mono">{dict.hero.lanes}</p>
             <h1>
               {dict.hero.headlineA} <em>{dict.hero.headlineB}</em>
             </h1>
@@ -88,9 +90,20 @@ export default async function Home({ params }: Props) {
               {recruiters && (
                 <div className="cta">
                   <span className="cta__for mono">{dict.hero.forRecruiters}</span>
-                  <a className="btn btn--solid" href={site.cv} download={cvFilename}>
-                    {dict.hero.ctaCv} <span className="btn__tag mono">PDF</span>
-                  </a>
+                  <div className="cv-button-group">
+                    <a className="btn btn--solid" href={cvGeneral} download="CV-Andrew-Chivas-Umum.pdf">
+                      {dict.hero.ctaCv} <span className="btn__tag mono">PDF</span>
+                    </a>
+                    <div className="cv-secondary-links">
+                      <a className="cv-secondary-link mono" href={cvFullstack} download="CV-Andrew-Chivas-FullStack.pdf">
+                        {dict.hero.cvFullstack}
+                      </a>
+                      <span className="dim" aria-hidden="true">·</span>
+                      <a className="cv-secondary-link mono" href={cvNetwork} download="CV-Andrew-Chivas-Network.pdf">
+                        {dict.hero.cvNetwork}
+                      </a>
+                    </div>
+                  </div>
                 </div>
               )}
               {clients && (
@@ -255,9 +268,20 @@ export default async function Home({ params }: Props) {
                 <h3>{dict.contact.hireTitle}</h3>
                 <p>{dict.contact.hireBody}</p>
                 <div className="contact__links">
-                  <a className="btn btn--solid" href={site.cv} download={cvFilename}>
-                    {dict.contact.cv} <span className="btn__tag mono">PDF</span>
-                  </a>
+                  <div className="cv-button-group">
+                    <a className="btn btn--solid" href={cvGeneral} download="CV-Andrew-Chivas-Umum.pdf">
+                      {dict.contact.cv} <span className="btn__tag mono">PDF</span>
+                    </a>
+                    <div className="cv-secondary-links">
+                      <a className="cv-secondary-link mono" href={cvFullstack} download="CV-Andrew-Chivas-FullStack.pdf">
+                        {dict.contact.cvFullstack}
+                      </a>
+                      <span className="dim" aria-hidden="true">·</span>
+                      <a className="cv-secondary-link mono" href={cvNetwork} download="CV-Andrew-Chivas-Network.pdf">
+                        {dict.contact.cvNetwork}
+                      </a>
+                    </div>
+                  </div>
                 </div>
                 <div className="contact__chips">
                   <ObfuscatedEmail

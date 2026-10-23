@@ -504,6 +504,29 @@ ul {
   color: var(--ink-2);
 }
 
+.cv-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.cv-secondary-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+.cv-secondary-link {
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+.cv-secondary-link:hover {
+  color: var(--blue);
+}
+
 .btn {
   display: inline-flex;
   align-items: center;

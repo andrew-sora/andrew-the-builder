@@ -1,7 +1,7 @@
 {
   "meta": {
-    "role": "Engineer full-stack, jaringan, keamanan, dan AI",
-    "description": "Archivas oleh Andrew Chivas: kurasi produk digital, sistem, dan inovasi dari konsep sampai production. Proyek pilihan dan CV.",
+    "role": "Full-Stack & Infrastructure Engineer",
+    "description": "Andrew Chivas (Archivas): Full-stack engineer (Next.js, TypeScript, PostgreSQL) dan infrastruktur jaringan. Kurasi produk digital, sistem, dan inovasi dari konsep sampai production.",
     "ogLocale": "id_ID",
     "projectsTitle": "Proyek",
     "projectsDescription": "Proyek pilihan di bidang web, infrastruktur, keamanan, dan AI."
@@ -35,6 +35,8 @@
     "forRecruiters": "Untuk rekruter",
     "forClients": "Untuk klien",
     "ctaCv": "Unduh CV",
+    "cvFullstack": "CV Full-Stack",
+    "cvNetwork": "CV Network",
     "ctaClient": "Mulai proyek",
     "waMessage": "Halo Andrew, saya menemukan portofolio Anda dan ingin membahas sebuah proyek.",
     "photoAlt": "Potret Andrew berkacamata dan bersweter gelap, menoleh ke samping."
@@ -120,7 +122,9 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "mailSubject": "Halo dari portofolio Anda",
-    "cv": "Unduh CV"
+    "cv": "Unduh CV",
+    "cvFullstack": "CV Full-Stack",
+    "cvNetwork": "CV Network"
   },
   "dummy": "Placeholder",
   "footer": {

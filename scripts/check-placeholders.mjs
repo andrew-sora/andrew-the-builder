@@ -19,7 +19,11 @@ for (const file of fs.readdirSync(projectsDir).filter((f) => f.endsWith('.yaml')
   if (project.placeholder) problems.push(`content/projects/${file}: placeholder: true`);
 }
 
-for (const file of ['CV-Andrew-Chivas-Arsenal-Rico.pdf']) {
+for (const file of [
+  'CV-Andrew-Chivas-Umum.pdf',
+  'CV-Andrew-Chivas-FullStack.pdf',
+  'CV-Andrew-Chivas-Network.pdf',
+]) {
   const p = path.join(root, 'public', 'cv', file);
   if (!fs.existsSync(p)) problems.push(`public/cv/${file}: missing`);
   else if (fs.readFileSync(p).includes('PLACEHOLDER-CV')) problems.push(`public/cv/${file}: still the dummy CV`);

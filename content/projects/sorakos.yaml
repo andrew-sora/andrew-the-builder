@@ -18,7 +18,7 @@ text:
   id:
     title: SoraKos
     tagline: SaaS manajemen kos multi-tenant untuk pemilik properti di Indonesia.
-    role: Founder & Lead Engineer
+    role: Founder & Software Engineer
     problem: Pemilik kos skala kecil dan menengah umumnya mengelola data penghuni, siklus sewa, tagihan bulanan, serta catatan pengeluaran secara manual via WhatsApp dan catatan kertas. Hal ini sering memicu salah catat, tunggakan pembayaran yang terlewat, dan kesulitan memantau arus kas properti secara real-time.
     approach: Membangun SoraKos sebagai platform SaaS multi-tenant dengan arsitektur React/Vite yang cepat dan backend PostgreSQL serverless (Supabase Auth & Edge Functions). Data tiap pemilik properti diisolasi secara ketat di level database menggunakan PostgreSQL Row Level Security (RLS). Dilengkapi fitur manajemen kamar, kontrak sewa, tagihan otomatis via WhatsApp, pencatatan pengeluaran, serta portal terpisah untuk penghuni kos.
     highlights:
@@ -28,7 +28,7 @@ text:
   en:
     title: SoraKos
     tagline: Multi-tenant property management SaaS for boarding house landlords in Indonesia.
-    role: Founder & Lead Engineer
+    role: Founder & Software Engineer
     problem: Independent boarding house (kos) landlords typically manage tenant records, lease cycles, monthly bills, and expenses manually through WhatsApp and paper ledgers. This often causes record-keeping errors, missed overdue payments, and lack of real-time financial visibility.
     approach: Built SoraKos as a multi-tenant SaaS platform utilizing a fast React/Vite frontend powered by PostgreSQL serverless infrastructure (Supabase Auth & Edge Functions). Data between property owners is strictly isolated at the database layer using PostgreSQL Row Level Security (RLS). Features include room and lease management, expense tracking, WhatsApp billing reminders, and a dedicated tenant portal.
     highlights:
