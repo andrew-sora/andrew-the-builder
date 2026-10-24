@@ -101,7 +101,7 @@ function pdf(title) {
 }
 
 fs.mkdirSync(path.join(root, 'public', 'cv'), { recursive: true });
-for (const f of ['CV-Andrew-Chivas-Umum.pdf', 'CV-Andrew-Chivas-FullStack.pdf', 'CV-Andrew-Chivas-Network.pdf']) {
+for (const f of ['CV-Andrew-Chivas-Umum.pdf']) {
   fs.writeFileSync(path.join(root, 'public', 'cv', f), pdf(`PLACEHOLDER-CV · ${f}`));
 }
 console.log('Dummy assets written to public/.');

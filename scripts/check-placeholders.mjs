@@ -21,8 +21,6 @@ for (const file of fs.readdirSync(projectsDir).filter((f) => f.endsWith('.yaml')
 
 for (const file of [
   'CV-Andrew-Chivas-Umum.pdf',
-  'CV-Andrew-Chivas-FullStack.pdf',
-  'CV-Andrew-Chivas-Network.pdf',
 ]) {
   const p = path.join(root, 'public', 'cv', file);
   if (!fs.existsSync(p)) problems.push(`public/cv/${file}: missing`);

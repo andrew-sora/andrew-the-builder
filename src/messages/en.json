@@ -35,8 +35,6 @@
     "forRecruiters": "For recruiters",
     "forClients": "For clients",
     "ctaCv": "Download CV",
-    "cvFullstack": "Full-Stack CV",
-    "cvNetwork": "Network CV",
     "ctaClient": "Start a project",
     "waMessage": "Hi Andrew, I found your portfolio and would like to discuss a project.",
     "photoAlt": "Portrait of Andrew in glasses and a dark sweater, glancing to the side."
@@ -122,9 +120,7 @@
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "mailSubject": "Hello from your portfolio",
-    "cv": "Download CV",
-    "cvFullstack": "Full-Stack CV",
-    "cvNetwork": "Network CV"
+    "cv": "Download CV"
   },
   "dummy": "Placeholder",
   "footer": {

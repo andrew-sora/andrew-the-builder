@@ -47,9 +47,6 @@ export default async function Home({ params }: Props) {
   const waHref = `https://wa.me/${site.contact.whatsapp}?text=${encodeURIComponent(dict.hero.waMessage)}`;
   const emailEncoded = Buffer.from(site.contact.email).toString('base64');
   const emailFallback = site.contact.email.replace('@', ' [at] ');
-  const cvGeneral = '/cv/CV-Andrew-Chivas-Umum.pdf';
-  const cvFullstack = '/cv/CV-Andrew-Chivas-FullStack.pdf';
-  const cvNetwork = '/cv/CV-Andrew-Chivas-Network.pdf';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -90,20 +87,9 @@ export default async function Home({ params }: Props) {
               {recruiters && (
                 <div className="cta">
                   <span className="cta__for mono">{dict.hero.forRecruiters}</span>
-                  <div className="cv-button-group">
-                    <a className="btn btn--solid" href={cvGeneral} download="CV-Andrew-Chivas-Umum.pdf">
-                      {dict.hero.ctaCv} <span className="btn__tag mono">PDF</span>
-                    </a>
-                    <div className="cv-secondary-links">
-                      <a className="cv-secondary-link mono" href={cvFullstack} download="CV-Andrew-Chivas-FullStack.pdf">
-                        {dict.hero.cvFullstack}
-                      </a>
-                      <span className="dim" aria-hidden="true">·</span>
-                      <a className="cv-secondary-link mono" href={cvNetwork} download="CV-Andrew-Chivas-Network.pdf">
-                        {dict.hero.cvNetwork}
-                      </a>
-                    </div>
-                  </div>
+                  <a className="btn btn--solid" href={site.cv} download="CV-Andrew-Chivas-Umum.pdf">
+                    {dict.hero.ctaCv} <span className="btn__tag mono">PDF</span>
+                  </a>
                 </div>
               )}
               {clients && (
@@ -268,20 +254,9 @@ export default async function Home({ params }: Props) {
                 <h3>{dict.contact.hireTitle}</h3>
                 <p>{dict.contact.hireBody}</p>
                 <div className="contact__links">
-                  <div className="cv-button-group">
-                    <a className="btn btn--solid" href={cvGeneral} download="CV-Andrew-Chivas-Umum.pdf">
-                      {dict.contact.cv} <span className="btn__tag mono">PDF</span>
-                    </a>
-                    <div className="cv-secondary-links">
-                      <a className="cv-secondary-link mono" href={cvFullstack} download="CV-Andrew-Chivas-FullStack.pdf">
-                        {dict.contact.cvFullstack}
-                      </a>
-                      <span className="dim" aria-hidden="true">·</span>
-                      <a className="cv-secondary-link mono" href={cvNetwork} download="CV-Andrew-Chivas-Network.pdf">
-                        {dict.contact.cvNetwork}
-                      </a>
-                    </div>
-                  </div>
+                  <a className="btn btn--solid" href={site.cv} download="CV-Andrew-Chivas-Umum.pdf">
+                    {dict.contact.cv} <span className="btn__tag mono">PDF</span>
+                  </a>
                 </div>
                 <div className="contact__chips">
                   <ObfuscatedEmail
