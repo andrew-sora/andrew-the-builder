@@ -1,0 +1,45 @@
+slug: field-dispatch
+placeholder: false
+lane: web
+status: beta
+year: 2026
+featured: true
+order: 1
+stack: [Next.js 15, Mobile-First PWA, TypeScript, IndexedDB (Offline Sync), QR Code Scanner, PostgreSQL, Web Audio]
+links: {}
+cover: /projects/field-dispatch/cover.svg
+gallery:
+  - src: /projects/field-dispatch/shot-1.svg
+    alt:
+      id: Antarmuka PWA mobile-first untuk pemindaian QR surat jalan dan antrean sinkronisasi offline
+      en: Mobile-first PWA interface for rapid Delivery Order QR scanning and offline IndexedDB sync queue
+  - src: /projects/field-dispatch/shot-2.svg
+    alt:
+      id: Verifikasi bukti foto kondisi barang di lokasi site dan pengesahan tanda tangan digital
+      en: Multi-angle site delivery photo evidence and digital handover signature capture
+text:
+  id:
+    title: Field Dispatch & DO Tracker
+    tagline: Sistem PWA mobile-first pelacak surat jalan digital & verifikasi serah-terima lapangan offline-first untuk kontraktor komersial.
+    role: Lead Systems Architect & Full-Stack Engineer (via SoraDev)
+    problem: >-
+      Kontraktor interior dan pameran komersial berskala besar menghadapi risiko kehilangan material bernilai tinggi, manipulasi surat jalan kertas manual, dan ketiadaan visibilitas status pengiriman antara workshop, logistik, dan lokasi proyek. Di area proyek lapangan (seperti basement pusat perbelanjaan atau gedung bertingkat), sinyal seluler sering kali hilang total, menyebabkan aplikasi berbasis web konvensional macet dan menghambat operasional bongkar muat pekerja.
+    approach: >-
+      Membangun aplikasi PWA (Progressive Web App) dengan prinsip mobile-first yang dirancang tangguh dalam kondisi tanpa jaringan internet (zero-signal tolerance). Mengimplementasikan antrean sinkronisasi dua arah berbasis IndexedDB di sisi peramban ponsel pintar yang otomatis menyelaraskan data ke basis data terpusat begitu koneksi pulih. Dilengkapi pemindai QR-code responsif dengan umpan balik haptik/audio, perekaman bukti foto serah-terima ber-geotagging, serta lembar pengesahan tanda tangan digital mandor lapangan langsung di layar sentuh.
+    highlights:
+      - Arsitektur PWA mobile-first yang beroperasi penuh secara offline dengan antrean sinkronisasi latar belakang IndexedDB tanpa kehilangan data (zero-data loss).
+      - Pelacakan 4 tahap rantai pasok (Dispatched, In-Transit, Arrived, Verified) dengan validasi QR-code unik anti-duplikasi per surat jalan.
+      - Bukti serah-terima digital nir-kertas (paperless) mencakup kompresi foto multi-sudut di sisi klien, verifikasi koordinat GPS (geofence), dan tanda tangan digital mandor.
+  en:
+    title: Field Dispatch & DO Tracker
+    tagline: Mobile-first offline-ready PWA for digital Delivery Order (DO) tracking and field handover verification for commercial contractors.
+    role: Lead Systems Architect & Full-Stack Engineer (via SoraDev)
+    problem: >-
+      Commercial interior and exhibition contractors face significant risks of high-value material loss, paper delivery order manipulation, and fragmented shipment visibility between fabrication workshops, haulers, and construction sites. At job sites (such as shopping mall basements and high-rise interiors), cellular coverage is frequently dead, causing standard cloud apps to fail and stalling loading dock operations.
+    approach: >-
+      Engineered an offline-first Progressive Web App (PWA) with a mobile-first UI specifically designed for zero-signal construction environments. Implemented an IndexedDB client-side synchronization queue that caches scans and forms locally, then auto-reconciles with a centralized PostgreSQL database once network connectivity is restored. Integrated a low-latency QR-code scanner with audio/haptic feedback, geotagged multi-photo delivery condition proof, and a responsive touchscreen signature pad for site supervisor handovers.
+    highlights:
+      - Mobile-first PWA architecture operating seamlessly offline with client-side IndexedDB background synchronization and zero data loss.
+      - 4-checkpoint chain-of-custody tracking (Dispatched, In-Transit, Arrived, Verified) with unique anti-tamper QR code verification.
+      - Paperless field handover capturing client-compressed photo evidence, GPS geofence validation, and digital supervisor signatures directly on mobile screens.
+

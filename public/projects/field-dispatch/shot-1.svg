@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Field Dispatch Shot 1 - Mobile Offline QR Scanning">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <pattern id="grid1" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg1)"/>
+  <rect width="1200" height="750" fill="url(#grid1)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(60, 45)">
+    <text x="0" y="24" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#38bdf8" letter-spacing="1.5">MOBILE-FIRST WORKFLOW · ZERO SIGNAL TOLERANCE</text>
+    <text x="0" y="58" font-family="-apple-system,sans-serif" font-size="28" font-weight="800" fill="#f8fafc">1. Pemindaian QR Cepat &amp; Antrean Offline IndexedDB</text>
+  </g>
+
+  <!-- Phone 1 (QR Scanner Viewport) -->
+  <g transform="translate(180, 120)">
+    <rect x="0" y="0" width="360" height="580" rx="32" fill="#030712" stroke="#334155" stroke-width="3"/>
+    <rect x="10" y="10" width="340" height="560" rx="24" fill="#0f172a"/>
+    <!-- Camera Viewport Box -->
+    <rect x="25" y="60" width="290" height="320" rx="16" fill="#020617" stroke="#1e293b"/>
+    <!-- Reticle Corners -->
+    <path d="M60 120 h-20 v20" stroke="#38bdf8" stroke-width="4" fill="none"/>
+    <path d="M280 120 h20 v20" stroke="#38bdf8" stroke-width="4" fill="none"/>
+    <path d="M60 320 h-20 v-20" stroke="#38bdf8" stroke-width="4" fill="none"/>
+    <path d="M280 320 h20 v-20" stroke="#38bdf8" stroke-width="4" fill="none"/>
+    <!-- Laser Scan Line -->
+    <line x1="45" y1="220" x2="295" y2="220" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.9"/>
+    <!-- Scan Prompt -->
+    <text x="170" y="260" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="12" fill="#94a3b8">Arahkan kamera ke QR Surat Jalan</text>
+    
+    <!-- Sound & Haptic Feedback Indicator -->
+    <g transform="translate(35, 400)">
+      <rect x="0" y="0" width="270" height="60" rx="10" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <circle cx="30" cy="30" r="14" fill="#047857"/>
+      <path d="M24 30l4 4 8-8" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <text x="56" y="27" font-family="-apple-system,sans-serif" font-size="13" font-weight="700" fill="#ecfdf5">QR Valid: DO-2026-X891</text>
+      <text x="56" y="45" font-family="-apple-system,sans-serif" font-size="11" fill="#a7f3d0">Web Audio Bip + Getar Lapangan</text>
+    </g>
+
+    <rect x="35" y="480" width="270" height="48" rx="8" fill="#2563eb"/>
+    <text x="170" y="510" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="13" font-weight="700" fill="#ffffff">BUKA MANIFEST SURAT JALAN</text>
+  </g>
+
+  <!-- Phone 2 (Offline Queue Sync Status) -->
+  <g transform="translate(660, 120)">
+    <rect x="0" y="0" width="360" height="580" rx="32" fill="#030712" stroke="#334155" stroke-width="3"/>
+    <rect x="10" y="10" width="340" height="560" rx="24" fill="#0f172a"/>
+
+    <!-- Offline Banner Inside App -->
+    <g transform="translate(25, 45)">
+      <rect x="0" y="0" width="290" height="65" rx="10" fill="#451a03" stroke="#b45309" stroke-width="1"/>
+      <circle cx="26" cy="32" r="10" fill="#d97706"/>
+      <text x="23" y="36" font-family="monospace" font-size="12" font-weight="900" fill="#ffffff">!</text>
+      <text x="46" y="27" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#fef3c7">MODE OFFLINE AKTIF</text>
+      <text x="46" y="44" font-family="-apple-system,sans-serif" font-size="11" fill="#fde68a">3 data tersimpan di IndexedDB</text>
+      <text x="46" y="56" font-family="-apple-system,sans-serif" font-size="10" fill="#f59e0b">Auto-sync saat mendapat sinyal 4G/WiFi</text>
+    </g>
+
+    <!-- Synced Actions Log -->
+    <g transform="translate(25, 130)">
+      <text x="0" y="16" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#94a3b8">ANTREAN LAPANGAN LOKAL</text>
+
+      <!-- Queue item 1 -->
+      <rect x="0" y="26" width="290" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="48" font-family="monospace" font-size="11" fill="#38bdf8" font-weight="700">SCAN: DO-X891 (ARRIVED)</text>
+      <text x="14" y="68" font-family="-apple-system,sans-serif" font-size="10" fill="#94a3b8">13:42 WIB · Site Grand Indonesia</text>
+      <rect x="215" y="42" width="62" height="22" rx="4" fill="#334155"/>
+      <text x="221" y="57" font-family="monospace" font-size="9" fill="#94a3b8">QUEUED</text>
+
+      <!-- Queue item 2 -->
+      <rect x="0" y="96" width="290" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="118" font-family="monospace" font-size="11" fill="#10b981" font-weight="700">FOTO BUKTI: 4 FOTO LAPANGAN</text>
+      <text x="14" y="138" font-family="-apple-system,sans-serif" font-size="10" fill="#94a3b8">Kompresi client-side WebP 120KB</text>
+      <rect x="215" y="112" width="62" height="22" rx="4" fill="#334155"/>
+      <text x="221" y="127" font-family="monospace" font-size="9" fill="#94a3b8">QUEUED</text>
+
+      <!-- Queue item 3 -->
+      <rect x="0" y="166" width="290" height="60" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="14" y="188" font-family="monospace" font-size="11" fill="#f59e0b" font-weight="700">TANDA TANGAN MANDOR</text>
+      <text x="14" y="208" font-family="-apple-system,sans-serif" font-size="10" fill="#94a3b8">Base64 Vector Canvas + Geotag</text>
+      <rect x="215" y="182" width="62" height="22" rx="4" fill="#334155"/>
+      <text x="221" y="197" font-family="monospace" font-size="9" fill="#94a3b8">QUEUED</text>
+    </g>
+
+    <!-- Bottom Sync Simulation Bar -->
+    <g transform="translate(25, 460)">
+      <rect x="0" y="0" width="290" height="50" rx="8" fill="#047857"/>
+      <text x="145" y="30" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#ffffff">SIMULASIKAN SINKRONISASI AWAN</text>
+    </g>
+  </g>
+</svg>
+

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Field Dispatch Shot 2 - Evidence & Handover">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#1e293b" stroke-width="1" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg2)"/>
+  <rect width="1200" height="750" fill="url(#grid2)"/>
+
+  <!-- Header Section -->
+  <g transform="translate(60, 45)">
+    <text x="0" y="24" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#10b981" letter-spacing="1.5">TAMPER-PROOF AUDIT TRAIL</text>
+    <text x="0" y="58" font-family="-apple-system,sans-serif" font-size="28" font-weight="800" fill="#f8fafc">2. Bukti Foto Multi-Sudut &amp; Tanda Tangan Serah Terima Lapangan</text>
+  </g>
+
+  <!-- Left: Photo Capture Checkpoint (Phone Mockup) -->
+  <g transform="translate(180, 120)">
+    <rect x="0" y="0" width="360" height="580" rx="32" fill="#030712" stroke="#334155" stroke-width="3"/>
+    <rect x="10" y="10" width="340" height="560" rx="24" fill="#0f172a"/>
+
+    <g transform="translate(25, 45)">
+      <text x="0" y="16" font-family="-apple-system,sans-serif" font-size="15" font-weight="800" fill="#f8fafc">BUKTI FOTO KONDISI BARANG</text>
+      <text x="0" y="34" font-family="-apple-system,sans-serif" font-size="11" fill="#94a3b8">Wajib minimal 2 foto saat bongkar muat</text>
+
+      <!-- Grid Photos -->
+      <g transform="translate(0, 50)">
+        <!-- Photo 1 -->
+        <rect x="0" y="0" width="138" height="110" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+        <path d="M20 80l30-35 25 25 35-40 20 25" stroke="#60a5fa" stroke-width="2" fill="none"/>
+        <circle cx="100" cy="30" r="8" fill="#60a5fa"/>
+        <rect x="6" y="82" width="75" height="18" rx="4" fill="#020617" fill-opacity="0.8"/>
+        <text x="12" y="95" font-family="monospace" font-size="9" fill="#93c5fd">FOTO MUATAN</text>
+
+        <!-- Photo 2 -->
+        <rect x="152" y="0" width="138" height="110" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect x="175" y="25" width="90" height="60" rx="4" fill="#334155"/>
+        <line x1="185" y1="40" x2="255" y2="40" stroke="#94a3b8" stroke-width="2"/>
+        <line x1="185" y1="55" x2="235" y2="55" stroke="#94a3b8" stroke-width="2"/>
+        <rect x="158" y="82" width="65" height="18" rx="4" fill="#020617" fill-opacity="0.8"/>
+        <text x="164" y="95" font-family="monospace" font-size="9" fill="#93c5fd">SEGEL TRUK</text>
+
+        <!-- Photo 3 -->
+        <rect x="0" y="125" width="138" height="110" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+        <polygon points="70,145 95,200 45,200" fill="#334155"/>
+        <circle cx="110" cy="155" r="7" fill="#60a5fa"/>
+        <rect x="6" y="207" width="85" height="18" rx="4" fill="#020617" fill-opacity="0.8"/>
+        <text x="12" y="220" font-family="monospace" font-size="9" fill="#93c5fd">SITE BONGKAR</text>
+
+        <!-- Add Photo Slot -->
+        <rect x="152" y="125" width="138" height="110" rx="8" fill="#0b1329" stroke="#1d4ed8" stroke-dasharray="4 4" stroke-width="1.5"/>
+        <circle cx="221" cy="170" r="16" fill="#1e3a8a"/>
+        <line x1="221" y1="162" x2="221" y2="178" stroke="#ffffff" stroke-width="2"/>
+        <line x1="213" y1="170" x2="229" y2="170" stroke="#ffffff" stroke-width="2"/>
+        <text x="221" y="210" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="10" fill="#93c5fd">+ TAMBAH FOTO</text>
+      </g>
+
+      <!-- Geotag & Timestamp Lock -->
+      <g transform="translate(0, 310)">
+        <rect x="0" y="0" width="290" height="55" rx="8" fill="#020617" stroke="#1e293b"/>
+        <circle cx="22" cy="27" r="8" fill="#065f46"/>
+        <circle cx="22" cy="27" r="3" fill="#34d399"/>
+        <text x="38" y="24" font-family="monospace" font-size="10" font-weight="700" fill="#6ee7b7">GPS LOCK: -6.1951, 106.8229</text>
+        <text x="38" y="42" font-family="-apple-system,sans-serif" font-size="10" fill="#94a3b8">Radius 15m dari titik geo-fence site</text>
+      </g>
+
+      <g transform="translate(0, 390)">
+        <rect x="0" y="0" width="290" height="48" rx="8" fill="#10b981"/>
+        <text x="145" y="29" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#ffffff">LANJUT KE TANDA TANGAN</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Digital Signature & Seal (Phone Mockup) -->
+  <g transform="translate(660, 120)">
+    <rect x="0" y="0" width="360" height="580" rx="32" fill="#030712" stroke="#334155" stroke-width="3"/>
+    <rect x="10" y="10" width="340" height="560" rx="24" fill="#0f172a"/>
+
+    <g transform="translate(25, 45)">
+      <text x="0" y="16" font-family="-apple-system,sans-serif" font-size="15" font-weight="800" fill="#f8fafc">LEMBAR PENGESAHAN LAPANGAN</text>
+      <text x="0" y="34" font-family="-apple-system,sans-serif" font-size="11" fill="#94a3b8">Tanda tangan penerima di layar sentuh</text>
+
+      <!-- Signature Pad Canvas -->
+      <g transform="translate(0, 50)">
+        <rect x="0" y="0" width="290" height="180" rx="10" fill="#020617" stroke="#334155" stroke-width="1"/>
+        <!-- Stylized Signature Vector Path -->
+        <path d="M40 120 C 60 70, 75 140, 95 90 C 110 50, 130 160, 150 110 C 170 80, 200 130, 240 100" stroke="#38bdf8" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <line x1="20" y1="145" x2="270" y2="145" stroke="#1e293b" stroke-width="1"/>
+        <text x="20" y="165" font-family="monospace" font-size="10" fill="#64748b">Tanda Tangan Mandor / Site Supervisor</text>
+      </g>
+
+      <!-- Signee Metadata -->
+      <g transform="translate(0, 250)">
+        <text x="0" y="16" font-family="-apple-system,sans-serif" font-size="11" fill="#94a3b8">Nama Terang Penerima:</text>
+        <rect x="0" y="24" width="290" height="38" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="14" y="48" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Bambang S. (Supervisor Site)</text>
+
+        <text x="0" y="84" font-family="-apple-system,sans-serif" font-size="11" fill="#94a3b8">Catatan Kondisi Barang:</text>
+        <rect x="0" y="92" width="290" height="50" rx="6" fill="#1e293b" stroke="#334155"/>
+        <text x="14" y="114" font-family="-apple-system,sans-serif" font-size="11" fill="#cbd5e1">Semua panel utuh tanpa cacat muat.</text>
+        <text x="14" y="130" font-family="-apple-system,sans-serif" font-size="10" fill="#64748b">Diterima lengkap pukul 14:10 WIB</text>
+      </g>
+
+      <!-- Final Submit Action -->
+      <g transform="translate(0, 420)">
+        <rect x="0" y="0" width="290" height="48" rx="8" fill="#2563eb"/>
+        <text x="145" y="29" text-anchor="middle" font-family="-apple-system,sans-serif" font-size="12" font-weight="700" fill="#ffffff">SAHKAN &amp; KUNCI SURAT JALAN</text>
+      </g>
+    </g>
+  </g>
+</svg>
+
