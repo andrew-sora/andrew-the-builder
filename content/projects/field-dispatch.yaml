@@ -9,11 +9,11 @@ stack: [Next.js 15, Mobile-First PWA, TypeScript, IndexedDB (Offline Sync), QR C
 links: {}
 cover: /projects/field-dispatch/cover.svg
 gallery:
-  - src: /projects/field-dispatch/shot-1.svg
+  - src: /projects/field-dispatch/preview-1.svg
     alt:
       id: Antarmuka PWA mobile-first untuk pemindaian QR surat jalan dan antrean sinkronisasi offline
       en: Mobile-first PWA interface for rapid Delivery Order QR scanning and offline IndexedDB sync queue
-  - src: /projects/field-dispatch/shot-2.svg
+  - src: /projects/field-dispatch/preview-2.svg
     alt:
       id: Verifikasi bukti foto kondisi barang di lokasi site dan pengesahan tanda tangan digital
       en: Multi-angle site delivery photo evidence and digital handover signature capture
