@@ -26,9 +26,9 @@ cv:
 
 about:
   id: >-
-    Lulusan Teknologi Informasi Universitas Gadjah Mada (UGM) dengan latar SMK Teknik Telekomunikasi. Membangun produk web dan mobile dari hulu ke hilir (Next.js, React Native, PostgreSQL multi-tenant dengan Row Level Security) dan berpengalaman memimpin operasional infrastruktur di beberapa site, termasuk integrasi jaringan optik DWDM. Founder SoraDev, pembuat SoraKos (SaaS beta). Mengutamakan keandalan sistem, dokumentasi yang rapi, dan solusi yang memecahkan masalah nyata.
+    Lulusan Teknologi Informasi Universitas Gadjah Mada (UGM) dengan latar SMK Teknik Telekomunikasi. Membangun produk web dan mobile dari hulu ke hilir (Next.js, React Native, PostgreSQL multi-tenant dengan Row Level Security) dan berpengalaman memimpin operasional infrastruktur di beberapa site, termasuk integrasi jaringan optik DWDM. Founder SoraDev (soradev.id), pembuat SoraKos (SaaS beta). Mengutamakan keandalan sistem, dokumentasi yang rapi, dan solusi yang memecahkan masalah nyata.
   en: >-
-    Information Technology graduate of Universitas Gadjah Mada (UGM) with a vocational background in telecommunication switching. Builds web and mobile products end to end (Next.js, React Native, multi-tenant PostgreSQL with Row Level Security) and has led infrastructure operations across multiple sites, including DWDM optical network integration. Founder of SoraDev and builder of SoraKos (beta SaaS). Focused on system reliability, clear documentation, and solutions to real problems.
+    Information Technology graduate of Universitas Gadjah Mada (UGM) with a vocational background in telecommunication switching. Builds web and mobile products end to end (Next.js, React Native, multi-tenant PostgreSQL with Row Level Security) and has led infrastructure operations across multiple sites, including DWDM optical network integration. Founder of SoraDev (soradev.id) and builder of SoraKos (beta SaaS). Focused on system reliability, clear documentation, and solutions to real problems.
 
 glance:
   - label: { id: Peran, en: Role }

@@ -333,6 +333,19 @@ ul {
   border: 1px solid rgba(16, 26, 51, 0.2);
 }
 
+.hero__badge--studio {
+  background: var(--card);
+  color: var(--blue);
+  border-color: var(--line);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero__badge--studio:hover {
+  border-color: var(--blue);
+  transform: translateY(-1px);
+}
+
 .hero__descriptor {
   margin-top: 6px;
   color: var(--ink-2);

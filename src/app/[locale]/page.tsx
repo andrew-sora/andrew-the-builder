@@ -78,6 +78,15 @@ export default async function Home({ params }: Props) {
             <div className="hero__identity">
               <p className="hero__name mono">{site.fullName}</p>
               <span className="hero__badge mono">FULL-STACK &amp; INFRASTRUCTURE ENGINEER</span>
+              <a
+                href="https://soradev.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero__badge hero__badge--studio mono"
+                title="SoraDev Studio"
+              >
+                BUILDING AT SORADEV.ID ↗
+              </a>
             </div>
             <p className="hero__descriptor mono">{dict.hero.lanes}</p>
             <h1>
