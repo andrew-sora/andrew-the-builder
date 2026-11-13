@@ -39,8 +39,8 @@ glance:
     value: { id: "React Native, FastAPI, Tailwind CSS, Vercel, Cloudflare, Linux", en: "React Native, FastAPI, Tailwind CSS, Vercel, Cloudflare, Linux" }
   - label: { id: "AI, Security & Infra", en: "AI, Security & Infra" }
     value: { id: "OWASP web security audit, nmap, DWDM optical networks, PyTorch (CNN)", en: "OWASP web security audit, nmap, DWDM optical networks, PyTorch (CNN)" }
-  - label: { id: Sedang dipelajari, en: Currently learning }
-    value: { id: "Mikrotik, Cisco, Zabbix, Next.js Server Actions/SSR/ISR, webhook & automated testing", en: "Mikrotik, Cisco, Zabbix, Next.js Server Actions/SSR/ISR, webhook & automated testing" }
+  - label: { id: Sedang dieksplorasi, en: Currently exploring }
+    value: { id: "Distributed database resilience, offline-first sync engines, local-first architecture, automated integration testing", en: "Distributed database resilience, offline-first sync engines, local-first architecture, automated integration testing" }
   - label: { id: Pendidikan, en: Education }
     value: { id: "Teknologi Informasi, Universitas Gadjah Mada (UGM)", en: "Information Technology, Universitas Gadjah Mada (UGM)" }
   - label: { id: Lokasi, en: Location }
