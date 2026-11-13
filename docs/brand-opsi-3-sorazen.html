@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opsi 3: Sora Zen / Sky & Code — @hi.itsdrew</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .ig-slide {
+      width: 540px;
+      height: 675px;
+      position: relative;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body class="bg-[#080c14] text-[#f8fafc] min-h-screen py-10 px-4 flex flex-col items-center">
+
+  <!-- Header Penjelasan Opsi 3 -->
+  <header class="max-w-xl text-center mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-mono mb-2">
+      OPSI 3 • SORA ZEN (HARMONIS DENGAN SORADEV)
+    </div>
+    <h1 class="text-2xl font-bold text-white">Modern Studio & Clean Code</h1>
+    <p class="text-xs text-slate-400 mt-1">
+      Warna: <strong>Midnight Ink (#0B0F17)</strong> + Navy Slate (#111827) + Aksen <strong>Sora Sky Cyan (#38BDF8)</strong>.
+    </p>
+
+    <!-- Tombol Mode Tampilan -->
+    <div class="mt-5 flex justify-center gap-2">
+      <button onclick="setView('single')" id="btn-single" class="px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-200 text-slate-900 transition">
+        Satu per Satu
+      </button>
+      <button onclick="setView('all')" id="btn-all" class="px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+        Lihat Semua
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigator & Download -->
+  <div id="navigator" class="flex items-center gap-2.5 mb-6">
+    <button onclick="prevSlide()" class="p-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">←</button>
+    <div class="flex gap-1.5" id="dots"></div>
+    <button onclick="nextSlide()" class="p-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">→</button>
+    <button onclick="downloadCurrentSlide()" class="p-1.5 px-3.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-xs ml-2 shadow-sm transition">
+      Download Slide Ini (PNG)
+    </button>
+  </div>
+
+  <!-- Area Container Slide -->
+  <main id="slide-container" class="flex flex-col items-center gap-10">
+
+    <!-- SLIDE 1 -->
+    <div class="ig-slide bg-[#111827] rounded-2xl p-12 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="1">
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-sky-400"></span>
+          <span class="text-slate-300">field notes</span>
+        </div>
+        <span>01 / 05</span>
+      </div>
+      <div class="my-auto pr-4">
+        <h2 class="text-[34px] font-bold text-white leading-[1.25] tracking-tight mb-5">
+          koding di 2026:<br>
+          hafalan sintaks udah gak penting lagi.
+        </h2>
+        <p class="text-[16px] text-slate-400 font-normal leading-relaxed">
+          sedikit catatan tentang bagaimana peran developer mulai bergeser ke hal yang lebih esensial.
+        </p>
+      </div>
+      <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-sky-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="ig-slide bg-[#111827] rounded-2xl p-12 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="2">
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-sky-400 font-medium">01 // SINTAKS</span>
+        <span>02 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="text-[26px] font-bold text-white mb-6 leading-snug tracking-tight">
+          ngetik kode itu urusan paling gampang sekarang.
+        </h3>
+        <p class="text-[16px] text-slate-300 leading-relaxed mb-5">
+          fungsi yang dulu butuh waktu sejam bolak-balik buka dokumentasi, sekarang kelar dalam hitungan detik dibantu AI.
+        </p>
+        <p class="text-[15px] text-slate-400 leading-relaxed">
+          kalau tolok ukur kehebatan programmer cuma seberapa banyak fungsi yang dihafal di luar kepala, ya udah selesai dari kemarin.
+        </p>
+      </div>
+      <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-sky-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="ig-slide bg-[#111827] rounded-2xl p-12 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="3">
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-sky-400 font-medium">02 // ARSITEKTUR</span>
+        <span>03 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="text-[26px] font-bold text-white mb-6 leading-snug tracking-tight">
+          yang mahal tetep arsitektur sistemnya.
+        </h3>
+        <p class="text-[16px] text-slate-300 leading-relaxed mb-4">
+          AI bisa bantu sat-set, tapi keputusan beratnya tetep ada di kepala kita:
+        </p>
+        <p class="text-[15px] text-slate-400 leading-relaxed mb-3 pl-3 border-l-2 border-sky-400">
+          relasi databasenya gimana, hak akses data antar user aman gak, dan pas traffic lagi rame sistemnya bakal ambruk gak?
+        </p>
+        <p class="text-[15px] text-slate-300 leading-relaxed">
+          hal-hal kayak gini gak bisa cuma modal prompt.
+        </p>
+      </div>
+      <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-sky-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="ig-slide bg-[#111827] rounded-2xl p-12 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="4">
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-sky-400 font-medium">03 // USER REALITY</span>
+        <span>04 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="text-[26px] font-bold text-white mb-6 leading-snug tracking-tight">
+          user cuma peduli: masalahnya kelar gak?
+        </h3>
+        <p class="text-[16px] text-slate-300 leading-relaxed mb-5">
+          mau kodenya diketik manual semalaman suntuk atau dibantu AI 2 jam, user gak bakal nanya kodenya dibikin pake cara apa.
+        </p>
+        <p class="text-[16px] text-slate-100 font-medium leading-relaxed bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+          mereka cuma peduli satu hal: aplikasinya gampang dipake dan gak error pas dibutuhin.
+        </p>
+      </div>
+      <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-sky-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 -->
+    <div class="ig-slide bg-[#111827] rounded-2xl p-12 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="5">
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-sky-400 font-medium">05 // KESIMPULAN</span>
+        <span>05 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="text-[26px] font-bold text-white mb-6 leading-snug tracking-tight">
+          fokusnya bergeser ke problem solving.
+        </h3>
+        <p class="text-[16px] text-slate-300 leading-relaxed mb-6">
+          bukan lagi adu gengsi siapa yang koding dari nol, tapi seberapa jeli kita melihat masalah nyata dan berani ngerilis solusinya.
+        </p>
+        <p class="text-[15px] text-slate-400 leading-relaxed">
+          gimana di tempat kalian? udah pada ngerasain pergeseran yang sama?
+        </p>
+      </div>
+      <div class="pt-6 border-t border-white/[0.06] flex items-center justify-between text-xs text-slate-500 font-mono">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-sky-400 font-semibold">drop di komen 👇</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 5;
+    let mode = 'single';
+
+    function init() {
+      const dotsContainer = document.getElementById('dots');
+      dotsContainer.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-6 h-6 rounded text-xs font-mono flex items-center justify-center transition-all ${
+          i === currentSlide ? 'bg-sky-400 text-slate-950 font-bold' : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+        }`;
+        dot.innerText = i;
+        dot.onclick = () => goToSlide(i);
+        dotsContainer.appendChild(dot);
+      }
+      updateSlideVisibility();
+    }
+
+    function updateSlideVisibility() {
+      const slides = document.querySelectorAll('.ig-slide');
+      slides.forEach(slide => {
+        const num = parseInt(slide.getAttribute('data-slide'));
+        slide.style.display = (mode === 'single') ? (num === currentSlide ? 'flex' : 'none') : 'flex';
+      });
+      init();
+    }
+
+    function goToSlide(n) { currentSlide = n; updateSlideVisibility(); }
+    function nextSlide() { if (currentSlide < totalSlides) { currentSlide++; updateSlideVisibility(); } }
+    function prevSlide() { if (currentSlide > 1) { currentSlide--; updateSlideVisibility(); } }
+
+    function setView(newMode) {
+      mode = newMode;
+      const nav = document.getElementById('navigator');
+      const btnSingle = document.getElementById('btn-single');
+      const btnAll = document.getElementById('btn-all');
+
+      if (mode === 'single') {
+        nav.style.display = 'flex';
+        btnSingle.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-200 text-slate-900';
+        btnAll.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+      } else {
+        nav.style.display = 'none';
+        btnAll.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-200 text-slate-900';
+        btnSingle.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+      }
+      updateSlideVisibility();
+    }
+
+    function downloadCurrentSlide() {
+      const activeSlide = document.querySelector(`.ig-slide[data-slide="${currentSlide}"]`);
+      if (!activeSlide) return;
+      const btn = event.currentTarget;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Memproses...';
+      btn.disabled = true;
+
+      html2canvas(activeSlide, {
+        scale: 2,
+        backgroundColor: '#111827',
+        useCORS: true
+      }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `opsi-3-slide-${currentSlide}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }).catch(err => {
+        alert('Gagal mendownload otomatis. Kamu bisa gunakan shortcut Win + Shift + S.');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
+

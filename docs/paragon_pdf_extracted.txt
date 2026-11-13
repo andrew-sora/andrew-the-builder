@@ -1,0 +1,768 @@
+=== PAGE 1 ===
+Kindly download and make a copy of this form before editing. For submission, uploading a .docx version is 
+recommended. 
+ 
+CURRICULUM VITAE 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        
+ 
+Name  
+: Andrew Chivas Arsenal Rico 
+ 
+Gender 
+: Male 
+Place of birth 
+: Batam 
+ 
+Date of birth 
+: 07 November 1999 
+ 
+Nationality 
+: Indonesia 
+ 
+Address 
+: Jl. Sumatra IV No.95 Tegal Boto, Sumbersari 
+ 
+City 
+: Jember 
+ 
+Phone number 
+: 087791159211 
+ 
+E-mail 
+: andrewchivas.ar@gmail.com 
+ 
+Social Media 
+: LinkedIn: linkedin.com/in/andrewchivasar | GitHub: github.com/andrew-sora | 
+Portfolio: archivas.pages.dev 
+ 
+Hobby 
+: Badminton & running, fantasy fiction reading, casual traveling, and photography  
+Religion 
+: Islam 
+ 
+Weight 
+: 59 kg  
+Height : 167 cm 
+Marital Status 
+: Single 
+ 
+ 
+FAMILY INFORMATION 
+Name 
+M/F 
+City, Date of Birth
+Education 
+Job 
+Write according to the order of siblings in the family, including your name.
+If a family member has died, write down the (RIP) behind his name. 
+Father 
+Deny Rico (RIP) 
+M 
+- 
+- 
+ 
+Mother 
+Anik Danu Hudzaimah 
+F 
+Jember, 31 Jan 
+1977 
+Diploma 1 
+Housewife 
+Child 1 
+Andrew Chivas Arsenal 
+Rico 
+M 
+Batam, 07 Nov 1999 Bachelor’s 
+Degree (UGM 
+Software 
+Engineer 
+Child 2 
+ 
+ 
+ 
+ 
+ 
+Child 3 
+ 
+ 
+ 
+ 
+ 
+Child 4 
+ 
+ 
+ 
+ 
+ 
+Child 5 
+ 
+ 
+ 
+ 
+ 
+Fill in the bottom if you are married* 
+Husband/Wife 
+ 
+ 
+ 
+ 
+ 
+Child 1 
+ 
+ 
+ 
+ 
+ 
+Child 2 
+ 
+ 
+ 
+ 
+ 
+Child 3 
+ 
+ 
+ 
+ 
+ 
+ 
+Formal Education 
+Please enter the full name of your university as stated in official records (e.g., Universitas 
+Indonesia, not UI) 
+Stage 
+Name 
+Major 
+Entry 
+Year 
+Graduat
+e year 
+GPA 
+Elementary 
+SDN Jember Lor 02  
+- 
+2005 
+2011 
+- 
+Junior High School 
+SMP N 1 Grujugan 
+Bondowoso 
+- 
+2011 
+2014 
+- 
+
+=== PAGE 2 ===
+ 
+Senior High School 
+SMK N 4 Bondowoso 
+Teknik Telekomunikasi 2014 
+2017 
+88 
+Diploma Degree 
+Choose... 
+ 
+ 
+ 
+ 
+Diploma Degree (Other)  
+ 
+ 
+ 
+ 
+Bachelor’s Degree 
+Universitas Gadjah 
+Mada 
+Teknologi Informasi 
+2017 
+2024 
+2.75 
+Bachelor’s Degree 
+(Other) 
+ 
+ 
+ 
+ 
+ 
+ 
+Bachelor overseas 
+ 
+ 
+ 
+ 
+ 
+Master’s Degree 
+Choose... 
+ 
+ 
+ 
+ 
+Master’s Degree (Other)  
+ 
+ 
+ 
+ 
+Master overseas 
+ 
+ 
+ 
+ 
+ 
+Doctoral Degree 
+Choose... 
+ 
+ 
+ 
+ 
+Doctoral Degree (Other)  
+ 
+ 
+ 
+ 
+ 
+Non-Formal Education (Courses, Lessons, Training) 
+Name of Education 
+Year 
+Duration 
+Diplomas / Certificates / 
+Description 
+Financed by 
+Introduction to 
+Cybersecurity (Cisco 
+Networking Academy) 
+2026 
+1 bulan 
+Certificate of Completion 
+Network Fundamentals & 
+Web Security Mitigations 
+Mandiri / Self 
+financed 
+Pelatihan Catu Daya 
+Sektor Telekomunikasi 
+(PT Bach Multi 
+Infrastruktur & Huawei 
+Tech Investment) 
+2025 
+1 bulan 
+Sertifikasi Operasional & 
+Standar Pemeliharaan Daya 
+Telekomunikasi 
+PT Bach Multi 
+Infrastruktur 
+First Aid Training 
+Workplace (PT Bach 
+Multi Infrastruktur) 
+2025 
+1 minggu 
+Sertifikasi K3 & Pertolongan 
+Pertama di Lingkungan 
+Kerja 
+PT Bach Multi 
+Infrastruktur 
+Digital Talent 
+Scholarship 
+(Kementerian 
+Komunikasi dan Digital / 
+Komdigi) 
+2019-2020 
+3 bulan 
+Fasilitasi & Dukungan 
+Teknis pelatihan IT Skala 
+besar (1.900+ peserta) 
+Pemerintah 
+RI/Komdigi 
+ 
+Foreign Language Skills: 
+1. Bahasa Indonesia 
+ (Active) 
+2. English 
+ (Active – Professional Working Proficiency) 
+ 
+Skills (hard skill or soft skill) 
+1. 
+Creative Tech & Interactive Web Architecture (Hard Skill): React, Next.js 15/16 (App Router), TypeScript, 
+JavaScript (ES6+), HTML5 Canvas, Web Animations & Micro-interactions (Framer Motion, Reanimated), 
+Tailwind CSS, Custom Design Systems, PWA, and Edge Deployment (Cloudflare & Vercel).   
+2. 
+UI/UX Design, Visual Styling & Brand Experience (Hard Skill): Figma (Design Systems, Prototyping, 
+Wireframing), Typography & Layouting (Editorial, Warm-Luxury, Earth Tone aesthetics), Multimedia Asset 
+Curation, Responsive Design, and visual storytelling for digital brand campaigns. 
+  
+3. 
+Full-Stack Engineering & API Integration (Hard Skill): REST APIs, FastAPI, Node.js, PostgreSQL (Row 
+Level Security / RLS), Supabase, In-App AST Math Expression Evaluator, Zero-friction WhatsApp 
+Commerce flows, Docker containerization, and Web Security Hardening (OWASP Top 10).   
+4. 
+Creative Problem Solving & Continuous Learning Agility (Soft Skill): User-centric empathy, cross-functional 
+collaboration between design and engineering, rapid prototyping mindset, high autonomy, and commitment 
+
+=== PAGE 3 ===
+ 
+to impactful value creation (aligned with Paragon's core values: Pembelajaran & Manfaat).   
+ 
+Work Experience 
+Start & 
+End Date
+Company / Institution 
+Name
+Position 
+Industrial Type 
+Number of 
+subordinates
+Juni 2025 
+– 
+Sekarang 
+PT Studio Sora Teknologi 
+(SoraDev) 
+Founder & Software 
+Engineer / IT Project 
+Coordinator 
+Software House & 
+SaaS Product 
+Studio 
+3-5 Orang 
+Nov 2025 
+– Mei 2026 
+PT Bach Multi 
+Infrastruktur 
+Team Leader – 
+Operasional 
+Infrastruktur 
+Telekomunikasi & 
+Infrastruktur 
+Jaringan  
+5-10 orang 
+Des 2024 
+– Mei 2025 
+Freelance (Klien UMKM 
+Australia) 
+Konsultan Sistem & 
+Operasional  
+Transformasi 
+Digital & Layanan 
+Bisnis 
+- 
+Juni 2019 
+– Juli 2020 
+Digital Talent Scholarship 
+– Komdigi 
+Asisten Instruktur & 
+Koordinator Pelatihan 
+Pendidikan & 
+Pelatihan 
+Teknologi 
+1.900+ Peserta 
+ 
+ 
+ 
+ 
+ 
+- The position is written with what position, including internship, freelance daily, etc. 
+- Write from the newest to the oldest 
+ 
+Describe your responsibilities for each position 
+a. 
+PT Studio Sora Teknologi (SoraDev) — Founder & Software Engineer / IT Project Coordinator (Juni 
+2025 – Sekarang): 
+ 
+Merancang dan membangun aplikasi web dan mobile end-to-end yang menggabungkan keandalan 
+teknis (Next.js, React Native, PostgreSQL RLS) dengan estetika visual tingkat tinggi (Yeka Studio 
+bergaya warm-luxury, showcase Danu's Collection dengan alur WhatsApp zero-friction, dan aplikasi 
+finansial Bocor Halus bertema Earth Tone). 
+ 
+Memimpin perancangan UI/UX di Figma dan implementasi Custom Design System: tipografi elegan, 
+interaktivitas kanvas mikro, dan animasi transisi halus (Reanimated / Framer Motion). 
+ 
+Menerjemahkan visi brand dan kebutuhan bisnis menjadi solusi perangkat lunak interaktif, mengelola 
+koordinasi tim pengembang, serta mengotomasi alur kerja teknis studio. 
+ 
+b. 
+PT Bach Multi Infrastruktur — Team Leader – Operasional Infrastruktur (Nov 2025 – Mei 2026): 
+ 
+Memimpin operasional teknis lapangan lintas site dalam menjaga ketersediaan tinggi (high 
+availability) infrastruktur optik DWDM dan server transmisi. 
+ 
+Mendiagnosis dan menangani insiden teknis kritis secara cepat dengan penyusunan SOP mitigasi 
+insiden darurat guna menekan mean-time-to-repair (MTTR). 
+ 
+Mengoordinasikan tim teknisi lapangan dan mengelola alokasi sumber daya teknis dengan 
+akuntabilitas dan keselamatan kerja tinggi. 
+ 
+c. 
+Freelance (Klien UMKM Australia) — Konsultan Sistem & Operasional (Desember 2024 – Mei 2025): 
+ 
+Memberikan konsultasi transformasi digital dan adopsi perkakas modern untuk optimalisasi alur kerja 
+bisnis klien mancanegara. 
+ 
+Menyusun Standard Operating Procedure (SOP) dan pedoman teknis interaktif yang mudah dipahami 
+oleh staf operasional non-teknis. 
+ 
+d. 
+Digital Talent Scholarship - Komdigi — Asisten Instruktur & Koordinator Pelatihan (2019 & 2020): 
+ 
+Mendukung penyelenggaraan program pelatihan IT berskala nasional yang melibatkan lebih dari 
+1.900 peserta. 
+
+=== PAGE 4 ===
+ 
+ 
+Memfasilitasi ekosistem pembelajaran daring yang responsif, menangani kendala teknis peserta 
+secara real-time, dan menyiapkan modul pengajaran digital. 
+ 
+    
+ 
+Organization Experience 
+Start 
+Date 
+End Date
+Organization Name 
+Position 
+Work Description 
+2018 
+2020 
+Fiagra (Komunitas 
+Fotografi & Grafis 
+Fakultas Teknik UGM 
+Anggota Aktif / Staf 
+Kreatif & Dokumentasi  
+Mengembangkan eksplorasi 
+fotografi dan visual grafis, 
+memproduksi dokumentasi visual 
+kegiatan, serta berkolaborasi dalam 
+pameran dan publikasi kreatif 
+mahasiswa Fakultas Teknik UGM. 
+2018 
+2020 
+Tim Sadewa UGM 
+Koordinator Divisi DDD 
+(tahun 2) & staf (tahun 1)
+Memimpin divisi Desain, Dekorasi, 
+dan Dokumentasi (DDD); 
+mengarahkan identitas visual acara, 
+memproduksi aset branding kreatif, 
+serta mengelola dokumentasi visual 
+kegiatan. 
+2019 
+2021 
+Kepanitiaan Ramadhan 
+di Kampus  
+Staff kepanitiaan (2 
+periode) 
+Mengoordinasikan kelancaran 
+operasional rangkaian kegiatan 
+dakwah dan sosial kemahasiswaan 
+berskala universitas yang melayani 
+ribuan jamaah dan partisipan lintas 
+fakultas. 
+ 
+Reference 
+Name 
+Employement Relationship 
+Phone Number 
+Gia Busyra Rabbani 
+Colleague / Internal Referral 
+(ParagonCorp) 
+0815-4698-3714 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Do you have any medical conditions that we should be aware of? No 
+If yes, please specify : -  
+ 
+Are you currently taking any medication? No 
+If yes, please list them : - 
+ 
+ 
+ 
+I hereby confirm that I consciously agree to submit my personal data to ParagonCorp. I give consent for my 
+data to be used for recruitment purposes or other related processes. All statements are filled with truth. If in the 
+future it turns out that there are things that are contradictory, then I am willing to be prosecuted in accordance 
+with applicable law and this application can be canceled. 
+ 
+ 
+Yogyakarta, 3 November 2026 
+ 
+ 
+ 
+        
+ 
+ 
+(Andrew Chivas Arsenal Rico) 
+ 
+ 
+
+=== PAGE 5 ===
+ 
+ 
+ 
+FORMULIR DEKLARASI/ 
+CLEARANCE DECLARATION FORM 
+ 
+Formulir ini merupakan bagian dari proses rekrutmen dan clearance Paragon. Semua informasi yang dibagikan 
+dalam formulir ini akan diperlakukan sebagai sangat rahasia dan digunakan semata-mata untuk tujuan 
+penilaian, kepatuhan, dan evaluasi konflik kepentingan. 
+This form is part of Paragon’s recruitment and clearance process. All information shared in this form will be 
+treated as strictly confidential and used solely for assessment, compliance, and conflict-of-interest evaluation 
+purposes. 
+Dengan melengkapi formulir ini, Anda menegaskan komitmen Anda untuk menjaga kerahasiaan semua 
+informasi yang berkaitan dengan Paragon, baik selama maupun setelah proses rekrutmen, sesuai dengan 
+kebijakan perusahaan dan Perjanjian Kerahasiaan (NDA). 
+By completing this form, you confirm your commitment to maintain confidentiality of all information related to 
+Paragon, both during and after the recruitment process, in line with company policies and the Non-Disclosure 
+Agreement (NDA). 
+A. Informasi Kandidat/ Candidate Information 
+Nama Lengkap/ Full Name 
+: Andrew Chivas Arsenal Rico 
+Nomor Identitas/ ID Number 
+: 3509210711990002 
+ 
+B. Pengakuan Kerahasiaan/ Confidentiality Acknowledgement 
+1. Apakah Anda memahami dan setuju untuk menjaga kerahasiaan semua informasi terkait Paragon yang 
+dibagikan selama proses rekrutmen dan onboarding, sesuai dengan NDA dan kebijakan perusahaan?   
+Do you understand and agree to maintain the confidentiality of all Paragon-related information shared during 
+the recruitment and onboarding process, in accordance with the NDA and company policies? 
+☐ Ya/Yes  
+☐ Tidak/No 
+ 
+C. Deklarasi Keluarga & Konflik Kepentingan/ Family & Conflict of Interest Declaration 
+Apakah Anda memiliki anggota keluarga (termasuk orang tua, pasangan, anak, saudara kandung, mertua, 
+atau kerabat sedarah maupun semenda) yang termasuk dalam salah satu kategori di bawah ini? 
+Do you have any family member (including parents, spouse, children, siblings, in-laws, or relatives by blood 
+or marriage) who falls into any of the categories below? 
+1. Saat ini bekerja di dalam Paragon Group? 
+Currently working within Paragon Group?  
+☐ Ya/Yes  
+☐ Tidak/No 
+ 
+Jika Ya, mohon berikan detailnya/ If Yes, please provide details: 
+☐ PT Paragon Technology and Innovation 
+☐ PT Paragon Universa Utama 
+             ☐ PT Parama Global Inspira 
+☐ PT Paranova Global Optima 
+☐ PT Varcos Citra Internasional 
+ 
+Hubungan/ 
+Relationship 
+Direktorat/ 
+Directorate 
+Jabatan/ 
+Role /Position 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PAGE 6 ===
+ 
+☐ 
+Pharmacore 
+Technology 
+and 
+Innovation 
+Sdn. 
+Bhd. 
+ 
+2.    Saat ini bermitra bisnis dengan Paragon Group (mis., Vendor, Pelanggan, Konsultan,   
+ 
+Distributor, Agen, dll.): 
+Currently business partnering with Paragon Group (e.g., Vendor, Customer, Consultant, 
+Distributor, Agency, etc.):  
+ 
+☐ Ya/Yes  
+☐ Tidak/No 
+ 
+       Jika Ya, mohon berikan detail/ If Yes, please provide details: 
+ 
+3.    Saat ini memiliki, mengelola, atau bekerja di bisnis yang serupa atau bersaing  
+ 
+dengan Paragon Group (mis., FMCG, Kecantikan, Manufaktur, Kesehatan, dll.)? 
+Currently owning, managing, or working in a business that is similar to or competing with 
+Paragon Group (e.g., FMCG, Beauty, Manufacturing, Healthcare, etc.)?  
+☐ Ya/ Yes  
+ 
+☐ Tidak/ No 
+          
+          Jika 
+Ya, 
+mohon 
+berikan 
+detail/ 
+If 
+Yes, 
+please 
+provide 
+details: 
+ 
+ 
+D. Kepemilikan Merek / Pengalaman Bisnis /Brand Ownership / Business Experience 
+Apakah Anda pernah mendirikan, mendirikan bersama, memiliki, mengelola, atau secara aktif 
+mengoperasikan merek atau bisnis pribadi (termasuk merek online, UMKM, startup, bisnis freelance, atau 
+bisnis sampingan)? 
+   Have you ever founded, co-founded, owned, managed, or actively operated a personal brand or business   
+   (including online brands, UMKM, startups, freelance businesses, or side businesses)? 
+    ☐ Ya/Yes  
+    ☐ Tidak/No 
+ 
+       Jika Ya, mohon sebutkan/ If Yes, please specify: 
+ 
+ 
+E. *Khusus untuk Kandidat MT (Management Trainee)  
+     *For MT (Management Trainee) Candidates Only 
+● Saya memahami bahwa Program Management Trainee membutuhkan komitmen penuh sepanjang 
+durasinya. Jika terpilih, saya setuju untuk memprioritaskan program ini dan mematuhi semua 
+persyaratan program, termasuk penugasan, rotasi, penempatan, dan kegiatan pengembangan yang 
+ditentukan oleh Perusahaan. Saya lebih lanjut mengakui bahwa saya tidak akan mengambil komitmen 
+akademis, profesional, bisnis, atau pribadi yang dapat mengganggu partisipasi saya dalam program ini. 
+Nama Perusahaan / Pelanggan 
+Company/Customer Name 
+Hubungan dengan Paragon 
+Relationship with Paragon
+ 
+ 
+ 
+ 
+Hubungan 
+Relationship
+Nama Perusahaan 
+Company Name
+Peran / Jabatan 
+Role /Position
+ 
+ 
+ 
+ 
+ 
+ 
+Brand/Business 
+Name 
+Nama Merek / 
+Bisnis 
+Position/ Role
+Jabatan / 
+Peran 
+Nature of 
+Business 
+Jenis Usaha 
+Year Started
+Tahun Mulai 
+Current Status 
+Status Saat Ini 
+(Active/Inactive/ 
+Closed) 
+(Aktif/Tidak 
+Aktif/Tutup) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SORADEV (PT Studio 
+Sora Teknologi) 
+Founder & 
+Software Eng. 
+Software House & 
+SaaS Product 
+2025 
+Project Base 
+
+=== PAGE 7 ===
+ 
+I understand that the Management Trainee Program requires full commitment throughout its duration. If 
+selected, I agree to prioritize the program and comply with all program requirements, including 
+assignments, rotations, placements, and development activities determined by the Company. I further 
+acknowledge that I will not undertake any academic, professional, business, or personal commitments 
+that may interfere with my participation in the program. 
+☐ Saya Telah Membaca, Memahami, dan Menyetujui 
+    I Have Read, Understood, and Agree 
+ 
+F. Deklarasi Akhir/Final Declaration 
+Dengan melengkapi formulir ini, saya dengan ini menyatakan bahwa: 
+By completing this form, I hereby declare that: 
+ 
+● 
+Semua informasi yang diberikan adalah benar, akurat, dan lengkap. 
+All information provided is true, accurate, and complete. 
+ 
+● 
+Saya memahami bahwa deklarasi ini digunakan sebagai bagian dari clearance konflik kepentingan dan 
+kepatuhan Paragon. 
+I understand that this declaration is used as part of Paragon’s conflict of interest and compliance 
+clearance. 
+ 
+● 
+Saya mengakui bahwa deklarasi palsu, kelalaian, atau penyajian yang tidak benar dapat 
+mengakibatkan diskualifikasi dari proses rekrutmen atau pemutusan hubungan kerja. 
+I acknowledge that any false declaration, omission, or misrepresentation may result in disqualification 
+from the recruitment process or termination of employment. 
+ 
+● 
+Saya menegaskan komitmen saya untuk menjaga kerahasiaan, termasuk sebelum penandatanganan 
+NDA resmi. 
+I confirm my commitment to maintain confidentiality, including prior to signing the formal NDA. 
+ 
+● 
+Saya mengakui dan menyetujui bahwa Data Pribadi saya akan diproses oleh Paragon untuk tujuan 
+rekrutmen dan orientasi karyawan. Saya dengan ini memberikan persetujuan kepada Paragon untuk 
+mengumpulkan, menyimpan, dan/atau memproses Data Pribadi saya selama periode yang diperlukan, 
+sesuai dengan Kebijakan Privasi Paragon dan peraturan perundang-undangan yang berlaku, termasuk 
+Undang-Undang No. 27 Tahun 2022 tentang Perlindungan Data Pribadi. 
+I acknowledge and agree that my Personal Data will be processed by Paragon for recruitment and 
+employee onboarding purposes. I hereby give my consent to Paragon to collect, retain, and/or process 
+my Personal Data for the period necessary to achieve such processing purposes, and/or in accordance 
+with Paragon’s Privacy Policy and the prevailing laws and regulations, including Undang-Undang No. 
+27 
+of 
+2022 
+on 
+Personal 
+Data 
+Protection. 
+ 
+● 
+Setuju untuk segera memberitahu dan memperbarui Petugas Data yang ditunjuk mengenai setiap 
+perubahan informasi yang diberikan dalam deklarasi ini selama masa kerja saya di Paragon. 
+Agree to promptly notify and update the designated Data Officer of any changes to the information 
+provided 
+in 
+this 
+declaration 
+throughout 
+my 
+employment 
+with 
+Paragon. 
+ 
+☐ Saya mengkonfirmasi dan menyetujui semua pernyataan di atas. 
+     I confirm and agree with all statements above. 
+ 
+ 
+Tempat & Tanggal/ Place & Date 
+: Yogyakarta, 3 November 2026 
+ 
+ 
+Tanda Tangan /Signature 
+ 
+:  
+ 
+ 
+

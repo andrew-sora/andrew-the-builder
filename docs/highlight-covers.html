@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architectural Highlight Covers — @hi.itsdrew</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=JetBrains+Mono:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
+    
+    /* Kanvas Persegi 1:1 yang Pas Memenuhi Lingkaran Instagram */
+    .cover-canvas {
+      width: 280px;
+      height: 280px;
+      box-sizing: border-box;
+      background-color: #16171b;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9999px; /* Panduan Lingkaran IG */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c0e] text-[#f4f4f5] min-h-screen py-10 px-4 flex flex-col items-center">
+
+  <!-- Header Info -->
+  <header class="max-w-2xl text-center mb-6">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono mb-2">
+      UKURAN BESAR & PAS DI LINGKARAN INSTAGRAM
+    </div>
+    <h1 class="text-3xl font-bold font-heading text-white">Sampul Sorotan Presisi</h1>
+    <p class="text-xs text-zinc-400 mt-2">
+      Ukuran icon dan angka sudah diperbesar 3x lipat agar terbaca jelas dan penuh di layar HP.
+    </p>
+
+    <!-- 3 TOMBOL UTAMA -->
+    <div class="mt-6 flex flex-wrap justify-center gap-2.5 p-2 bg-zinc-900/90 border border-white/[0.08] rounded-2xl max-w-xl mx-auto shadow-xl">
+      <button onclick="setStyle('index')" id="btn-index" class="px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-zinc-950 transition shadow-sm">
+        01. Monolithic Index
+      </button>
+      <button onclick="setStyle('wireframe')" id="btn-wireframe" class="px-4 py-2 rounded-xl text-xs font-mono font-medium bg-zinc-800 text-zinc-300 hover:bg-zinc-700 transition">
+        02. Wireframe 1px
+      </button>
+      <button onclick="setStyle('macro')" id="btn-macro" class="px-4 py-2 rounded-xl text-xs font-mono font-medium bg-zinc-800 text-zinc-300 hover:bg-zinc-700 transition">
+        03. Macro Texture
+      </button>
+    </div>
+
+    <!-- Deskripsi -->
+    <p id="style-desc" class="text-xs text-amber-400/90 font-mono mt-3">
+      Angka indeks monolitik tebal (01–06) beraksen Amber. Sangat jelas terbaca di bubble kecil Instagram.
+    </p>
+  </header>
+
+  <!-- ================= GAYA 1: MONOLITHIC INDEX (UKURAN BESAR & BOLD) ================= -->
+  <main id="section-index" class="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- 01 BUILDS -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-01" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">01</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">BUILDS</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">01 / BUILDS</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Proyek mandiri (SoraKos, app)</p>
+      <button onclick="downloadCover('idx-01', 'highlight-01-builds.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- 02 CLIENTS (UNTUK MEETING KINGSMEN) -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-02" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">02</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">CLIENTS</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">02 / CLIENTS</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Meeting Kingsmen & riset B2B</p>
+      <button onclick="downloadCover('idx-02', 'highlight-02-clients.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- 03 NOTES -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-03" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">03</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">NOTES</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">03 / NOTES</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Catatan teknis & Threads</p>
+      <button onclick="downloadCover('idx-03', 'highlight-03-notes.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- 04 STACK -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-04" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">04</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">STACK</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">04 / STACK</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Next.js, Tailwind, Postgres, tools</p>
+      <button onclick="downloadCover('idx-04', 'highlight-04-stack.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- 05 DAILY -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-05" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">05</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">DAILY</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">05 / DAILY</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Kafe, colokan, rutinitas santai</p>
+      <button onclick="downloadCover('idx-05', 'highlight-05-daily.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- 06 ABOUT -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="idx-06" class="cover-canvas mb-5">
+        <span class="text-amber-500 text-6xl font-mono font-extrabold tracking-tight leading-none">06</span>
+        <span class="text-[12px] font-mono tracking-[0.25em] text-zinc-200 font-bold uppercase mt-2">ABOUT</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">06 / ABOUT</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Profil Drew & perkenalan studio</p>
+      <button onclick="downloadCover('idx-06', 'highlight-06-about.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+  </main>
+
+  <!-- ================= GAYA 2: WIREFRAME 1PX (UKURAN BESAR) ================= -->
+  <main id="section-wireframe" class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+
+    <!-- WIREFRAME 1: BUILDS -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-01" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+          <line x1="12" y1="22.08" x2="12" y2="12"></line>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">BUILDS</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Wireframe Cube</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Rancang bangun produk & software</p>
+      <button onclick="downloadCover('wire-01', 'wireframe-01-builds.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- WIREFRAME 2: CLIENTS -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-02" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="18" cy="5" r="3"></circle>
+          <circle cx="6" cy="12" r="3"></circle>
+          <circle cx="18" cy="19" r="3"></circle>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">CLIENTS</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Network Nodes</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Kolaborasi sistem B2B & meeting</p>
+      <button onclick="downloadCover('wire-02', 'wireframe-02-clients.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- WIREFRAME 3: NOTES -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-03" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">NOTES</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Code Chevron</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Pemikiran & catatan teknis</p>
+      <button onclick="downloadCover('wire-03', 'wireframe-03-notes.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- WIREFRAME 4: STACK -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-04" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+          <polyline points="2 17 12 22 22 17"></polyline>
+          <polyline points="2 12 12 17 22 12"></polyline>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">STACK</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Layered Plates</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Tumpukan arsitektur teknologi</p>
+      <button onclick="downloadCover('wire-04', 'wireframe-04-stack.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- WIREFRAME 5: DAILY -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-05" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">DAILY</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Chronos Dial</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Waktu harian & kafe</p>
+      <button onclick="downloadCover('wire-05', 'wireframe-05-daily.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- WIREFRAME 6: ABOUT -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="wire-06" class="cover-canvas mb-5">
+        <svg class="w-24 h-24 text-amber-500 mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+        </svg>
+        <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase">ABOUT</span>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Identity At-Sign</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Profil personal & perkenalan</p>
+      <button onclick="downloadCover('wire-06', 'wireframe-06-about.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+  </main>
+
+  <!-- ================= GAYA 3: MACRO TEXTURE ================= -->
+  <main id="section-macro" class="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hidden">
+
+    <!-- MACRO 1: BUILDS -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-01" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-zinc-950 via-zinc-900 to-amber-950/50"></div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-zinc-100 text-3xl font-mono font-extrabold tracking-tight">KBD//01</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-amber-500 font-bold uppercase mt-1">BUILDS</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Hardware Gradient</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Sentuhan mekanik studio</p>
+      <button onclick="downloadCover('macro-01', 'macro-01-builds.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- MACRO 2: CLIENTS -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-02" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-[#0c0d10] bg-[linear-gradient(to_right,#ffffff0f_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0f_1px,transparent_1px)] bg-[size:10px_10px]"></div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-zinc-100 text-3xl font-mono font-extrabold tracking-tight">SOW//02</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-amber-500 font-bold uppercase mt-1">CLIENTS</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Blueprint Grid</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Tekstur kertas perancangan</p>
+      <button onclick="downloadCover('macro-02', 'macro-02-clients.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- MACRO 3: NOTES -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-03" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-[#090a0d] flex items-center justify-center opacity-30 font-mono text-[9px] text-zinc-400 leading-tight select-none">
+          0101010101010101<br>1010101010101010<br>0101010101010101
+        </div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-zinc-100 text-3xl font-mono font-extrabold tracking-tight">LOG//03</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-amber-500 font-bold uppercase mt-1">NOTES</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Terminal Buffer</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Nuansa biner & catatan koding</p>
+      <button onclick="downloadCover('macro-03', 'macro-03-notes.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- MACRO 4: STACK -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-04" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-zinc-900 to-black"></div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-zinc-100 text-3xl font-mono font-extrabold tracking-tight">DEV//04</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-amber-500 font-bold uppercase mt-1">STACK</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Matte Aluminum</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Bodi laptop & hardware</p>
+      <button onclick="downloadCover('macro-04', 'macro-04-stack.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- MACRO 5: DAILY -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-05" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#451a03_0%,#09090b_70%)]"></div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-zinc-100 text-3xl font-mono font-extrabold tracking-tight">CAFE//05</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-amber-500 font-bold uppercase mt-1">DAILY</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Espresso Crema</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Nuansa kopi kafe</p>
+      <button onclick="downloadCover('macro-05', 'macro-05-daily.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+    <!-- MACRO 6: ABOUT -->
+    <div class="flex flex-col items-center bg-zinc-900/40 border border-white/[0.06] rounded-2xl p-6">
+      <div id="macro-06" class="cover-canvas mb-5 overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-tr from-[#111215] to-zinc-800"></div>
+        <div class="relative z-10 flex flex-col items-center">
+          <span class="text-amber-500 text-3xl font-mono font-extrabold tracking-tight">DREW//06</span>
+          <span class="text-[11px] font-mono tracking-[0.25em] text-zinc-300 font-bold uppercase mt-1">ABOUT</span>
+        </div>
+      </div>
+      <h3 class="text-sm font-semibold text-zinc-200">Founder Monolith</h3>
+      <p class="text-[11px] text-zinc-400 mb-3 text-center">Identitas personal studio</p>
+      <button onclick="downloadCover('macro-06', 'macro-06-about.png')" class="w-full py-2 text-xs font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 transition shadow-md">
+        Download Sampul (PNG)
+      </button>
+    </div>
+
+  </main>
+
+  <script>
+    function setStyle(style) {
+      const secIndex = document.getElementById('section-index');
+      const secWire = document.getElementById('section-wireframe');
+      const secMacro = document.getElementById('section-macro');
+
+      const btnIndex = document.getElementById('btn-index');
+      const btnWire = document.getElementById('btn-wireframe');
+      const btnMacro = document.getElementById('btn-macro');
+      const desc = document.getElementById('style-desc');
+
+      secIndex.classList.add('hidden');
+      secWire.classList.add('hidden');
+      secMacro.classList.add('hidden');
+
+      [btnIndex, btnWire, btnMacro].forEach(btn => {
+        btn.className = 'px-4 py-2 rounded-xl text-xs font-mono font-medium bg-zinc-800 text-zinc-300 hover:bg-zinc-700 transition';
+      });
+
+      if (style === 'index') {
+        secIndex.classList.remove('hidden');
+        btnIndex.className = 'px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-zinc-950 transition shadow-sm';
+        desc.innerText = 'Angka indeks monolitik tebal (01–06) beraksen Amber. Sangat jelas terbaca di bubble kecil Instagram.';
+      } else if (style === 'wireframe') {
+        secWire.classList.remove('hidden');
+        btnWire.className = 'px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-zinc-950 transition shadow-sm';
+        desc.innerText = 'Vektor blueprint besar (kubus isometrik, simpul jaringan, kurung kode). Mengisi penuh lingkaran Instagram.';
+      } else {
+        secMacro.classList.remove('hidden');
+        btnMacro.className = 'px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-amber-500 text-zinc-950 transition shadow-sm';
+        desc.innerText = 'Tekstur material nyata berresolusi tinggi (hardware gradient, grid blueprint, terminal buffer, espresso crema).';
+      }
+    }
+
+    function downloadCover(elementId, filename) {
+      const el = document.getElementById(elementId);
+      const btn = event.currentTarget;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Memproses...';
+      btn.disabled = true;
+
+      // Render pada skala 2.5 (280px -> 700px tajam tanpa margin kosong)
+      html2canvas(el, {
+        scale: 2.5,
+        backgroundColor: '#16171b',
+        useCORS: true,
+        logging: false
+      }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }).catch(err => {
+        alert('Gagal download.');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      });
+    }
+  </script>
+</body>
+</html>

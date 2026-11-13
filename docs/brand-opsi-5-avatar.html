@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opsi 5: Personal Avatar Edition — @hi.itsdrew</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .ig-slide {
+      width: 540px;
+      height: 675px;
+      position: relative;
+      flex-shrink: 0;
+    }
+    .code-box {
+      background: #0d1017;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body class="bg-[#08090d] text-[#e2e8f0] min-h-screen py-10 px-4 flex flex-col items-center">
+
+  <!-- Header Penjelasan Opsi 5 -->
+  <header class="max-w-xl text-center mb-8">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono mb-2">
+      OPSI 5 • PERSONAL AVATAR EDITION
+    </div>
+    <h1 class="text-2xl font-bold text-white">Sentuhan Personal & Wajah Nyata</h1>
+    <p class="text-xs text-slate-400 mt-1">
+      Menggunakan <strong>foto avatar aslimu</strong> untuk membangun rasa percaya (*trust*) dan personal branding yang kuat.
+    </p>
+
+    <!-- Tombol Mode Tampilan -->
+    <div class="mt-5 flex justify-center gap-2">
+      <button onclick="setView('single')" id="btn-single" class="px-3.5 py-1.5 text-xs font-medium rounded-lg bg-blue-500 text-white font-semibold transition">
+        Satu per Satu
+      </button>
+      <button onclick="setView('all')" id="btn-all" class="px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+        Lihat Semua
+      </button>
+    </div>
+  </header>
+
+  <!-- Navigator & Download -->
+  <div id="navigator" class="flex items-center gap-2.5 mb-6">
+    <button onclick="prevSlide()" class="p-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">←</button>
+    <div class="flex gap-1.5" id="dots"></div>
+    <button onclick="nextSlide()" class="p-1.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs">→</button>
+    <button onclick="downloadCurrentSlide()" class="p-1.5 px-3.5 rounded-lg bg-blue-500 hover:bg-blue-400 text-white font-semibold text-xs ml-2 shadow-sm transition">
+      Download Slide Ini (PNG)
+    </button>
+  </div>
+
+  <!-- Area Container Slide -->
+  <main id="slide-container" class="flex flex-col items-center gap-10">
+
+    <!-- ================= SLIDE 1 (COVER DENGAN AVATAR) ================= -->
+    <div class="ig-slide bg-[#11131a] rounded-2xl p-10 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="1">
+      <!-- Top -->
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-blue-400 font-semibold">/// catatan builder</span>
+        <span>01 / 05</span>
+      </div>
+
+      <!-- Main Content -->
+      <div class="my-auto">
+        <!-- Personal Badge dengan 3D Avatar Karakter -->
+        <div class="flex items-center gap-3 mb-6 p-2 pr-4 rounded-full bg-white/[0.03] border border-white/5 w-fit">
+          <img src="../public/avatar-3d.png" alt="Drew 3D Avatar" class="w-11 h-11 rounded-full object-cover border-2 border-blue-400 shadow-md">
+          <div>
+            <p class="text-xs font-bold text-white leading-none">Drew</p>
+            <p class="text-[10px] font-mono text-slate-400 mt-0.5">founder @ soradev.id</p>
+          </div>
+        </div>
+
+        <h2 class="text-[31px] font-bold text-white leading-[1.25] tracking-tight mb-3">
+          koding di 2026: kenapa hafalan sintaks udah gak penting.
+        </h2>
+        <p class="text-[14px] text-slate-400 leading-relaxed mb-6">
+          sedikit catatan tentang bagaimana peran developer mulai bergeser ke hal yang lebih esensial.
+        </p>
+
+        <!-- Cuplikan Log Terminal Nyata -->
+        <div class="code-box rounded-xl p-4 font-mono text-xs">
+          <div class="flex items-center gap-1.5 pb-2.5 mb-2.5 border-b border-white/5 text-[11px] text-slate-500">
+            <span class="text-blue-400">~/soradev/build</span>
+          </div>
+          <div class="space-y-1.5 leading-relaxed text-[11.5px]">
+            <p class="text-slate-400"><span class="text-emerald-400">$</span> ai generate --module="auth & billing"</p>
+            <p class="text-slate-500">> created 320 lines in 0.4s (syntax done ✓)</p>
+            <p class="text-amber-300 mt-2"><span class="text-blue-400">$</span> architect --review</p>
+            <p class="text-slate-300">> "tunggu, alur datanya beneran aman gak?" 🤔</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-blue-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- ================= SLIDE 2 ================= -->
+    <div class="ig-slide bg-[#11131a] rounded-2xl p-10 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="2">
+      <!-- Top -->
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-blue-400">01 // SINTAKS</span>
+        <span>02 / 05</span>
+      </div>
+
+      <!-- Main Content -->
+      <div class="my-auto">
+        <h3 class="text-2xl font-bold text-white mb-2 leading-snug">
+          ngetik kode itu urusan paling gampang sekarang.
+        </h3>
+        <p class="text-[14px] text-slate-400 leading-relaxed mb-5">
+          fungsi yang dulu butuh waktu sejam bolak-balik buka docs, sekarang kelar dalam hitungan detik dibantu AI.
+        </p>
+
+        <!-- Cuplikan Kode Nyata -->
+        <div class="code-box rounded-xl p-4 font-mono text-xs mb-5">
+          <div class="text-[10px] text-slate-500 mb-2">// boilerplates like this take 2 seconds now:</div>
+          <pre class="text-slate-300 text-[11.5px] leading-relaxed"><code><span class="text-blue-400">export async function</span> <span class="text-amber-300">calculateRent</span>(id: <span class="text-purple-400">string</span>) {
+  <span class="text-slate-500">// AI handles the boring loop in 0.2s</span>
+  <span class="text-blue-400">const</span> room = <span class="text-blue-400">await</span> db.rooms.findUnique({ id });
+  <span class="text-blue-400">return</span> room.price + room.utilityFee;
+}</code></pre>
+        </div>
+
+        <p class="text-[13px] text-slate-400 leading-relaxed">
+          kalau tolok ukur kehebatan programmer cuma seberapa banyak fungsi yang dihafal di luar kepala, ya udah selesai dari kemarin.
+        </p>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-blue-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- ================= SLIDE 3 ================= -->
+    <div class="ig-slide bg-[#11131a] rounded-2xl p-10 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="3">
+      <!-- Top -->
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-blue-400">02 // ARSITEKTUR</span>
+        <span>03 / 05</span>
+      </div>
+
+      <!-- Main Content -->
+      <div class="my-auto">
+        <h3 class="text-2xl font-bold text-white mb-2 leading-snug">
+          yang mahal tetep arsitektur sistemnya.
+        </h3>
+        <p class="text-[14px] text-slate-400 leading-relaxed mb-5">
+          AI bisa bantu sat-set, tapi keputusan beratnya tetep ada di kepala kita sendiri:
+        </p>
+
+        <!-- Diagram Arsitektur Nyata -->
+        <div class="code-box rounded-xl p-4 font-mono text-xs space-y-2 mb-4">
+          <div class="flex items-center justify-between p-2 rounded bg-slate-900 border border-slate-800">
+            <span class="text-slate-300">1. Client / Browser</span>
+            <span class="text-[10px] text-slate-500">HTTP / Bearer Token</span>
+          </div>
+          <div class="text-center text-slate-600 text-[10px]">↓ validate auth & tenant context</div>
+          <div class="flex items-center justify-between p-2 rounded bg-blue-950/40 border border-blue-500/30 text-blue-200">
+            <span>2. Business Logic / API</span>
+            <span class="text-[10px] text-blue-400">Tenant: 'kos_ugm'</span>
+          </div>
+          <div class="text-center text-slate-600 text-[10px]">↓ enforce query isolation</div>
+          <div class="flex items-center justify-between p-2 rounded bg-slate-900 border border-slate-800">
+            <span class="text-emerald-400">3. PostgreSQL (RLS)</span>
+            <span class="text-[10px] text-emerald-400">Data Isolated 🔒</span>
+          </div>
+        </div>
+
+        <p class="text-[13px] text-slate-400 leading-relaxed">
+          hal-hal mendasar kayak gini gak bisa cuma modal copy-paste prompt tanpa paham ilmunya.
+        </p>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-blue-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- ================= SLIDE 4 ================= -->
+    <div class="ig-slide bg-[#11131a] rounded-2xl p-10 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="4">
+      <!-- Top -->
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-blue-400">03 // PERSPEKTIF USER</span>
+        <span>04 / 05</span>
+      </div>
+
+      <!-- Main Content -->
+      <div class="my-auto">
+        <h3 class="text-2xl font-bold text-white mb-2 leading-snug">
+          user cuma peduli: masalahnya kelar gak?
+        </h3>
+        <p class="text-[14px] text-slate-400 leading-relaxed mb-5">
+          mau kodenya diketik manual semalaman suntuk atau dibantu AI 2 jam, gak bakal ada user yang nanya cara bikinnya.
+        </p>
+
+        <!-- Tabel Matrix Nyata -->
+        <div class="code-box rounded-xl overflow-hidden font-mono text-xs mb-5">
+          <div class="grid grid-cols-2 bg-slate-900/90 p-2.5 border-b border-slate-800 text-[11px] font-semibold text-slate-300">
+            <span>Yang Dipikir Developer:</span>
+            <span>Yang Dilihat User:</span>
+          </div>
+          <div class="grid grid-cols-2 p-3 text-[11.5px] border-b border-white/5 text-slate-400">
+            <span>• Framework paling viral</span>
+            <span class="text-slate-300">• Web-nya loading cepet</span>
+          </div>
+          <div class="grid grid-cols-2 p-3 text-[11.5px] border-b border-white/5 text-slate-400">
+            <span>• Hafal ribuan sintaks</span>
+            <span class="text-slate-300">• Tombol dipencet gak error</span>
+          </div>
+          <div class="grid grid-cols-2 p-3 text-[11.5px] text-slate-400">
+            <span>• Ngetik dari nol</span>
+            <span class="text-emerald-400 font-semibold">• Masalah bisnis selesai ✓</span>
+          </div>
+        </div>
+
+        <p class="text-[13px] text-slate-400 leading-relaxed">
+          kualitas software itu diukur dari dampaknya ke pengguna, bukan dari seberapa menderita kita pas nulis kodenya.
+        </p>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-blue-400">geser →</span>
+      </div>
+    </div>
+
+    <!-- ================= SLIDE 5 (CLOSING DENGAN AVATAR & PROFIL) ================= -->
+    <div class="ig-slide bg-[#11131a] rounded-2xl p-10 flex flex-col justify-between shadow-2xl border border-white/[0.06]" data-slide="5">
+      <!-- Top -->
+      <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-blue-400">05 // PENUTUP</span>
+        <span>05 / 05</span>
+      </div>
+
+      <!-- Main Content -->
+      <div class="my-auto">
+        <h3 class="text-2xl font-bold text-white mb-3 leading-snug">
+          fokusnya bergeser ke problem solving.
+        </h3>
+        <p class="text-[14px] text-slate-400 leading-relaxed mb-6">
+          bukan lagi adu gengsi siapa yang koding dari nol, tapi seberapa jeli kita melihat masalah nyata dan berani ngerilis solusinya.
+        </p>
+
+        <!-- Kartu Profil Penutup dengan 3D Avatar -->
+        <div class="code-box rounded-xl p-5 flex items-center gap-4">
+          <img src="../public/avatar-3d.png" alt="Drew 3D Avatar" class="w-16 h-16 rounded-full object-cover border-2 border-blue-400 shadow-xl">
+          <div>
+            <p class="text-sm font-bold text-white">Drew (@hi.itsdrew)</p>
+            <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">
+              Founder & Software Engineer di SoraDev.<br>
+              Berbagi catatan seputar produk digital & sistem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="pt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-slate-500">
+        <span class="text-slate-300">drew · soradev.id</span>
+        <span class="text-blue-400 font-semibold">follow @hi.itsdrew ↗</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 5;
+    let mode = 'single';
+
+    function init() {
+      const dotsContainer = document.getElementById('dots');
+      dotsContainer.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-6 h-6 rounded text-xs font-mono flex items-center justify-center transition-all ${
+          i === currentSlide ? 'bg-blue-500 text-white font-bold' : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
+        }`;
+        dot.innerText = i;
+        dot.onclick = () => goToSlide(i);
+        dotsContainer.appendChild(dot);
+      }
+      updateSlideVisibility();
+    }
+
+    function updateSlideVisibility() {
+      const slides = document.querySelectorAll('.ig-slide');
+      slides.forEach(slide => {
+        const num = parseInt(slide.getAttribute('data-slide'));
+        slide.style.display = (mode === 'single') ? (num === currentSlide ? 'flex' : 'none') : 'flex';
+      });
+      init();
+    }
+
+    function goToSlide(n) { currentSlide = n; updateSlideVisibility(); }
+    function nextSlide() { if (currentSlide < totalSlides) { currentSlide++; updateSlideVisibility(); } }
+    function prevSlide() { if (currentSlide > 1) { currentSlide--; updateSlideVisibility(); } }
+
+    function setView(newMode) {
+      mode = newMode;
+      const nav = document.getElementById('navigator');
+      const btnSingle = document.getElementById('btn-single');
+      const btnAll = document.getElementById('btn-all');
+
+      if (mode === 'single') {
+        nav.style.display = 'flex';
+        btnSingle.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-blue-500 text-white font-semibold';
+        btnAll.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+      } else {
+        nav.style.display = 'none';
+        btnAll.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-blue-500 text-white font-semibold';
+        btnSingle.className = 'px-3.5 py-1.5 text-xs font-medium rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700';
+      }
+      updateSlideVisibility();
+    }
+
+    function downloadCurrentSlide() {
+      const activeSlide = document.querySelector(`.ig-slide[data-slide="${currentSlide}"]`);
+      if (!activeSlide) return;
+      const btn = event.currentTarget;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Memproses...';
+      btn.disabled = true;
+
+      html2canvas(activeSlide, {
+        scale: 2,
+        backgroundColor: '#11131a',
+        useCORS: true
+      }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `opsi-5-slide-${currentSlide}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }).catch(err => {
+        alert('Gagal mendownload otomatis. Kamu bisa gunakan shortcut Win + Shift + S.');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
+

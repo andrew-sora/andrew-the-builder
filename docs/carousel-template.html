@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Carousel Template (The Architectural Monolith) — @hi.itsdrew</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    
+    .ig-slide {
+      position: relative;
+      flex-shrink: 0;
+      box-sizing: border-box;
+      transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    /* 1:1 Persegi (Feed Anti-Crop IG) */
+    .ig-slide.ratio-1-1 {
+      width: 540px;
+      height: 540px;
+      padding: 38px 42px;
+    }
+
+    /* 4:5 Portrait (Vertikal Tinggi) */
+    .ig-slide.ratio-4-5 {
+      width: 540px;
+      height: 675px;
+      padding: 48px;
+    }
+
+    /* ================= TEMA DARK (Obsidian & Amber) ================= */
+    .theme-dark .ig-slide {
+      background-color: #18191e;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #f4f4f5;
+    }
+    .theme-dark .slide-badge { color: #f59e0b; }
+    .theme-dark .slide-meta { color: #71717a; }
+    .theme-dark .slide-title { color: #ffffff; }
+    .theme-dark .slide-sub { color: #a1a1aa; }
+    .theme-dark .slide-body { color: #d4d4d8; }
+    .theme-dark .slide-quote { 
+      color: #a1a1aa; 
+      border-left: 2px solid rgba(245, 158, 11, 0.75); 
+    }
+    .theme-dark .slide-divider { border-color: rgba(255, 255, 255, 0.08); }
+    .theme-dark .slide-footer-text { color: #d4d4d8; }
+    .theme-dark .slide-footer-action { color: #f59e0b; }
+    .theme-dark .slide-footer-finish { color: #71717a; }
+
+    /* ================= TEMA LIGHT (Paper Studio & Ink) ================= */
+    .theme-light .ig-slide {
+      background-color: #fafaf9;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      color: #18181b;
+    }
+    .theme-light .slide-badge { color: #d97706; }
+    .theme-light .slide-meta { color: #a1a1aa; }
+    .theme-light .slide-title { color: #09090b; }
+    .theme-light .slide-sub { color: #52525b; }
+    .theme-light .slide-body { color: #27272a; }
+    .theme-light .slide-quote { 
+      color: #4b5563; 
+      border-left: 2px solid #d97706; 
+    }
+    .theme-light .slide-divider { border-color: rgba(0, 0, 0, 0.08); }
+    .theme-light .slide-footer-text { color: #18181b; font-weight: 500; }
+    .theme-light .slide-footer-action { color: #d97706; font-weight: 600; }
+    .theme-light .slide-footer-finish { color: #71717a; }
+  </style>
+</head>
+<body class="bg-[#0b0c0e] text-[#f4f4f5] min-h-screen py-10 px-4 flex flex-col items-center">
+
+  <!-- Header Info -->
+  <header class="max-w-xl text-center mb-6">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-mono mb-2">
+      MASTER TEMPLATE • THE ARCHITECTURAL MONOLITH
+    </div>
+    <h1 class="text-2xl font-bold text-white">Master Generator Carousel Instagram</h1>
+    <p class="text-xs text-zinc-400 mt-1">
+      Gunakan tema Gelap atau Terang untuk membentuk pola selang-seling papan catur di profil Instagram.
+    </p>
+
+    <!-- Toolbar Pengaturan -->
+    <div class="mt-4 p-3 bg-zinc-900/90 border border-white/[0.08] rounded-xl flex flex-col gap-2.5">
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <span class="text-xs text-zinc-400 font-mono mr-1">Tema Grid:</span>
+        <button onclick="setTheme('dark')" id="btn-theme-dark" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-zinc-800 text-amber-400 border border-amber-500/40 transition shadow-sm">
+          🌙 Mode Gelap (Obsidian)
+        </button>
+        <button onclick="setTheme('light')" id="btn-theme-light" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 transition">
+          ☀️ Mode Terang (Paper Studio)
+        </button>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-white/[0.06]">
+        <span class="text-xs text-zinc-400 font-mono mr-1">Ukuran Feed:</span>
+        <button onclick="setRatio('1-1')" id="btn-ratio-1-1" class="px-3 py-1 text-xs font-semibold rounded-lg bg-amber-500 text-zinc-950 transition shadow-sm">
+          ✓ 1:1 Persegi (Anti Crop IG)
+        </button>
+        <button onclick="setRatio('4-5')" id="btn-ratio-4-5" class="px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition">
+          4:5 Portrait (Tinggi)
+        </button>
+      </div>
+    </div>
+
+    <!-- Pilihan Mode Tampilan -->
+    <div class="mt-3 flex justify-center gap-2">
+      <button onclick="setView('single')" id="btn-single" class="px-3 py-1 text-xs font-medium rounded-lg bg-zinc-200 text-zinc-900 transition">
+        Satu per Satu
+      </button>
+      <button onclick="setView('all')" id="btn-all" class="px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:bg-zinc-700 transition">
+        Lihat Semua
+      </button>
+    </div>
+
+    <p id="tip-4-5" class="text-[11px] text-amber-400/90 font-mono mt-3 hidden bg-amber-500/10 border border-amber-500/20 py-1.5 px-3 rounded-lg">
+      💡 <b>Tips Upload 4:5 di IG:</b> Saat upload di aplikasi Instagram, klik ikon expand <b>( ⤢ )</b> di pojok kiri bawah foto pertama agar tidak dipotong otomatis jadi 1:1.
+    </p>
+  </header>
+
+  <!-- Navigator & Download -->
+  <div id="navigator" class="flex items-center gap-2.5 mb-6">
+    <button onclick="prevSlide()" class="p-1.5 px-3 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs">←</button>
+    <div class="flex gap-1.5" id="dots"></div>
+    <button onclick="nextSlide()" class="p-1.5 px-3 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs">→</button>
+    <button onclick="downloadCurrentSlide()" class="p-1.5 px-4 rounded-lg bg-amber-500 hover:bg-amber-400 text-zinc-950 font-semibold text-xs ml-2 shadow-sm transition">
+      Download Slide Ini (PNG)
+    </button>
+  </div>
+
+  <!-- Area Container Slide -->
+  <main id="slide-container" class="theme-dark flex flex-col items-center gap-10">
+
+    <!-- SLIDE 1 -->
+    <div class="ig-slide ratio-1-1 shadow-2xl flex flex-col justify-between" data-slide="1">
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="slide-badge font-semibold">01 / BUILDER NOTES</span>
+        <span class="slide-meta">01 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h2 class="slide-title text-[27px] font-bold leading-[1.28] tracking-tight mb-3">
+          koding di 2026:<br>
+          hafalan sintaks udah gak penting lagi.
+        </h2>
+        <p class="slide-sub text-[14px] font-normal leading-relaxed">
+          sedikit catatan tentang bagaimana peran developer mulai bergeser ke hal yang lebih esensial.
+        </p>
+      </div>
+      <div class="slide-divider pt-4 border-t flex items-center justify-between text-xs font-mono">
+        <span class="slide-footer-text">drew · soradev.id</span>
+        <span class="slide-footer-action">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="ig-slide ratio-1-1 shadow-2xl flex flex-col justify-between" data-slide="2">
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="slide-badge font-semibold">02 / SINTAKS</span>
+        <span class="slide-meta">02 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="slide-title text-[22px] font-bold mb-3 leading-snug tracking-tight">
+          ngetik kode itu urusan paling gampang sekarang.
+        </h3>
+        <p class="slide-body text-[14px] leading-relaxed mb-3">
+          fungsi yang dulu butuh waktu sejam bolak-balik buka dokumentasi, sekarang kelar dalam hitungan detik dibantu AI.
+        </p>
+        <p class="slide-quote text-[13.5px] leading-relaxed pl-3.5">
+          kalau tolok ukur kehebatan programmer cuma seberapa banyak fungsi yang dihafal di luar kepala, ya udah selesai dari kemarin.
+        </p>
+      </div>
+      <div class="slide-divider pt-4 border-t flex items-center justify-between text-xs font-mono">
+        <span class="slide-footer-text">drew · soradev.id</span>
+        <span class="slide-footer-action">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="ig-slide ratio-1-1 shadow-2xl flex flex-col justify-between" data-slide="3">
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="slide-badge font-semibold">03 / ARSITEKTUR</span>
+        <span class="slide-meta">03 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="slide-title text-[22px] font-bold mb-3 leading-snug tracking-tight">
+          yang mahal tetep arsitektur sistemnya.
+        </h3>
+        <p class="slide-body text-[14px] leading-relaxed mb-3">
+          AI bisa bantu sat-set, tapi keputusan beratnya tetep ada di kepala kita:
+        </p>
+        <p class="slide-quote text-[13.5px] leading-relaxed pl-3.5">
+          relasi databasenya gimana, hak akses data antar user aman gak, dan pas traffic lagi rame sistemnya bakal ambruk gak?
+        </p>
+      </div>
+      <div class="slide-divider pt-4 border-t flex items-center justify-between text-xs font-mono">
+        <span class="slide-footer-text">drew · soradev.id</span>
+        <span class="slide-footer-action">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 4 -->
+    <div class="ig-slide ratio-1-1 shadow-2xl flex flex-col justify-between" data-slide="4">
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="slide-badge font-semibold">04 / PERSPEKTIF</span>
+        <span class="slide-meta">04 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="slide-title text-[22px] font-bold mb-3 leading-snug tracking-tight">
+          user cuma peduli: masalahnya kelar gak?
+        </h3>
+        <p class="slide-body text-[14px] leading-relaxed mb-3">
+          mau kodenya diketik manual semalaman suntuk atau dibantu AI 2 jam, user gak bakal nanya kodenya dibikin pake cara apa.
+        </p>
+        <p class="slide-quote text-[13.5px] leading-relaxed pl-3.5">
+          mereka cuma peduli satu hal: aplikasinya gampang dipake dan gak error pas dibutuhin.
+        </p>
+      </div>
+      <div class="slide-divider pt-4 border-t flex items-center justify-between text-xs font-mono">
+        <span class="slide-footer-text">drew · soradev.id</span>
+        <span class="slide-footer-action">geser →</span>
+      </div>
+    </div>
+
+    <!-- SLIDE 5 -->
+    <div class="ig-slide ratio-1-1 shadow-2xl flex flex-col justify-between" data-slide="5">
+      <div class="flex items-center justify-between text-xs font-mono">
+        <span class="slide-badge font-semibold">05 / KESIMPULAN</span>
+        <span class="slide-meta">05 / 05</span>
+      </div>
+      <div class="my-auto pr-2">
+        <h3 class="slide-title text-[22px] font-bold mb-3 leading-snug tracking-tight">
+          fokusnya bergeser ke problem solving.
+        </h3>
+        <p class="slide-body text-[14px] leading-relaxed mb-3">
+          bukan lagi adu gengsi siapa yang koding dari nol, tapi seberapa jeli kita melihat masalah nyata dan berani ngerilis solusinya.
+        </p>
+        <p class="slide-sub text-[13.5px] leading-relaxed">
+          gimana di tempat kalian? udah pada ngerasain pergeseran yang sama?
+        </p>
+      </div>
+      <div class="slide-divider pt-4 border-t flex items-center justify-between text-xs font-mono">
+        <span class="slide-footer-text">drew · soradev.id</span>
+        <span class="slide-footer-finish">selesai ✓</span>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    let currentSlide = 1;
+    const totalSlides = 5;
+    let mode = 'single';
+    let currentRatio = '1-1';
+    let currentTheme = 'dark';
+
+    function init() {
+      const dotsContainer = document.getElementById('dots');
+      dotsContainer.innerHTML = '';
+      for (let i = 1; i <= totalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.className = `w-6 h-6 rounded text-xs font-mono flex items-center justify-center transition-all ${
+          i === currentSlide ? 'bg-amber-500 text-zinc-950 font-bold' : 'bg-zinc-800 text-zinc-400 hover:bg-zinc-700'
+        }`;
+        dot.innerText = i;
+        dot.onclick = () => goToSlide(i);
+        dotsContainer.appendChild(dot);
+      }
+      updateSlideVisibility();
+    }
+
+    function updateSlideVisibility() {
+      const slides = document.querySelectorAll('.ig-slide');
+      slides.forEach(slide => {
+        const num = parseInt(slide.getAttribute('data-slide'));
+        slide.style.display = (mode === 'single') ? (num === currentSlide ? 'flex' : 'none') : 'flex';
+      });
+    }
+
+    function goToSlide(n) { currentSlide = n; init(); }
+    function nextSlide() { if (currentSlide < totalSlides) { currentSlide++; init(); } }
+    function prevSlide() { if (currentSlide > 1) { currentSlide--; init(); } }
+
+    function setView(newMode) {
+      mode = newMode;
+      const nav = document.getElementById('navigator');
+      const btnSingle = document.getElementById('btn-single');
+      const btnAll = document.getElementById('btn-all');
+
+      if (mode === 'single') {
+        nav.style.display = 'flex';
+        btnSingle.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-200 text-zinc-900';
+        btnAll.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:bg-zinc-700';
+      } else {
+        nav.style.display = 'none';
+        btnAll.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-200 text-zinc-900';
+        btnSingle.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:bg-zinc-700';
+      }
+      updateSlideVisibility();
+    }
+
+    function setRatio(ratio) {
+      currentRatio = ratio;
+      const slides = document.querySelectorAll('.ig-slide');
+      const btn11 = document.getElementById('btn-ratio-1-1');
+      const btn45 = document.getElementById('btn-ratio-4-5');
+      const tip45 = document.getElementById('tip-4-5');
+
+      slides.forEach(slide => {
+        if (ratio === '1-1') {
+          slide.classList.remove('ratio-4-5');
+          slide.classList.add('ratio-1-1');
+        } else {
+          slide.classList.remove('ratio-1-1');
+          slide.classList.add('ratio-4-5');
+        }
+      });
+
+      if (ratio === '1-1') {
+        btn11.className = 'px-3 py-1 text-xs font-semibold rounded-lg bg-amber-500 text-zinc-950 transition shadow-sm';
+        btn45.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition';
+        tip45.classList.add('hidden');
+      } else {
+        btn45.className = 'px-3 py-1 text-xs font-semibold rounded-lg bg-amber-500 text-zinc-950 transition shadow-sm';
+        btn11.className = 'px-3 py-1 text-xs font-medium rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 transition';
+        tip45.classList.remove('hidden');
+      }
+    }
+
+    function setTheme(theme) {
+      currentTheme = theme;
+      const container = document.getElementById('slide-container');
+      const btnDark = document.getElementById('btn-theme-dark');
+      const btnLight = document.getElementById('btn-theme-light');
+
+      if (theme === 'dark') {
+        container.classList.remove('theme-light');
+        container.classList.add('theme-dark');
+        btnDark.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg bg-zinc-800 text-amber-400 border border-amber-500/40 transition shadow-sm';
+        btnLight.className = 'px-3 py-1.5 text-xs font-medium rounded-lg bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 transition';
+      } else {
+        container.classList.remove('theme-dark');
+        container.classList.add('theme-light');
+        btnLight.className = 'px-3 py-1.5 text-xs font-semibold rounded-lg bg-zinc-200 text-zinc-950 border border-zinc-300 transition shadow-sm';
+        btnDark.className = 'px-3 py-1.5 text-xs font-medium rounded-lg bg-zinc-800/60 text-zinc-400 hover:text-zinc-200 transition';
+      }
+    }
+
+    function downloadCurrentSlide() {
+      const activeSlide = document.querySelector(`.ig-slide[data-slide="${currentSlide}"]`);
+      if (!activeSlide) return;
+      const btn = event.currentTarget;
+      const originalText = btn.innerHTML;
+      btn.innerHTML = 'Memproses...';
+      btn.disabled = true;
+
+      const bgColor = (currentTheme === 'dark') ? '#18191e' : '#fafaf9';
+
+      html2canvas(activeSlide, {
+        scale: 2,
+        backgroundColor: bgColor,
+        useCORS: true,
+        logging: false
+      }).then(canvas => {
+        const link = document.createElement('a');
+        link.download = `carousel-slide-${currentSlide}-${currentRatio}-${currentTheme}.png`;
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      }).catch(err => {
+        alert('Gagal mendownload otomatis. Kamu bisa gunakan shortcut Win + Shift + S.');
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
