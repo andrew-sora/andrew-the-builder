@@ -63,6 +63,8 @@ const SiteSchema = z.object({
     whatsapp: z.string().regex(/^\d{8,15}$/, 'digits only, international format'),
     linkedin: z.string().url(),
     github: z.string().url(),
+    instagram: z.string().url().optional(),
+    threads: z.string().url().optional(),
   }),
   cv: z.object({ id: z.string().startsWith('/'), en: z.string().startsWith('/') }),
   about: Localized,

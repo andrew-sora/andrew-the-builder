@@ -56,7 +56,12 @@ export default async function Home({ params }: Props) {
     url: `${site.siteUrl}/${locale}/`,
     image: `${site.siteUrl}/me-720.webp`,
     jobTitle: dict.meta.role,
-    sameAs: [site.contact.linkedin, site.contact.github],
+    sameAs: [
+      site.contact.linkedin,
+      site.contact.github,
+      site.contact.threads,
+      site.contact.instagram,
+    ].filter(Boolean) as string[],
   };
 
   return (
@@ -279,6 +284,14 @@ export default async function Home({ params }: Props) {
                     </svg>
                     <span>LinkedIn</span>
                   </a>
+                  {site.contact.threads && (
+                    <a className="contact__chip" href={site.contact.threads} target="_blank" rel="noopener noreferrer">
+                      <svg className="contact__chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M19.25 12.05c-.14-4.52-3.17-7.3-7.25-7.3-4.36 0-7.5 3.32-7.5 7.75 0 4.3 3.08 7.75 7.63 7.75 2.78 0 4.88-1.22 5.92-3.44l-1.92-.98c-.7 1.48-2.13 2.37-4 2.37-3.07 0-5.23-2.31-5.23-5.7 0-3.32 2.1-5.7 5.1-5.7 2.82 0 4.85 1.88 4.95 4.9H12a2.6 2.6 0 0 0-2.6 2.6c0 1.48 1.12 2.6 2.6 2.6 1.18 0 2.1-.64 2.45-1.62.1.66.36 1.25.75 1.76" />
+                      </svg>
+                      <span>Threads</span>
+                    </a>
+                  )}
                 </div>
               </div>
             )}
@@ -311,6 +324,24 @@ export default async function Home({ params }: Props) {
                     </svg>
                     <span>GitHub</span>
                   </a>
+                  {site.contact.threads && (
+                    <a className="contact__chip" href={site.contact.threads} target="_blank" rel="noopener noreferrer">
+                      <svg className="contact__chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <path d="M19.25 12.05c-.14-4.52-3.17-7.3-7.25-7.3-4.36 0-7.5 3.32-7.5 7.75 0 4.3 3.08 7.75 7.63 7.75 2.78 0 4.88-1.22 5.92-3.44l-1.92-.98c-.7 1.48-2.13 2.37-4 2.37-3.07 0-5.23-2.31-5.23-5.7 0-3.32 2.1-5.7 5.1-5.7 2.82 0 4.85 1.88 4.95 4.9H12a2.6 2.6 0 0 0-2.6 2.6c0 1.48 1.12 2.6 2.6 2.6 1.18 0 2.1-.64 2.45-1.62.1.66.36 1.25.75 1.76" />
+                      </svg>
+                      <span>Threads</span>
+                    </a>
+                  )}
+                  {site.contact.instagram && (
+                    <a className="contact__chip" href={site.contact.instagram} target="_blank" rel="noopener noreferrer">
+                      <svg className="contact__chip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                      <span>Instagram</span>
+                    </a>
+                  )}
                 </div>
               </div>
             )}
